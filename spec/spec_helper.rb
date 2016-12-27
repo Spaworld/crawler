@@ -3,8 +3,6 @@ SimpleCov.start
 
 require 'factory_girl_rails'
 require 'support/database_cleaner'
-require 'support/webmock'
-require 'support/vcr'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

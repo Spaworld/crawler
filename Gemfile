@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'capybara'
-gem 'poltergeist'
+gem 'poltergeist', '~> 1.11'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
@@ -20,8 +20,10 @@ group :development, :test do
   gem 'faker'
   gem 'dotenv-rails'
   gem 'pry-rails'
-  gem 'vcr'
-  gem 'webmock'
+  gem 'puffing-billy'
+  gem 'reek'
+  gem 'mutant-rspec'
+  gem 'rubocop', require: false
 end
 
 group :development do

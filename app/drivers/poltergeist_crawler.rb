@@ -9,7 +9,7 @@ class PoltergeistCrawler
   include Capybara::DSL
 
   def initialize
-    Capybara.register_driver :poltergeist do |app|
+    Capybara.register_driver :poltergeist_crawler do |app|
       Capybara::Poltergeist::Driver.new(app, {
         :js_errors => false,
         :inspector => false,
@@ -18,7 +18,7 @@ class PoltergeistCrawler
       })
     end
     Capybara.run_server = false
-    Capybara.default_driver = :poltergeist
+    Capybara.default_driver = :poltergeist_crawler
     page.driver.headers = {
       'DNT' => 1,
       'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0'

@@ -11,9 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161227055430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "listings", force: :cascade do |t|
+    t.string   "sku"
+    t.string   "hd_url"
+    t.string   "menards_url"
+    t.string   "overstock_url"
+    t.string   "lowes_url"
+    t.string   "build_url"
+    t.string   "hmb_url"
+    t.string   "wayfair_url"
+    t.string   "houzz_url"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
