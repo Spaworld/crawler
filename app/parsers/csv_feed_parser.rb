@@ -1,4 +1,5 @@
 require 'csv'
+
 class CSVFeedParser
 
   attr_accessor :skus

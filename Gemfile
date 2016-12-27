@@ -10,13 +10,18 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'capybara'
+gem 'poltergeist'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'capybara'
   gem 'dotenv-rails'
+  gem 'pry-rails'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
