@@ -1,8 +1,9 @@
 require 'csv'
 
+# fetches skus from a csv file
 class CSVFeedParser
 
-  attr_accessor :skus
+  attr_reader :skus
 
   def initialize
     @skus = Array.new
