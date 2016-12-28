@@ -2,7 +2,7 @@
 # through HomeDepot.com
 class HomeDepotConnector < PoltergeistCrawler
 
-  def process_skus(skus)
+  def process_listings(skus)
     skus.each do |sku|
       get_listing_page(sku)
       append_url_to_listing(sku)

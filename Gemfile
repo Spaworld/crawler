@@ -10,6 +10,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'puma'
+
 gem 'capybara'
 gem 'poltergeist', '~> 1.11'
 
@@ -23,6 +25,7 @@ group :development, :test do
   gem 'puffing-billy'
   gem 'reek'
   gem 'mutant-rspec'
+  gem 'fantaskspec'
   gem 'rubocop', require: false
 end
 

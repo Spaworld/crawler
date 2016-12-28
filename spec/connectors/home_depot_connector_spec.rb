@@ -31,7 +31,7 @@ RSpec.describe HomeDepotConnector do
         .to receive(:get_listing_page)
         .with('123')
         .thrice
-      connector.process_skus(%w( 123 123 123))
+      connector.process_listings(%w( 123 123 123))
     end
 
     it 'should get listing pages for skus' do
@@ -39,7 +39,7 @@ RSpec.describe HomeDepotConnector do
         .to receive(:append_url_to_listing)
         .with('123')
         .thrice
-      connector.process_skus(%w( 123 123 123))
+      connector.process_listings(%w( 123 123 123))
     end
 
   end
