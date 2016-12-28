@@ -17,7 +17,11 @@ class Listing < ActiveRecord::Base
   CHANNELS.each do |channel_name|
     define_singleton_method("append_#{channel_name}_url") do |url, sku|
       listing = find_by(sku: sku)
-      listing.update_attributes!("#{channel_name}_url": url)
+      if listing
+        listing.update_attributes("#{channel_name}_url": url)
+      else
+        create(sku: sku, "#{channel_name}_url":url)
+      end
     end
   end
 
