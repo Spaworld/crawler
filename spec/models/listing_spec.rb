@@ -66,29 +66,25 @@ RSpec.describe Listing, type: :model do
 
   end
 
-  describe 'url appending' do
+  context 'when listing exists' do
 
-    context 'when listing exists' do
-
-      it 'should update correspodning channel url' do
-        listing = create(:listing)
-        Listing.append_hd_url('http://abc.com', listing.sku)
-        listing.reload
-        expect(listing.hd_url).to eq('http://abc.com')
-      end
-
+    it 'should update correspodning channel url' do
+      listing = create(:listing)
+      Listing.append_hd_url('http://abc.com', listing.sku)
+      listing.reload
+      expect(listing.hd_url).to eq('http://abc.com')
     end
 
-    context 'when listing does not exist' do
+  end
 
-      it 'should create new listing with corresponding sku and url' do
-        expect(Listing.count).to eq(0)
-        Listing.append_hd_url('http://www.abc.com', 'foo')
-        expect(Listing.count).to eq(1)
-        expect(Listing.first.sku).to eq('foo')
-        expect(Listing.first.hd_url).to eq('http://www.abc.com')
-      end
+  context 'when listing does not exist' do
 
+    it 'should create new listing with corresponding sku and url' do
+      expect(Listing.count).to eq(0)
+      Listing.append_hd_url('http://www.abc.com', 'foo')
+      expect(Listing.count).to eq(1)
+      expect(Listing.first.sku).to eq('foo')
+      expect(Listing.first.hd_url).to eq('http://www.abc.com')
     end
 
   end
