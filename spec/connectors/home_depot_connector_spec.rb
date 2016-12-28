@@ -2,44 +2,93 @@ require 'rails_helper'
 
 RSpec.describe HomeDepotConnector do
 
-  let(:connector) { HomeDepotConnector.new }
+  describe 'initalization' do
 
-  it 'should visit the product page' do
-    expect_any_instance_of(Capybara::Session).to receive(:visit)
-      .with('http://www.homedepot.com/s/123')
-    connector.get_listing_page('123')
+    context 'when valid driver is injected' do
+
+      before { @connector = HomeDepotConnector.new(PuffingBillyCrawler.new) }
+
+      it 'should init with a driver' do
+        expect(@connector).to respond_to(:driver)
+      end
+
+      it 'should init with a valid driver' do
+        expect(@connector.driver.class).to eq(PuffingBillyCrawler)
+      end
+
+    end
+
+    context 'when wrong driver type is injected' do
+
+      it 'should not init' do
+        expect{ HomeDepotConnector.new(Class.new) }
+          .to raise_error(ArgumentError, 'Invalid driver')
+      end
+
+    end
+
+    context 'when no driver is injected' do
+
+      it 'should not init' do
+        expect{ HomeDepotConnector.new(nil) }
+          .to raise_error(ArgumentError, 'Invalid driver')
+      end
+
+    end
+
   end
 
-  it 'should append url to listing' do
-    fake_page = double('page', current_url: 'foo.com')
-    allow(Capybara)
-      .to receive(:page)
-      .and_return(fake_page)
-    expect(Listing).to receive(:append_hd_url)
-    connector.append_url_to_listing('123')
-  end
+  describe 'crawling' do
 
-  describe 'bulk sku processing' do
+    let(:connector) { HomeDepotConnector.new(PuffingBillyCrawler.new) }
 
     before do
-      allow(Listing).to receive(:append_hd_url)
-      allow(connector).to receive(:visit)
+      @listing = create(:listing)
+      sample_page = File.read("#{Rails.root}/spec/fixtures/standard_page.html")
+      proxy.stub("http://www.homedepot.com/s/#{@listing.sku}")
+        .and_return(text: sample_page)
     end
 
-    it 'should get listing pages for skus' do
-      expect(connector)
-        .to receive(:get_listing_page)
-        .with('123')
-        .thrice
-      connector.process_listings(%w( 123 123 123))
+    describe 'visting listing pages' do
+
+      it 'should visit listing page' do
+        connector.get_listing_page_url(@listing.sku)
+        expect(connector.driver.page)
+          .to have_content('Home Depot')
+      end
+
+      it 'should handle wrong / empty sku injection' do
+        expect{ connector.get_listing_page_url(nil) }
+          .to_not raise_error
+      end
+
+      it 'should set listing_url attr' do
+        expect(connector.listing_url).to be_empty
+        connector.get_listing_page_url(@listing.sku)
+        expect(connector.listing_url)
+          .to eq("http://www.homedepot.com/s/#{@listing.sku}")
+      end
+
     end
 
-    it 'should get listing pages for skus' do
-      expect(connector)
-        .to receive(:append_url_to_listing)
-        .with('123')
-        .thrice
-      connector.process_listings(%w( 123 123 123))
+    it 'should append listing_url to listing' do
+      connector.get_listing_page_url(@listing.sku)
+      expect(Listing)
+        .to receive(:append_hd_url)
+        .with("http://www.homedepot.com/s/#{@listing.sku}",
+      @listing.sku)
+        .once
+      connector.append_url_to_listing(@listing.sku)
+    end
+
+    it 'should process a bulk of skus' do
+      expect(connector).
+        to receive(:get_listing_page_url)
+        .with(@listing.sku)
+      expect(connector).
+        to receive(:append_url_to_listing)
+        .with(@listing.sku)
+      connector.process_listings([@listing.sku])
     end
 
   end

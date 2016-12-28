@@ -3,6 +3,7 @@ SimpleCov.start
 
 require 'factory_girl_rails'
 require 'support/database_cleaner'
+require 'support/puffing_billy_driver.rb'
 require 'fantaskspec'
 
 RSpec.configure do |config|
