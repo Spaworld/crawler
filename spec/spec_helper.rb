@@ -4,6 +4,7 @@ SimpleCov.start
 require 'factory_girl_rails'
 require 'support/database_cleaner'
 require 'support/puffing_billy_driver.rb'
+
 require 'fantaskspec'
 
 RSpec.configure do |config|
@@ -18,5 +19,7 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
   config.include FactoryGirl::Syntax::Methods
+
+  config.infer_rake_task_specs_from_file_location!
 
 end
