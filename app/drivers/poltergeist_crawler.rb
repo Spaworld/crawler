@@ -30,4 +30,8 @@ class PoltergeistCrawler
     Nokogiri::HTML(page.body)
   end
 
+  def append_url_to_listing(sku, url)
+    Listing.append_hd_url(sku, url)
+  end
+
 end

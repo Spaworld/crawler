@@ -24,4 +24,10 @@ RSpec.describe PoltergeistCrawler do
     crawler.doc
   end
 
+  it 'should append hd url to lisitng' do
+    expect(Listing).to receive(:append_hd_url)
+      .with('foo', 'bar')
+    crawler.append_url_to_listing('foo','bar')
+  end
+
 end

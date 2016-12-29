@@ -31,4 +31,9 @@ class PuffingBillyCrawler
     Nokogiri::HTML(page.body)
   end
 
+  def append_url_to_listing(sku, url)
+    return unless @listing_url
+    Listing.append_hd_url(sku, url)
+  end
+
 end

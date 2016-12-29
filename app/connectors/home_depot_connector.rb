@@ -10,22 +10,17 @@ class HomeDepotConnector
     @listing_url = String.new
   end
 
-  def process_listings(skus)
-    skus.each do |sku|
-      get_listing_page_url(sku)
-      append_url_to_listing(sku)
-    end
-  end
-
   def get_listing_page_url(sku)
     return unless sku.present?
     @driver.visit("http://www.homedepot.com/s/#{sku}")
     @listing_url = @driver.page.current_url
   end
 
-  def append_url_to_listing(sku)
-    return unless @listing_url
-    Listing.append_hd_url(@listing_url, sku)
+  def process_listings(skus)
+    skus.each do |sku|
+      get_listing_page_url(sku)
+      @driver.append_url_to_listing(sku, @listing_url)
+    end
   end
 
   private
@@ -37,7 +32,7 @@ class HomeDepotConnector
 
   def validate_driver(driver)
     unless valid_driver?(driver)
-      raise ArgumentError.new('Invalid driver')# unless valid_driver?(driver)
+      raise ArgumentError.new('Invalid driver')
     end
   end
 

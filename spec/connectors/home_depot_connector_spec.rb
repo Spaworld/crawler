@@ -71,23 +71,22 @@ RSpec.describe HomeDepotConnector do
 
     end
 
-    it 'should append listing_url to listing' do
+    it 'should append listing_url to listing via its driver' do
+      url = "http://www.homedepot.com/s/#{@listing.sku}"
+      sku = @listing.sku
       connector.get_listing_page_url(@listing.sku)
-      expect(Listing)
-        .to receive(:append_hd_url)
-        .with("http://www.homedepot.com/s/#{@listing.sku}",
-      @listing.sku)
-        .once
-      connector.append_url_to_listing(@listing.sku)
+      expect(connector.driver).to receive(:append_url_to_listing)
+        .with(sku, url)
+      connector.process_listings([@listing.sku])
     end
 
     it 'should process a bulk of skus' do
       expect(connector).
         to receive(:get_listing_page_url)
         .with(@listing.sku)
-      expect(connector).
+      expect(connector.driver).
         to receive(:append_url_to_listing)
-        .with(@listing.sku)
+        .with(@listing.sku, any_args)
       connector.process_listings([@listing.sku])
     end
 
