@@ -1,0 +1,71 @@
+---
+:scope: 
+:url: http://www.homedepot.com/p/static/images/pip-social-media-icons.png
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: image/png
+  Content-Length: '2153'
+  X-VARNISH-ESI: 'true'
+  Last-Modified: Thu, 15 Dec 2016 18:22:40 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  X-Varnish: '1245609'
+  X-Varnish-Cache: MISS@core_p_grid
+  Cache-Control: max-age=7200
+  Expires: Sat, 31 Dec 2016 00:12:01 GMT
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: !binary |-
+  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

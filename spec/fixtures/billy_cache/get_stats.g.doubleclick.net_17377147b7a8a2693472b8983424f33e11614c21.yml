@@ -1,0 +1,22 @@
+---
+:scope: 
+:url: https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j47&tid=UA-32593878-1&cid=1549429172.1483136012&jid=2051063799&_u=SGCAgEYI~&z=809988752
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Location: https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-32593878-1&cid=1549429172.1483136012&jid=2051063799&_v=j47&z=809988752
+  Access-Control-Allow-Origin: "*"
+  Strict-Transport-Security: max-age=10886400; includeSubDomains; preload
+  Date: Fri, 30 Dec 2016 22:13:31 GMT
+  Pragma: no-cache
+  Expires: Fri, 01 Jan 1990 00:00:00 GMT
+  Cache-Control: no-cache, no-store, must-revalidate
+  Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+  Content-Type: text/html; charset=UTF-8
+  Server: Golfe2
+  Content-Length: '366'
+  Alt-Svc: quic=":443"; ma=2592000; v="35,34"
+  Connection: close
+:content: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+  Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"https://www.google.com/ads/ga-audiences?v=1&amp;aip=1&amp;t=sr&amp;_r=4&amp;tid=UA-32593878-1&amp;cid=1549429172.1483136012&amp;jid=2051063799&amp;_v=j47&amp;z=809988752\">here</A>.\r\n</BODY></HTML>\r\n"

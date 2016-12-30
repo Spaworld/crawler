@@ -1,0 +1,30 @@
+---
+:scope: 
+:url: http://www.homedepot.com/p/svcs/getProductIrgData?itemId=100675927&irgCount=3&_=1483135921355
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/json;charset=UTF-8
+  Content-Length: '992'
+  X-dynaTrace: PT=1490698760;PA=231829051;SP=Production Live;PS=-1262753182
+  dynaTrace: PT=1490698760;PA=231829051;SP=Production Live;PS=-1262753182
+  X-VARNISH-ESI: 'true'
+  Content-Encoding: gzip
+  Vary: Accept-Encoding
+  X-Varnish: '69844218'
+  X-Varnish-Cache: MISS@core_p_grid
+  Accept-Ranges: bytes
+  Expires: Fri, 30 Dec 2016 22:12:02 GMT
+  Cache-Control: max-age=0, no-cache, no-store
+  Pragma: no-cache
+  Date: Fri, 30 Dec 2016 22:12:02 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: '{"IRGITEMIDS":{"COLLECTION":["100675946"],"ACCESSORY":["204768743","100440229","202341180","100089177","100075972","202337378"],"PRIMARY":["100675927"]},"IRGITEMDATA":{"COLLECTIONS":[{"itemId":"100675946","productLabel":"American
+  Standard Acrylic Standard Series 60...","imageUrl":"http://www.homedepot.com/catalog/productImages/145/d6/d66e9c63-0162-441e-8024-dfb379533885_145.jpg","productUrl":"http://www.homedepot.com/p/American-Standard-Acrylic-Standard-Series-60-in-x-32-in-Walk-In-Whirlpool-and-Air-Bath-Tub-in-White-3260-210-CRW/100675946","originalPrice":"$5,691.05","specialPrice":"$5,691.05","uom":"each","showATC":true,"sqftCoverageMessage":"","rating":"4.0","totalReviews":"3","isAppliance":false,"availableOnline":true}],"ACCESSORIES":[{"itemId":"204768743","productLabel":"GE
+  Silicone II 10.1 oz. White Kitchen and...","imageUrl":"http://www.homedepot.com/catalog/productImages/145/db/db1d1302-127c-47e6-8b8d-a00a9f4da4f4_145.jpg","productUrl":"http://www.homedepot.com/p/GE-Silicone-II-10-1-oz-White-Kitchen-and-Bath-Caulk-HD5070X2-72C/204768743","originalPrice":"$6.24","specialPrice":"$6.24","uom":"each","showATC":true,"sqftCoverageMessage":"","rating":"3.2143","totalReviews":"14","isAppliance":false,"availableOnline":false},{"itemId":"100440229","productLabel":"1-1/4
+  in. Deep Soak Max Drain","imageUrl":"http://www.homedepot.com/catalog/productImages/145/3f/3f7d7e24-1379-466f-a263-f4ac378c03ef_145.jpg","productUrl":"http://www.homedepot.com/p/1-1-4-in-Deep-Soak-Max-Drain-1599-205-020/100440229","originalPrice":"$72.40","specialPrice":"$72.40","uom":"each","showATC":true,"sqftCoverageMessage":"","rating":"3.2258","totalReviews":"62","isAppliance":false,"availableOnline":true},{"itemId":"202341180","productLabel":"American
+  Standard Berwick 1-Handle Shower...","imageUrl":"http://www.homedepot.com/catalog/productImages/145/f5/f5a92953-2b1a-4d32-8394-6b31a906f7eb_145.jpg","productUrl":"http://www.homedepot.com/p/American-Standard-Berwick-1-Handle-Shower-Faucet-Trim-Kit-Rain-Showerhead-in-Polished-Chrome-Valve-Sold-Separately-T430-501-002/202341180","originalPrice":"$126.89","specialPrice":"$126.89","uom":"each","showATC":true,"sqftCoverageMessage":"","rating":"3.6","totalReviews":"5","isAppliance":false,"availableOnline":true}],"PRIMARY":[{"itemId":"100675927","productLabel":"American
+  Standard Acrylic Standard Series 51...","imageUrl":"http://www.homedepot.com/catalog/productImages/145/51/51722a5e-b5f8-4f3f-b8b7-e5d5a0b80bd7_145.jpg","productUrl":"http://www.homedepot.com/p/American-Standard-Acrylic-Standard-Series-51-in-x-30-in-Walk-In-Whirlpool-Tub-in-White-3051-110-WLW/100675927","originalPrice":"$5,191.70","specialPrice":"$5,191.70","uom":"each","showATC":false,"irgMsgCode":"oosOnline","sqftCoverageMessage":"","rating":"0.0","totalReviews":"","isAppliance":false,"availableOnline":true}]}}'

@@ -1,0 +1,20 @@
+---
+:scope: 
+:url: http://bat.r.msn.com/action-uic/0?ti=5319585&Ver=2&mid=4deba8c1-117a-6af7-73da-145031390b3a&evt=pageLoad&lt=367&pi=0&lg=en-US&sw=1024&sh=768&sc=32&tl=The%20Home%20Depot&p=http%3A%2F%2Fwww.homedepot.com%2F&r=&rn=958897
+:body: ''
+:status: 204
+:method: get
+:headers:
+  Cache-Control: no-cache, must-revalidate
+  Pragma: no-cache
+  Content-Length: '0'
+  Expires: Fri, 01 Jan 1990 00:00:00 GMT
+  Server: Microsoft-IIS/8.5
+  Access-Control-Allow-Origin: "*"
+  Set-Cookie:
+  - MUID=1B591D39870564EB351A14C2830566CB; domain=.msn.com; expires=Sun, 30-Dec-2018
+    20:33:58 GMT; path=/;
+  - MR=0; domain=bat.r.msn.com; expires=Wed, 28-Jun-2017 20:33:58 GMT; path=/;
+  Date: Fri, 30 Dec 2016 20:33:57 GMT
+  Connection: close
+:content: ''

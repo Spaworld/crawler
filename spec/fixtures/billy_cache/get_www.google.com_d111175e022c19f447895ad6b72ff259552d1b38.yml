@@ -1,0 +1,30 @@
+---
+:scope: 
+:url: http://www.google.com/
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Location: https://www.google.com/?gws_rd=ssl
+  Cache-Control: private
+  Content-Type: text/html; charset=UTF-8
+  P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en
+    for more info."
+  Date: Fri, 30 Dec 2016 20:02:00 GMT
+  Server: gws
+  Content-Length: '231'
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Set-Cookie: NID=93=Y0QOXkYLjjgxT--6ELv_HGBGna8l621Qvx-8Z6aijb_aAhQnRD6fAILFK4EqdK4ySLmen1Vnbm93lAoaWCc8ZXC6RyFhkG6JTWfz9azOgXQy9NJgqbQfIJBZwoZvTxSw;
+    expires=Sat, 01-Jul-2017 20:02:00 GMT; path=/; domain=.google.com; HttpOnly
+  Connection: close
+:content: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+  Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A HREF=\"https://www.google.com/?gws_rd=ssl\">here</A>.\r\n</BODY></HTML>\r\n"
+:request_headers:
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: www.google.com

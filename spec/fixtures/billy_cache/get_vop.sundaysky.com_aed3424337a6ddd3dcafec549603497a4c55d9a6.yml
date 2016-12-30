@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: http://vop.sundaysky.com/t/v1/j?a=homedepot&ap=1&m=uui&pb=f&sp=http%3A%2F%2Fwww.homedepot.com%2Fp%2FAmerican-Standard-Acrylic-Standard-Series-51-in-x-30-in-Walk-In-Whirlpool-Tub-in-White-3051-110-WLW%2F100675927%3Fkeyword%3D3051.110.WLW&cb=1024239076&udt=~segment/visitor;~pv/100675927;~cat/bath%3Ebathtubs%20%26%20whirlpools;~sid/121;~kw/3051.110.WLW
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Cache-control: private, no-cache, no-cache=Set-Cookie, must-revalidate, proxy-revalidate,
+    max-age=0
+  Date: Fri, 30 Dec 2016 22:18:16 GMT
+  Expires: Sat, 1 Apr 2000 00:00:00 GMT
+  Location: http://vop.sundaysky.com/t/v1/j?a=homedepot&ap=1&m=uui&pb=f&sp=http%3A%2F%2Fwww.homedepot.com%2Fp%2FAmerican-Standard-Acrylic-Standard-Series-51-in-x-30-in-Walk-In-Whirlpool-Tub-in-White-3051-110-WLW%2F100675927%3Fkeyword%3D3051.110.WLW&cb=1024239076&udt=~segment/visitor;~pv/100675927;~cat/bath%3Ebathtubs%20%26%20whirlpools;~sid/121;~kw/3051.110.WLW&_cvt=t&timestamp=1483136297189&nonce=p4108pn8457gmkvf5m6jlmp7h7&signature=53595b4e157e2c961c9284a2876369e0968e876a
+  P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa PSAa PSDa OUR
+    IND UNI PUR COM NAV INT DEM STA PRE"
+  Pragma: no-cache
+  Server: Apache-Coyote/1.1
+  Set-Cookie: sskyu=d4.c1d54acaf2304a3682b5be4d61becbc2; Domain=.sundaysky.com; Expires=Sun,
+    30-Dec-2018 22:18:17 GMT; Path=/
+  Content-Length: '0'
+  Connection: close
+:content: ''

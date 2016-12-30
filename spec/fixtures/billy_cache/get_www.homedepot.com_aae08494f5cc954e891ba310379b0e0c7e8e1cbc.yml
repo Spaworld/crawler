@@ -1,0 +1,26 @@
+---
+:scope: 
+:url: http://www.homedepot.com/catalog/swatchImages/35/88/8822a99b-b687-429d-9b6b-b9e6133af2db_35.jpg
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: image/jpeg
+  Content-Length: '300'
+  Last-Modified: Fri, 11 Mar 2016 01:28:13 GMT
+  ETag: '"56e21f2d-12c"'
+  Accept-Ranges: bytes
+  Cache-Control: max-age=7200
+  Expires: Sat, 31 Dec 2016 00:12:01 GMT
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: !binary |-
+  /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsL
+  DBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/
+  2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+  MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAjACMDASIAAhEBAxEB/8QA
+  FQABAQAAAAAAAAAAAAAAAAAAAAf/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QA
+  FgEBAQEAAAAAAAAAAAAAAAAAAAME/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/a
+  AAwDAQACEQMRAD8AtQDOqAAAAAAAAAAAAAAAA//Z

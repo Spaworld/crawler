@@ -14,6 +14,7 @@ gem 'puma'
 
 gem 'capybara'
 gem 'poltergeist', '~> 1.11'
+gem 'capybara-webkit'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'

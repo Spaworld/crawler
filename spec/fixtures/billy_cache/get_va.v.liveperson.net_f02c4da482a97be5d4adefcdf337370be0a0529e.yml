@@ -1,0 +1,14 @@
+---
+:scope: 
+:url: http://va.v.liveperson.net/api/js/31564604?sid=fL8-PWYrQLq0v63KTmAwSQ.ebe7942098ca588638f379a3f126b866bd3ebce8&cb=lpCb54721x82706&t=uc&ts=1483136463492&pid=4677053340&tid=5966591201&sdes=%5B%7B%22type%22%3A%22pagediv%22%2C%22divId%22%3A%22lpbuttondiv-global%22%7D%2C%7B%22type%22%3A%22pagediv%22%2C%22divId%22%3A%22lebuttondiv-global%22%7D%5D&vid=UwM2VjNGE3NzRiYmQ1ODQw
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 22:21:05 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: close
+  Server: ws
+  Content-Encoding: gzip
+:content: lpCb54721x82706({"messagesToVisitor":[]});

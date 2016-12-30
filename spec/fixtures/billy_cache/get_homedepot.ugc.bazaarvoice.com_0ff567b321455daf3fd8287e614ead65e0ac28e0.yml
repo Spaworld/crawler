@@ -1,0 +1,20 @@
+---
+:scope: 
+:url: http://homedepot.ugc.bazaarvoice.com/answers/1999/static/hideAllMinus.gif
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: max-age=3600
+  Content-Type: image/gif
+  ETag: '"sC42eSv5Nc5GdCfDTOhcb1fnYlY"'
+  Expires: Fri, 30 Dec 2016 05:15:43 GMT
+  Last-Modified: Thu, 29 Dec 2016 12:24:49 GMT
+  P3P: CP="Bazaarvoice does not have a P3P policy."
+  Server: nginx
+  Content-Length: '57'
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+:content: !binary |-
+  R0lGODlhCQAJAIABADMzM////yH5BAEAAAEALAAAAAAJAAkAAAIQhI+hG8br
+  XgPzTHllfKiDAgA7

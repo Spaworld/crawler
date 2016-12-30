@@ -1,0 +1,205 @@
+---
+:scope: 
+:url: http://www.homedepot.com/p/static/node_modules/olt-global-scripts/desktop/source/thd.moduleLoader.js
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: text/javascript
+  X-VARNISH-ESI: 'true'
+  Last-Modified: Tue, 22 Nov 2016 15:31:34 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  Content-Encoding: gzip
+  Vary: Accept-Encoding
+  X-Varnish: '6947309'
+  X-Varnish-Cache: MISS@core_p_grid
+  Content-Length: '4631'
+  Cache-Control: max-age=7200
+  Expires: Sat, 31 Dec 2016 00:12:01 GMT
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: "/*\r\n------------------------------------------------------------------------------\r\n|
+  Modulular function to call in necessary files on demand.\r\n|\r\n|\r\n| THDModuleLoader.$inludeModule(ThisIsModulesName,
+  dependency1, dependency2, dependency3,.....)\r\n|\t$ModuleName = Boolean($(\".moduleTest\").length);\r\n|\t\tif($ModuleName)
+  {\r\n|\t\t$includeModule(\"testname\", \"cart\", \"certona\");\r\n|\t}\r\n|\r\n|\t$ModuleName2
+  = Boolean($(\".moduleTest2\").length);\r\n|\t\tif($ModuleName2) {\r\n|\t\t$includeModule(\"testname2\",
+  \"cart\", \"gridx\");\r\n|\t}\r\n|\r\n|\tThe Above would return\r\n|\r\n|\t<script
+  type=\"text/javascript\" src=\"/library/scripts/cart.js\"></script>\r\n|\t<script
+  type=\"text/javascript\" src=\"/library/scripts/certona.js\"></script>\r\n|\t<link
+  rel=\"stylesheet\" href=\"/modules/styles/testname.css\">\r\n|\t<script type=\"text/javascript\"
+  src=\"modules/scripts/testname.js\"></script>\r\n|\t<script type=\"text/javascript\"
+  src=\"/library/scripts/gridx.js\"></script>\r\n|\t<link rel=\"stylesheet\" href=\"/modules/styles/testname2.css\">\r\n|\t<script
+  type=\"text/javascript\" src=\"modules/scripts/testname2.js\"></script>\r\n|\r\n------------------------------------------------------------------------------\r\n\r\n#
+  THDModuleLoader is deprecated. You should be using requirejs.\r\n\r\n\tThe below
+  scripts are dependencies of THDModule loader and need to be defined\r\n\tin your
+  requirejs config with the below alias and correct paths\r\n\r\n\t'heroSlideShow':
+  '../../node_modules/olt-global-scripts/desktop/widgets/heroSlideShow',\r\n\t'thdTheme':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thdTheme',\r\n\t'thdSlider':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thdSlider',\r\n\t'thdSliderV2':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thdSliderV2',\r\n\t'thd.sliderV3':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thd.sliderV3',\r\n\t'twentytwenty':
+  '../../node_modules/olt-global-scripts/desktop/widgets/twentytwenty',\r\n\t'jquery.event.move':
+  '../../node_modules/olt-global-scripts/desktop/lib/plugins/jquery.event.move',\r\n\t'thdSilo':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thdSilo',\r\n\t'relatedResourceWidget':
+  '../../node_modules/olt-global-scripts/desktop/widgets/relatedResourceWidget',\r\n\t'simpleAccordion':
+  '../../node_modules/olt-global-scripts/desktop/widgets/simpleAccordion',\r\n\t'thd.collapse':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thd.collapse',\r\n\t'thdSocialmedia':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thdSocialmedia',\r\n\t'thd.sbotd':
+  '../../node_modules/olt-global-scripts/desktop/widgets/thd.sbotd',\r\n\t'muteYTVideo':
+  '../../node_modules/olt-global-scripts/desktop/widgets/muteYTVideo',\r\n*/\r\n'use
+  strict';\r\n(function closure(root, factory) {\r\n\tif(typeof define === 'function'
+  && define.amd) {\r\n\t\tdefine('thd.moduleLoader', [\r\n\t\t\t'jquery',\r\n\t\t\t'global.namespace',\r\n\t\t\t'global.logging',\r\n\t\t\t'global.utility'\r\n\t\t],
+  function load($, THD, thdLogger, globalUtility) {\r\n\t\t\treturn factory($, THD,
+  thdLogger, globalUtility);\r\n\t\t});\r\n\t} else{\r\n\t\t/* eslint-disable*/\r\n\t\troot.THDModuleLoader
+  = factory(jQuery, THD, THD, globalUtility);\r\n\t\t/*eslint-enable*/\r\n\t}\r\n})(this,
+  function factory($, THD, thdLogger, globalUtility) {\r\n\tvar THDModuleLoader;\r\n\tvar
+  THDModuleDependencies = [];\r\n\tvar loadBV;\r\n\t// var secureLLC;\r\n\r\n\r\n\t//
+  check for URL type 'origin'\r\n\tfunction isURLTypeOrigin(urlSuffix) {\r\n\t\treturn
+  urlSuffix === 'origin';\r\n\t}\r\n\r\n\t// formats passed in urls\r\n\tfunction
+  urlFormatter(urlParam, pathParam) {\r\n\t\tvar path = (pathParam) ? pathParam :
+  '';\r\n\t\tvar url = (urlParam.indexOf('http://') === 0 || urlParam.indexOf('https://')
+  === 0)\r\n\t\t\t? urlParam\r\n\t\t\t: path + urlParam;\r\n\t\treturn url;\r\n\t}\r\n\r\n\t//
+  Private: breaks down the host so we can apply logic based on LLC vs. Producion environment.\r\n\tfunction
+  determineHost() {\r\n\t\tvar sub = window.location.host;\r\n\t\tvar secureDomain
+  = (sub.indexOf('dev.') > -1)\r\n\t\t\t? 'secure.'\r\n\t\t\t: 'secure2.';\r\n\t\tvar
+  domains = {};\r\n\t\tvar httpProtocol = window.location.protocol;\r\n\t\t/* sub
+  = \"t.hd-st71.homedepotdev.com\";\r\n\t\tsub = \"www.homedepot.com\";\r\n\t\tsub
+  = \"hd-st71.homedepot.com\";\r\n\t\tsub = \"t.homedepot.com\";\r\n\t\tsub = \"secure2.homedepot.com\";\r\n\t\tsub
+  = \"secure2.hd-st71.homedepotdev.com\";\r\n\t\tsub = \"t.secure2.homedepot.com\";\r\n\t\tsub
+  = \"origin.hd-st71.homedepotdev.com\";\r\n\t\tsub = \"secure2.origin.hd-st71.homedepotdev.com\";\r\n\t\thttProtocol
+  = \"https:\";*/\r\n\r\n\t\tsub = sub.split('.');\r\n\t\t// checking to see if we
+  are in and LLC\r\n\t\ttry {\r\n\t\t\tdomains.secure = (httpProtocol === 'https:')
+  ? secureDomain : '';\r\n\t\t\tif(sub[0].length === 1) {\r\n\t\t\t/* tablet */\r\n\t\t\t\tdomains.channel
+  = sub[0] + '.';\r\n\t\t\t\tif (sub[2].indexOf('dev') > -1 || sub[1].indexOf('dev')
+  > -1) {\r\n\t\t\t\t\tif (httpProtocol === 'https:') {\r\n\t\t\t\t\t\tdomains.environment
+  = '';\r\n\t\t\t\t\t\tdomains.topLevel = sub[2] + '.com';\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tdomains.environment
+  = sub[1] + '.';\r\n\t\t\t\t\t\tdomains.topLevel = sub[2] + '.com';\r\n\t\t\t\t\t}\r\n\t\t\t\t}else{\r\n\t\t\t\t\tif(httpProtocol
+  === 'https:') {\r\n\t\t\t\t\t\tdomains.environment = '';\r\n\t\t\t\t\t\tdomains.topLevel
+  = sub[2] + '.com';\r\n\t\t\t\t\t}else{\r\n\t\t\t\t\t\tdomains.environment = '';\r\n\t\t\t\t\t\tdomains.topLevel
+  = sub[1] + '.com';\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\t/* desktop*/\r\n\t\t\t\tdomains.channel
+  = '';\r\n\r\n\t\t\t\tif(sub[1].indexOf('dev') > -1 || sub[2].indexOf('dev') > -1
+  || (sub[3] && sub[3].indexOf('dev') > -1)) {\r\n\t\t\t\t\tif(httpProtocol === 'https:')
+  {\r\n\t\t\t\t\t\tdomains.environment = sub[1] + '.';\r\n\t\t\t\t\t\tdomains.topLevel
+  = isURLTypeOrigin(sub[1])\r\n\t\t\t\t\t\t\t? (sub[2] + '.' + sub[3] + '.com')\r\n\t\t\t\t\t\t\t:
+  sub[2] + '.com';\r\n\t\t\t\t\t}else{\r\n\t\t\t\t\t\tdomains.environment = sub[0]
+  + '.';\r\n\t\t\t\t\t\tdomains.topLevel = isURLTypeOrigin(sub[0])\r\n\t\t\t\t\t\t\t?
+  (sub[1] + '.' + sub[2] + '.com')\r\n\t\t\t\t\t\t\t: (sub[1] + '.com');\r\n\t\t\t\t\t}\r\n\t\t\t\t}
+  else {\r\n\t\t\t\t\tif (httpProtocol === 'https:') {\r\n\t\t\t\t\t\tdomains.environment
+  = '';\r\n\t\t\t\t\t\tdomains.topLevel = sub[1] + '.com';\r\n\t\t\t\t\t}else{\r\n\t\t\t\t\t\tdomains.environment
+  = sub[0] + '.';\r\n\t\t\t\t\t\tdomains.topLevel = sub[1] + '.com';\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}
+  catch (e) {\r\n\t\t\tTHD.isLogging = true;\r\n\t\t\tthdLogger.log('Error: ' + e
+  + ' - D\\'OH! You\\'re getting this error becasue you are running on localhost:XXXX.
+  The workaround is for you to update your hosts file localhost domain (127.0.0.1
+  localhost) to a genric domain like, local.homedepot.com!  Don\\'t know how to change
+  your hosts file you say? Check out this article: http://bit.ly/1fueDGB.');\r\n\t\t}\r\n\t\treturn
+  domains;\r\n\t}\r\n\r\n\t// Private: sets the full path of the resource based on
+  environment\r\n\tfunction getPath() {\r\n\t\tvar basePath = '';\r\n\t\tvar httpProto
+  = window.location.protocol;\r\n\t\tvar domains = determineHost();\r\n\t\tbasePath
+  = httpProto + '//' + domains.secure + domains.environment + domains.topLevel;\r\n\t\treturn
+  basePath;\r\n\t}\r\n\r\n\t/* private callback method used to envoke a given callback
+  function\r\n\t--------------------------------------------------------------------\r\n\t\targs
+  = {\r\n\t\t\tscript: //the script object,\r\n\t\t\tcallback: //callback method name\r\n\t\t}\r\n\t------------------------------------------------------------------*/\r\n\tfunction
+  callThis(args) {\r\n\t\tif (typeof args.callBack === 'function') {\r\n\t\t\targs.script.onload
+  = args.callBack.call(this);\r\n\r\n\t\t\targs.script.onreadystatechange = function
+  readystatechange() {\r\n\t\t\t\tif(this.readyState === 'complete' || this.readyState
+  === 'loaded') {\r\n\t\t\t\t\targs.script.call(this);\r\n\t\t\t\t}\r\n\t\t\t};\r\n\t\t}\r\n\t}\r\n\r\n\tTHDModuleLoader
+  = {\r\n\t\t$includeModule: function includeModule(moduleName) {\r\n\t\t\tvar jsDependencyPath;\r\n\t\t\tvar
+  cssModulePath;\r\n\t\t\tvar jsModulePath;\r\n\t\t\tvar i;\r\n\t\t\tvar _head = parent.document.getElementsByTagName('head')[0];\r\n\t\t\tvar
+  _body = parent.document.getElementsByTagName('body')[0];\r\n\t\t\tvar newScript
+  = parent.document.createElement('script');\r\n\t\t\tvar newCSS = parent.document.createElement('link');\r\n\t\t\tvar
+  newDependency;\r\n\t\t\tvar path = getPath();\r\n\r\n\t\t\t// paths to correct folders\r\n\t\t\tjsDependencyPath
+  = path + '/HFApp/static/global/scripts/desktop/lib/';\r\n\t\t\tcssModulePath = path
+  + '/HFApp/static/global/styles/desktop/widget/';\r\n\t\t\tjsModulePath = path +
+  '/HFApp/static/global/scripts/desktop/widgets/';\r\n\r\n\t\t\t// set the source
+  for each variable\r\n\t\t\tnewScript.type = 'text/javascript';\r\n\t\t\tnewScript.src
+  = jsModulePath + moduleName + '.js';\r\n\r\n\t\t\t// set type for each new element\r\n\t\t\tnewCSS.rel
+  = 'stylesheet';\r\n\t\t\tnewCSS.href = cssModulePath + moduleName + '.css';\r\n\r\n\t\t\t//
+  check for dependencies and append accordingly\r\n\t\t\tfor(i = 1; i < arguments.length;
+  i += 1) {\r\n\t\t\t\t// check if dependency exist in the global array THDModuleDependencies\r\n\t\t\t\t//
+  If it doesn not exist then add it to the page and update the array\r\n\t\t\t\tif($.inArray(arguments[i],
+  THDModuleDependencies) === -1) {\r\n\t\t\t\t\t// console.log(arguments[i] + '.js
+  has been added to the page');\r\n\r\n\t\t\t\t\tnewDependency = document.createElement('script');\r\n\t\t\t\t\tnewDependency.src
+  = jsDependencyPath + arguments[i] + '.js';\r\n\r\n\t\t\t\t\tTHDModuleDependencies.push(arguments[i]);\r\n\r\n\t\t\t\t\t_body.appendChild(newDependency);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\t//
+  append script and css for module\r\n\t\t\t_head.appendChild(newCSS);\r\n\t\t\t_body.appendChild(newScript);\r\n\t\t},\r\n\r\n\t\t$includeJS:
+  function includeJS(urlParam, myCallBack) {\r\n\t\t\tvar _body = parent.document.getElementsByTagName('body')[0];\r\n\t\t\tvar
+  newScript = parent.document.createElement('script');\r\n\t\t\tvar url = urlFormatter(urlParam);\r\n\r\n\t\t\tnewScript.type
+  = 'text/javascript';\r\n\t\t\tnewScript.src = url;\r\n\t\t\t_body.appendChild(newScript);\r\n\r\n\t\t\t//
+  this envokes the callback passed in\r\n\t\t\tif(typeof myCallBack !== 'undefined')
+  {\r\n\t\t\t\tcallThis({\r\n\t\t\t\t\tcallback: myCallBack,\r\n\t\t\t\t\tscript:
+  newScript\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t},\r\n\r\n\t\t$includeCSS: function includeCSS(urlParam)
+  {\r\n\t\t\tvar _head = parent.document.getElementsByTagName('head')[0];\r\n\t\t\tvar
+  newCSS = parent.document.createElement('link');\r\n\t\t\tvar url = urlFormatter(urlParam);\r\n\t\t\tnewCSS.rel
+  = 'stylesheet';\r\n\t\t\tnewCSS.href = url;\r\n\t\t\t_head.appendChild(newCSS);\r\n\t\t},\r\n\r\n\t\t//
+  if you want to use a $.defered method as a callback.  Note this wont work cross
+  domain!!!\r\n\t\t$includeJSAjax: function includeJSAjax(urlParam) {\r\n\t\t\tvar
+  url = urlFormatter(urlParam);\r\n\t\t\treturn $.getScript(url);\r\n\t\t}\r\n\t};\r\n\r\n\tfunction
+  runBV(bvID) {\r\n\t\twindow.$BV.ui('rr', 'show_reviews', {\r\n\t\t\tproductId: bvID,\r\n\t\t\tonEvent:
+  function onEvent(json) {\r\n\t\t\t\tif(json.eventSource === 'Display') {\r\n\t\t\t\t\t//
+  @QUESTION where is this defined?\r\n\t\t\t\t\tshowRatingsDisplayed(json.attributes.numReviews);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t});\r\n\t}\r\n\r\n\tfunction
+  waitForBV(bvID) {\r\n\t\tif(typeof window.$BV !== 'undefined') {\r\n\t\t\tclearInterval(loadBV);\r\n\t\t\trunBV(bvID);\r\n\t\t}\r\n\t}\r\n\r\n\tfunction
+  handleShowMoreButton(e) {\r\n\t\tvar $this = $(e.target);\r\n\t\tvar moreText =
+  'More';\r\n\t\tvar lessText = 'Less';\r\n\t\tvar lessClass = 'showLess';\r\n\t\t//
+  To disable parent click handlers\r\n\t\te.preventDefault();\r\n\t\te.stopPropagation();\r\n\r\n\t\tif($this.hasClass(lessClass))
+  {\r\n\t\t\t$this.removeClass(lessClass);\r\n\t\t\t$this.html(moreText);\r\n\t\t}
+  else {\r\n\t\t\t$this.addClass(lessClass);\r\n\t\t\t$this.html(lessText);\r\n\t\t}\r\n\t\t$this.prevAll().eq(1).toggle();\r\n\t\t$this.prev().toggle();\r\n\t}\r\n\r\n\tTHDModuleLoader.init
+  = function init() {\r\n\t\tif (THD.THDModuleLoader) {\r\n\t\t\treturn this;\r\n\t\t}\r\n\r\n\t\tTHD.THDModuleLoader
+  = THDModuleLoader;\r\n\t\t$(function docReady() {\r\n\t\t\tvar themeID;\r\n\t\t\tvar
+  $hasSlider;\r\n\t\t\tvar $hasSliderV2;\r\n\t\t\tvar $hasSliderV3;\r\n\t\t\tvar $hasSplitImageContainer;\r\n\t\t\t//
+  var $hasNegMargin;\r\n\t\t\tvar $hasRelatedResourcesWidget;\r\n\t\t\tvar $hasTHDSimpleAccordion;\r\n\t\t\tvar
+  $isGen1ContactUs;\r\n\t\t\tvar $isFAQPageVisible;\r\n\t\t\tvar $hasSocialResourcesWidget;\r\n\t\t\tvar
+  $hasSBOTDResourcesWidget;\r\n\t\t\tvar $hasmuteVideo;\r\n\t\t\tvar bcAPI;\r\n\t\t\tvar
+  $hasServiceRatingsReviews;\r\n\t\t\tvar hostName;\r\n\t\t\tvar isDevEnvironment;\r\n\t\t\tvar
+  bvID;\r\n\t\t\tvar $hasMoreLink;\r\n\r\n\t\t\t// thdTheme\r\n\t\t\tthemeID = $('#container').attr('data-thdtheme');\r\n\t\t\tif
+  (themeID) {\r\n\t\t\t\trequire(['thdTheme']);\r\n\t\t\t} else {\r\n\t\t\t\t// thdSlider\r\n\t\t\t\t$hasSlider
+  = Boolean($('.slider').length);\r\n\t\t\t\tif ($hasSlider) {\r\n\t\t\t\t\trequire(['thdSlider']);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\t$hasSliderV2
+  = Boolean($('.sliderV2').length);\r\n\t\t\tif ($hasSliderV2) {\r\n\t\t\t\trequire(['thdSliderV2']);\r\n\t\t\t\t//
+  THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/thdSliderV2.css');\r\n\t\t\t}\r\n\r\n\t\t\t$hasSliderV3
+  = Boolean($('.sliderV3').length);\r\n\t\t\tif ($hasSliderV3) {\r\n\t\t\t\trequire(['thd.sliderV3']);\r\n\t\t\t\t//
+  THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/thd.sliderV3.css');\r\n\t\t\t}\r\n\r\n\t\t\t$hasSplitImageContainer
+  = Boolean($('.twentytwenty-container').length);\r\n\t\t\tif ($hasSplitImageContainer)
+  {\r\n\t\t\t\t// Include jquery move event https://github.com/stephband/jquery.event.move\r\n\t\t\t\trequire(['jquery.event.move',
+  'twentytwenty']);\r\n\t\t\t\t// THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/twentytwenty.css');\r\n\t\t\t}\r\n\r\n\t\t\t//
+  Related Resources\r\n\t\t\t$hasRelatedResourcesWidget = Boolean($('[data-widget=related-resource-widget]').length);\r\n\t\t\tif($hasRelatedResourcesWidget)
+  {\r\n\t\t\t\trequire(['relatedResourceWidget']);\r\n\t\t\t}\r\n\r\n\t\t\t// Simple
+  Accordion\r\n\t\t\t$hasTHDSimpleAccordion = Boolean($('[data-action=accordion-trigger]').length);\r\n\t\t\tif($hasTHDSimpleAccordion)
+  {\r\n\t\t\t\trequire(['simpleAccordion']);\r\n\t\t\t}\r\n\r\n\t\t\t// Contact Us
+  Page Hack\r\n\t\t\t$isGen1ContactUs = Boolean($('#contactFormWrapper').length);\r\n\t\t\tif($isGen1ContactUs)
+  {\r\n\t\t\t\t// THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/source/ContactUsPageGen1.css');\r\n\t\t\t}\r\n\r\n\t\t\t//
+  FAQs page\r\n\t\t\t$isFAQPageVisible = Boolean($(\".content > h4[data-toggle='collapse']\").length);\r\n\t\t\tif($isFAQPageVisible)
+  {\r\n\t\t\t\trequire(['thd.collapse']);\r\n\t\t\t\t// THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/thd.collapse.css');\r\n\t\t\t}\r\n\r\n\t\t\t//
+  THD Social Media Related Resources\r\n\t\t\t$hasSocialResourcesWidget = Boolean($('#socialWidgetTable').length);\r\n\t\t\tif($hasSocialResourcesWidget)
+  {\r\n\t\t\t\trequire(['thdSocialmedia']);\r\n\t\t\t\t// THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/thdSocialmedia.css');\r\n\t\t\t}\r\n\r\n\t\t\t//
+  THD SBOTD Widget Related Resources\r\n\t\t\t$hasSBOTDResourcesWidget = Boolean($('#sbotd').length);\r\n\t\t\tif($hasSBOTDResourcesWidget)
+  {\r\n\t\t\t\trequire(['thd.sbotd']);\r\n\t\t\t\t// THDModuleLoader.$includeCSS('/HFApp/static/global/styles/desktop/widget/thd.sbotd.css');\r\n\t\t\t}\r\n\r\n\t\t\t//
+  Mute the Youtube Video Resources\r\n\t\t\t$hasmuteVideo = Boolean($('.muteYTVideo').length);\r\n\t\t\tif($hasmuteVideo)
+  {\r\n\t\t\t\trequire(['muteYTVideo']);\r\n\t\t\t}\r\n\r\n\t\t\t// Pull in the brightcove
+  player, but only if it was not already called in.\r\n\t\t\tif(window.brightcove
+  === undefined) {\r\n\t\t\t\t// Determine, if we need secure or not.\r\n\t\t\t\tbcAPI
+  = (window.location.protocol === 'http:')\r\n\t\t\t\t\t? true\r\n\t\t\t\t\t: false;\r\n\r\n\t\t\t\tif
+  (bcAPI) {\r\n\t\t\t\t\trequire(['brightcove', 'videoPlayer']);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\r\n\t\t\t//
+  try{\r\n\t\t\t// \t// Determine if MCC throttle is on.\r\n\t\t\t// \tvar MCC_OVERRIDE
+  = readCookie(\"MCC_THROTTLE\");\r\n\t\t\t// \tvar devOverride = ((window.location.search.indexOf(\"mcc=true\")>-1)
+  ||\r\n\t\t\t// \t\t\t\t\t\t\t(window.location.search.indexOf(\"MCC=true\")>-1));\r\n\r\n\t\t\t//
+  \tif(MCC_OVERRIDE || devOverride) {\r\n\t\t\t// \t\tTHDModuleLoader.$includeJS('/MCCCheckout/static/MCC/dist/mccFullsiteCore.js');\r\n\t\t\t//
+  \t\t// Include CSS overrides for MCC\r\n\t\t\t// \t\tTHDModuleLoader.$includeCSS('/MCCCheckout/static/MCC/dist/thd.mcc.atc.overlay.v1.css');\r\n\t\t\t//
+  \t}\r\n\t\t\t// }catch(e){\r\n\t\t\t// \tconsole.log(\"Error loading MCC resources\");\r\n\t\t\t//
+  }\r\n\r\n\r\n\t\t\t// Pull in the BV RR, but only if it was not already called in.\r\n\t\t\t$hasServiceRatingsReviews
+  = (Boolean($('#BVRRContainer').length) && (!Boolean($('#productinfo_ctn').length)));\r\n\t\t\tif(window.$BV
+  === undefined && $hasServiceRatingsReviews) {\r\n\t\t\t\thostName = globalUtility.getHostNameNonSecure();\r\n\t\t\t\tisDevEnvironment
+  = (hostName.indexOf('homedepotdev') > -1 || hostName.indexOf('localhost') > -1);\r\n\t\t\t\tbvID
+  = $('#BVRRContainer').attr('data-bv-id');\r\n\r\n\t\t\t\t// console.log(isDevEnvironment);\r\n\r\n\t\t\t\t//
+  @TODO need to test this\r\n\t\t\t\tif (window.location.protocol === 'https:') {\r\n\t\t\t\t\t(!isDevEnvironment)\r\n\t\t\t\t\t\t?
+  require(['https://homedepot.ugc.bazaarvoice.com/static/1999profiles/bvapi.js'])\r\n\t\t\t\t\t\t:
+  require(['https://homedepot.ugc.bazaarvoice.com/bvstaging/static/1999profiles/bvapi.js']);\r\n\t\t\t\t}
+  else {\r\n\t\t\t\t\t(!isDevEnvironment)\r\n\t\t\t\t\t\t? require(['http://homedepot.ugc.bazaarvoice.com/static/1999aa/bvapi.js'])\r\n\t\t\t\t\t\t:
+  require(['http://homedepot.ugc.bazaarvoice.com/bvstaging/static/1999services/bvapi.js']);\r\n\t\t\t\t}\r\n\r\n\r\n\t\t\t\tloadBV
+  = setInterval(function bv() {\r\n\t\t\t\t\twaitForBV(bvID);\r\n\t\t\t\t}, 1000);\r\n\t\t\t}\r\n\r\n\t\t\t//
+  Handling More/Less Links on Text Widgets\r\n\t\t\t$hasMoreLink = Boolean($('.moreLink').length);\r\n\t\t\t//
+  @QUESTIOM why is this here?\r\n\t\t\tif($hasMoreLink) {\r\n\t\t\t\t// Method to
+  handle More Button click\r\n\t\t\t\t$('.moreLink').click(handleShowMoreButton);\r\n\t\t\t}\r\n\t\t});\r\n\t\treturn
+  this;\r\n\t};\r\n\twindow.THDModuleLoader =  THDModuleLoader;\r\n\r\n\tTHDModuleLoader.init();\r\n\treturn
+  THDModuleLoader;\r\n});\r\n"

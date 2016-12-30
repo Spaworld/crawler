@@ -1,0 +1,22 @@
+---
+:scope: 
+:url: http://dpm.demdex.net/id/rd?d_visid_ver=1.5.4&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=F6421253512D2C100A490D45%40AdobeOrg&d_nsid=0&d_cb=s_c_il%5B0%5D._setMarketingCloudFields
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+  Content-Encoding: gzip
+  Content-Type: application/javascript; charset=UTF-8
+  Date: Fri, 30 Dec 2016 18:20:09 GMT
+  DCS: va6-prod-dcs-f0bcdffe.edge-va6.demdex.com master-5.2.0.20161115.204931 3ms
+  Expires: Thu, 01 Jan 2009 00:00:00 GMT
+  P3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS
+    PUR COM NAV INT"
+  Pragma: no-cache
+  Set-Cookie: demdex=50981432369812804992378120583744643884;Path=/;Domain=.demdex.net;Expires=Wed,
+    28-Jun-2017 18:20:09 GMT
+  Vary: Accept-Encoding, User-Agent
+  transfer-encoding: chunked
+  Connection: close
+:content: s_c_il[0]._setMarketingCloudFields({"d_mid":"50911463810022688062407056325945544025","id_sync_ttl":604800,"d_blob":"NRX38WO0n5BH8Th-nqAG_A","dcs_region":7,"d_ottl":7200,"ibs":[{"id":"269","ttl":10080,"tag":"img","fireURLSync":0,"syncOnPage":0,"url":["//sync.mathtag.com/sync/img?mt_exid=10004&mt_exuid=50981432369812804992378120583744643884&redir=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D269%26dpuuid%3D[MM_UUID]%26ddsuuid%3d50981432369812804992378120583744643884"]},{"id":"359","ttl":30240,"tag":"img","fireURLSync":0,"syncOnPage":0,"url":["//i.w55c.net/ping_match.gif?st=dmx&rurl=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D359%26dpuuid%3D_wfivefivec_"]},{"id":"771","ttl":20160,"tag":"img","fireURLSync":0,"syncOnPage":0,"url":["https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm"]},{"id":"28645","ttl":10080,"tag":"img","fireURLSync":0,"syncOnPage":0,"url":["//gum.criteo.com/sync?c=8&r=1&a=1&u=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D28645%26dpuuid%3D%40USERID%40"]}],"subdomain":"homedepot"})

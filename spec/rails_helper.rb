@@ -10,7 +10,10 @@ require 'capybara/rails'
 
 require 'capybara/poltergeist'
 require 'billy/capybara/rspec'
-Capybara.javascript_driver = :poltergeist_billy
+require 'support/puffing_billy_config'
+require 'support/billy_driver'
+
+Capybara.javascript_driver = :webkit_billy
 
 Rails.application.load_tasks
 

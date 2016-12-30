@@ -1,0 +1,33 @@
+---
+:scope: 
+:url: http://accdn.lpsnmedia.net/api/account/31564604/configuration/le-campaigns/zones?fields=id&fields=zoneValue&cb=lpZonesStaticCB
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Content-Type: application/javascript
+  Transfer-Encoding: chunked
+  Connection: close
+  Vary: Accept
+  Expires: Fri, 30 Dec 2016 18:20:20 GMT
+  Server: ws
+  X-Cache-Status: HIT
+  Content-Encoding: gzip
+:content: lpZonesStaticCB([{"id":589241712,"createdDate":"2016-04-26 09:58:25","modifiedDate":"2016-04-26
+  09:58:25","name":"lpbuttondiv-footer","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lpbuttondiv-footer","mainZone":false,"capping":2,"mapping":[]},{"id":23357514,"createdDate":"2016-11-17
+  13:49:40","modifiedDate":"2016-11-17 13:49:40","name":"lpButton","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lpButton","mainZone":false,"capping":2,"mapping":[]},{"id":959467012,"createdDate":"2016-07-19
+  15:35:38","modifiedDate":"2016-07-19 15:35:38","name":"CO_header_logo","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"CO_header_logo","mainZone":false,"capping":2,"mapping":[]},{"id":1575786412,"createdDate":"2016-10-20
+  10:24:17","modifiedDate":"2016-10-20 10:24:17","name":"lpButDivID-1329496879922","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lpButDivID-1329496879922","mainZone":false,"capping":2,"mapping":[]},{"id":46258014,"createdDate":"2016-12-30
+  10:54:51","modifiedDate":"2016-12-30 10:54:51","name":"chat-test-contact-us-content","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"chat-test-contact-us-content","mainZone":false,"capping":2,"mapping":[]},{"id":566660812,"createdDate":"2016-03-16
+  09:59:41","modifiedDate":"2016-03-16 09:59:41","name":"Left Overlay","isDeleted":false,"deleted":false,"zoneType":1,"mainZone":false,"capping":0,"mapping":[{"engagementSubType":25},{"engagementSubType":23},{"engagementSubType":14},{"engagementSubType":15},{"engagementSubType":21},{"engagementSubType":16},{"engagementSubType":20}]},{"id":566660912,"createdDate":"2016-03-16
+  09:59:41","modifiedDate":"2016-03-16 09:59:41","name":"Proactive Overlay","isDeleted":false,"deleted":false,"zoneType":1,"mainZone":true,"capping":0,"mapping":[{"engagementSubType":7},{"engagementSubType":8},{"engagementSubType":11},{"engagementSubType":1},{"engagementSubType":5},{"engagementSubType":2},{"engagementSubType":3},{"engagementSubType":0},{"engagementSubType":4},{"engagementSubType":12},{"engagementSubType":13},{"engagementSubType":6},{"engagementSubType":9},{"engagementSubType":10}]},{"id":959143512,"createdDate":"2016-07-19
+  14:05:43","modifiedDate":"2016-07-19 14:05:43","name":"express-checkout-loading","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"express-checkout-loading","mainZone":false,"capping":2,"mapping":[]},{"id":1021834912,"createdDate":"2016-07-25
+  13:47:23","modifiedDate":"2016-07-25 13:47:23","name":"lpbuttondiv-global","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lpbuttondiv-global","mainZone":false,"capping":2,"mapping":[]},{"id":566661112,"createdDate":"2016-03-16
+  09:59:41","modifiedDate":"2016-03-16 09:59:41","name":"Offsite","isDeleted":false,"deleted":false,"zoneType":2,"mainZone":false,"capping":0,"mapping":[{"engagementSubType":30},{"engagementSubType":28},{"engagementSubType":29}]},{"id":43655414,"createdDate":"2016-12-21
+  13:13:55","modifiedDate":"2016-12-21 13:13:55","name":"test","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"test","mainZone":false,"capping":2,"mapping":[]},{"id":1233931912,"createdDate":"2016-08-17
+  10:20:14","modifiedDate":"2016-08-17 10:20:14","name":"lpButtonPlaceholder","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lpButtonPlaceholder","mainZone":false,"capping":2,"mapping":[]},{"id":566661012,"createdDate":"2016-03-16
+  09:59:41","modifiedDate":"2016-03-16 09:59:41","name":"Right Overlay","isDeleted":false,"deleted":false,"zoneType":1,"mainZone":false,"capping":0,"mapping":[{"engagementSubType":17},{"engagementSubType":18},{"engagementSubType":27},{"engagementSubType":26},{"engagementSubType":24},{"engagementSubType":22},{"engagementSubType":19}]},{"id":959466412,"createdDate":"2016-07-19
+  15:31:59","modifiedDate":"2016-07-19 15:31:59","name":"checkout-header-section","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"checkout-header-section","mainZone":false,"capping":2,"mapping":[]},{"id":1267484312,"createdDate":"2016-08-25
+  14:07:21","modifiedDate":"2016-08-25 14:07:21","name":"lebuttondiv-global","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"lebuttondiv-global","mainZone":false,"capping":2,"mapping":[]},{"id":44029214,"createdDate":"2016-12-22
+  14:24:19","modifiedDate":"2016-12-22 14:24:19","name":"footer-banner-test","isDeleted":false,"deleted":false,"zoneType":0,"zoneValue":"footer-banner-test","mainZone":false,"capping":2,"mapping":[]}]);

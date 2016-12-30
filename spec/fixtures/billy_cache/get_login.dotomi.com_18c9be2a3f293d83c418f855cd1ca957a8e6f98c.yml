@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: http://login.dotomi.com/ucm/UCMController?dtm_com=28&dtm_fid=101&dtm_cid=2339&dtm_cmagic=359365&dtm_format=5&cli_promo_id=1&dtm_user_id=&dtmc_department=homepage&dtmc_category=homepage&dtmc_subcategory=homepage&dtmc_product_id=&dtm_user_token=&dtmc_ref=&dtmc_loc=http://www.homedepot.com/
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Server: nginx
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Content-Length: '0'
+  Connection: close
+  Expires: '0'
+  Pragma: no-cache
+  Cache-Control: no-cache, private
+  P3P: policyref="/w3c/p3p.xml", CP="NOI DSP NID OUR STP"
+  Set-Cookie:
+  - DotomiTest=Test; Expires=Fri, 30 Dec 2016 18:50:10 GMT; Path=/; Domain=.dotomi.com
+  - DotomiTestSession=TestSession; Expires=Fri, 30 Dec 2016 18:20:09 GMT; Path=/;
+    Domain=.dotomi.com
+  Location: http://login.dotomi.com/ucm/UCMController?dtm_user_token=null&dtm_user_id=null&dtmc_product_id=null&dtmc_subcategory=homepage&dtmc_category=homepage&dtm_cmagic=359365&dtmc_loc=http%3A%2F%2Fwww.homedepot.com%2F&cli_promo_id=1&dtm_com=28&dtm_fid=101&dtm_cid=2339&dtmc_ref=null&dtmc_department=homepage&dtm_format=5&dtm_user_ip=100.2.23.59&dtm_user_agent=Mozilla%2F5.0+%28Windows+NT+6.1%3B+WOW64%3B+rv%3A22.0%29+Gecko%2F20100101+Firefox%2F22.0&dtm_referrer=http%3A%2F%2Fwww.homedepot.com%2F&tcflag=true
+:content: ''

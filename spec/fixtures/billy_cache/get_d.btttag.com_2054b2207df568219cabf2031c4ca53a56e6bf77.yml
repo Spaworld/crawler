@@ -1,0 +1,37 @@
+---
+:scope: 
+:url: http://d.btttag.com/btt.gif?pageName=homepage&nst=1483136057061&unloadEventStart=0&redirectStart=0&totRD=0&fetchStart=1483136057061&domainLookupStart=1483136057061&connectStart=1483136057061&secureConnectionStart=0&requestStart=1483136057061&responseStart=1483136057061&REE=1483136057082&BPT=21&domLoading=1483136057080&domInteractive=1483136057524&domContentLoadedStart=1483136057525&domContentLoadedEnd=1483136057541&loadEventStart=1483136057551&navigationType=1&redirectCount=0&pageType=homepage&pageValue=0&pgTm=490&dns=0&tcp=0&dom=471&fByte=0&ssl=0&cartValue=0&eT=5&siteID=homedepot&txnName=eCommerce&top=-1483136057582&bv=0&bvzn=Safari-&tul=0&EUOS=Linux&sessionID=859857816314717363&SHi=768&SWi=1024&CSID=0&CV1=0&CV2=0&CV3=0&CV4=0&CV5=0&wcd=0&LTM=1483136057716&WCDtt=c&collectAt=100
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 22:14:19 GMT
+  Content-Type: image/gif
+  Content-Length: '26'
+  Connection: close
+  Accept-Ranges: bytes
+  Access-Control-Allow-Credentials: 'true'
+  Access-Control-Allow-Headers: xhr,content-type,Content-Type, Depth, User-Agent,
+    X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control
+  Access-Control-Allow-Methods: xhr,GET, POST, OPTIONS
+  Access-Control-Max-Age: '86400'
+  age: '180000'
+  Cache-Control: private, no-cache, no-cache=Set-Cookie, proxy-revalidate
+  Expires: Wed, 19 Apr 2013 01:00:00 GMT
+  Last-Modified: Wed, 21 Jan 2004 01:01:30 GMT
+  Pragma: no-cache
+  Set-Cookie:
+  - collection=1; expires=Fri, 30-Dec-2016 22:39:19 GMT; Max-Age=1500; path=/; domain=btttag.com
+  - sessionID=859857816314717363; expires=Fri, 30-Dec-2016 22:39:19 GMT; Max-Age=1500;
+    path=/; domain=btttag.com
+  - homedepot-GUID=859857816314717363; expires=Sun, 31-Dec-2017 04:03:05 GMT; Max-Age=31556926;
+    path=/; domain=btttag.com
+  - homedepot-txnName=eCommerce; expires=Fri, 30-Dec-2016 22:39:19 GMT; Max-Age=1500;
+    path=/; domain=btttag.com
+  - homedepot-BrowserVersion=Safari-; expires=Fri, 30-Dec-2016 22:39:19 GMT; Max-Age=1500;
+    path=/; domain=btttag.com
+  Timing-Allow-Origin: "*"
+  Server: cloudflare-nginx
+  CF-RAY: 3198d815817b0ed9-EWR
+:content: !binary |-
+  R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAA=

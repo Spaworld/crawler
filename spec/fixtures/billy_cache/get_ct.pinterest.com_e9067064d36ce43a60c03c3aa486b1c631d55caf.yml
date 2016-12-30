@@ -1,0 +1,25 @@
+---
+:scope: 
+:url: https://ct.pinterest.com/v3/?tid=2620449154726&ov=%7B%22page_name%22%3A%22homepage%22%2C%22page_category%22%3A%22homepage%22%7D&ad=%7B%22loc%22%3A%22http%3A%2F%2Fwww.homedepot.com%2F%22%2C%22ref%22%3A%22%22%2C%22if%22%3Afalse%2C%22sh%22%3A768%2C%22sw%22%3A1024%7D&cb=1483127912666
+:body: ''
+:status: 204
+:method: get
+:headers:
+  Accept-Ranges: bytes
+  Age: '0'
+  Content-Length: '0'
+  Date: Fri, 30 Dec 2016 19:58:32 GMT
+  Via: 1.1 varnish
+  X-Pinterest-RID: '793061142518'
+  X-Varnish: '566515101'
+  Connection: close
+:content: ''
+:request_headers:
+  Referer: http://www.homedepot.com/
+  Accept: "*/*"
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: ct.pinterest.com

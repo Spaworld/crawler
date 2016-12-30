@@ -1,0 +1,18 @@
+---
+:scope: 
+:url: http://www.thdws.com/TA2/search?term=3051.110.wlw&e=21&callback=termCallback
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  X-Application-Context: application
+  Content-Encoding: gzip
+  Content-Length: '43'
+  Vary: Accept-Encoding
+  X-N: S
+  Cache-Control: max-age=10800
+  Date: Fri, 30 Dec 2016 22:17:13 GMT
+  Connection: close
+:content: "/**/termCallback(null);"

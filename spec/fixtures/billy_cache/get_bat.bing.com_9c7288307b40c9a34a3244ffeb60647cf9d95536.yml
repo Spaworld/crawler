@@ -1,0 +1,22 @@
+---
+:scope: 
+:url: http://bat.bing.com/action/0?ti=5319585&Ver=2&mid=aa660aec-786d-4ed1-6689-c7c3c63d4368&evt=pageLoad&lt=521&pi=0&lg=en-US&sw=1024&sh=768&sc=32&tl=The%20Home%20Depot&p=http%3A%2F%2Fwww.homedepot.com%2F&r=&rn=477958
+:body: ''
+:status: 204
+:method: get
+:headers:
+  Cache-Control: no-cache, must-revalidate
+  Pragma: no-cache
+  Content-Length: '0'
+  Expires: Fri, 01 Jan 1990 00:00:00 GMT
+  Server: Microsoft-IIS/8.5
+  Set-Cookie:
+  - MUID=279BE9AAFC476B453D72E051F8476813; domain=.bing.com; expires=Sun, 30-Dec-2018
+    22:13:06 GMT; path=/;
+  - MR=0; domain=bat.bing.com; expires=Wed, 28-Jun-2017 22:13:06 GMT; path=/;
+  Access-Control-Allow-Origin: "*"
+  X-MSEdge-Ref: 'Ref A: 7B799148969A4CAC8E0494D7DAAC963A Ref B: E5B132E938984B9776B1270679BF8EA9
+    Ref C: Fri Dec 30 14:13:06 2016 PST'
+  Date: Fri, 30 Dec 2016 22:13:06 GMT
+  Connection: close
+:content: ''

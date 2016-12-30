@@ -1,0 +1,68 @@
+---
+:scope: 
+:url: http://www.homedepot.com/recommendations/v1?type=json&key=tRXWvUBGuAwEzFHScjLw9ktZ0Bw7a335
+:body: '{"levels":"","storeId":"121","trackingId":"522975845728069","sessionId":"453294474398717","customerId":"","appId":"homedepot01","certonaSchema":"rv_gm_pip_rr,PIPHorizontal1_rr","exItems":"","maxProducts":16,"products":"100675927"}'
+:status: 200
+:method: post
+:headers:
+  Server: nginx
+  Content-Type: application/json;charset=UTF-8
+  X-Varnish: '299472605'
+  X-Varnish-Cache: MISS@default
+  Content-Encoding: gzip
+  Content-Length: '851'
+  Vary: Accept-Encoding
+  Expires: Fri, 30 Dec 2016 22:18:17 GMT
+  Cache-Control: max-age=0, no-cache, no-store
+  Pragma: no-cache
+  Date: Fri, 30 Dec 2016 22:18:17 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: !binary |-
+  eyJzY2hlbWFzIjpbeyJzY2hlbWFJZCI6InJ2X2dtX3BpcF9yciIsInRpdGxl
+  IjoiWW91IE1heSBBbHNvIExpa2UifSx7InNjaGVtYUlkIjoiUElQSG9yaXpv
+  bnRhbDFfcnIiLCJ0aXRsZSI6IkNVU1RPTUVSUyBXSE8gVklFV0VEIFRISVMg
+  SVRFTSBCT1VHSFQg4oCmIiwicHJvZHVjdHMiOlt7InByb2R1Y3RJZCI6IjEw
+  MDY2NTQwMiIsIml0ZW1UeXBlIjoiTUVSQ0hBTkRJU0UiLCJndWlkIjoiYjY5
+  ODk2YjMtMzcyYy00MDYwLTkyMjYtMTc3MWEyNDgwYTcxIiwidW9tIjoiZWFj
+  aCIsImNhbm9uaWNhbFVSTCI6Ii9wL1VuaXZlcnNhbC1UdWJzLTQtNS1mdC1M
+  ZWZ0LURyYWluLVdhbGstSW4tV2hpcmxwb29sLUJhdGgtVHViLWluLVdoaXRl
+  LUhEMzA1M0xXSC8xMDA2NjU0MDIiLCJicmFuZCI6IlVuaXZlcnNhbCBUdWJz
+  IiwicHJvZHVjdE5hbWUiOiI0LjUgZnQuIExlZnQgRHJhaW4gV2Fsay1JbiBX
+  aGlybHBvb2wgQmF0aCBUdWIgaW4gV2hpdGUiLCJyYXRpbmciOiIzLjc1Iiwi
+  cmV2aWV3cyI6IjQiLCJwcmljZSI6MjU2NS42NCwib3JpZ2luYWxQcmljZSI6
+  Mzc3My4wMCwiZG9sbGFyT2ZmIjoxMjA3LjM2LCJwZXJjZW50YWdlT2ZmIjoz
+  Mi4wMH0seyJwcm9kdWN0SWQiOiIyMDIyMTMxMDgiLCJpdGVtVHlwZSI6Ik1F
+  UkNIQU5ESVNFIiwiZ3VpZCI6ImYwMDY3NTZjLTc4ZjEtNGNlOC05NWZhLWQw
+  ZmM1MjU5ODgzNSIsInVvbSI6ImVhY2giLCJjYW5vbmljYWxVUkwiOiIvcC9B
+  bWVyaWNhbi1TdGFuZGFyZC1HZWxjb2F0LVN0YW5kYXJkLVNlcmllcy01MS1p
+  bi14LTMxLWluLVdhbGstSW4tU29ha2luZy1UdWItaW4tV2hpdGUtMzE1MS0y
+  MDEtU0xXLzIwMjIxMzEwOCIsImJyYW5kIjoiQW1lcmljYW4gU3RhbmRhcmQi
+  LCJwcm9kdWN0TmFtZSI6IkdlbGNvYXQgU3RhbmRhcmQgU2VyaWVzIDUxIGlu
+  LiB4IDMxIGluLiBXYWxrLUluIFNvYWtpbmcgVHViIGluIFdoaXRlIiwicmF0
+  aW5nIjoiMC4wIiwicmV2aWV3cyI6IjAiLCJwcmljZSI6MzA2NS4yOCwib3Jp
+  Z2luYWxQcmljZSI6MzA2NS4yOCwiZG9sbGFyT2ZmIjowLjAsInBlcmNlbnRh
+  Z2VPZmYiOjAuMH0seyJwcm9kdWN0SWQiOiIyMDIyMTMxMTYiLCJpdGVtVHlw
+  ZSI6Ik1FUkNIQU5ESVNFIiwiZ3VpZCI6IjU4ODIwNjczLWU1ZWQtNDZhYy04
+  MGY4LTcxMDllY2ZjMzMxNSIsInVvbSI6ImVhY2giLCJjYW5vbmljYWxVUkwi
+  OiIvcC9BbWVyaWNhbi1TdGFuZGFyZC1BY3J5bGljLVN0YW5kYXJkLVNlcmll
+  cy01MS1pbi14LTI2LWluLVdhbGstSW4tV2hpcmxwb29sLVR1Yi13aXRoLVF1
+  aWNrLURyYWluLWluLVdoaXRlLTI2NTEtMTE0LVdMVy8yMDIyMTMxMTYiLCJi
+  cmFuZCI6IkFtZXJpY2FuIFN0YW5kYXJkIiwicHJvZHVjdE5hbWUiOiJBY3J5
+  bGljIFN0YW5kYXJkIFNlcmllcyA1MSBpbi4geCAyNiBpbi4gV2Fsay1JbiBX
+  aGlybHBvb2wgVHViIHdpdGggUXVpY2sgRHJhaW4gaW4gV2hpdGUiLCJyYXRp
+  bmciOiI1LjAiLCJyZXZpZXdzIjoiMSIsInByaWNlIjo0NTEzLjgyLCJvcmln
+  aW5hbFByaWNlIjo0NTEzLjgyLCJkb2xsYXJPZmYiOjAuMCwicGVyY2VudGFn
+  ZU9mZiI6MC4wfSx7InByb2R1Y3RJZCI6IjIwMjIxMzEyMCIsIml0ZW1UeXBl
+  IjoiTUVSQ0hBTkRJU0UiLCJndWlkIjoiZGJiN2U0NWItYTBjMi00MzMzLWJh
+  ZjItM2I1MmJiODRmYTBlIiwidW9tIjoiZWFjaCIsImNhbm9uaWNhbFVSTCI6
+  Ii9wL0FtZXJpY2FuLVN0YW5kYXJkLUdlbGNvYXQtU3RhbmRhcmQtU2VyaWVz
+  LTQ4LWluLXgtMjgtaW4tV2Fsay1Jbi1XaGlybHBvb2wtVHViLXdpdGgtUXVp
+  Y2stRHJhaW4taW4tV2hpdGUtMjg0OC0xMDQtV0xXLzIwMjIxMzEyMCIsImJy
+  YW5kIjoiQW1lcmljYW4gU3RhbmRhcmQiLCJwcm9kdWN0TmFtZSI6IkdlbGNv
+  YXQgU3RhbmRhcmQgU2VyaWVzIDQ4IGluLiB4IDI4IGluLiBXYWxrLUluIFdo
+  aXJscG9vbCBUdWIgd2l0aCBRdWljayBEcmFpbiBpbiBXaGl0ZSIsInJhdGlu
+  ZyI6IjAuMCIsInJldmlld3MiOiIwIiwicHJpY2UiOjM4ODMuNTUsIm9yaWdp
+  bmFsUHJpY2UiOjM4ODMuNTUsImRvbGxhck9mZiI6MC4wLCJwZXJjZW50YWdl
+  T2ZmIjowLjB9XX1dLCJ0cmFja2luZ0lkIjoiNTIyOTc1ODQ1NzI4MDY5Iiwi
+  cGFnZUlkIjoicmVzMTYxMjMwMTQ3MjcxODM1MzY0OTkzNTgifQ==

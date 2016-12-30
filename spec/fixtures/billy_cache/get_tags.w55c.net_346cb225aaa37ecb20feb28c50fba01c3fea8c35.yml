@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: http://tags.w55c.net/rs?id=3215ac837d15434caec9199aa1e933ad&t=marketing&nomatch
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: Apache-Coyote/1.1
+  P3P: policyref="https://cts.w55c.net/ct/p3p_policy_ref.xml", CP="UNI PUR COM INT
+    STA OTC STP OUR CUR TAIo COR DSP NOI"
+  Expires: Fri, 01 Jan 1990 00:00:00 GMT
+  Cache-Control: no-cache, must-revalidate
+  Pragma: no-cache
+  Set-Cookie: wfivefivec=SlGJv64J1Cn1MK2; Domain=.w55c.net; Expires=Tue, 30-Jan-2018
+    04:20:10 GMT; Path=/
+  Content-Type: image/gif
+  Content-Length: '43'
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+:content: !binary |-
+  R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==

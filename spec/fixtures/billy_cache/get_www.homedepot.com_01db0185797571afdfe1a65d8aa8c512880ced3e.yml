@@ -1,0 +1,49 @@
+---
+:scope: 
+:url: http://www.homedepot.com/content/node_modules/hfapp/scripts/source/hfapp.js?v=e77fc1f
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  Last-Modified: Tue, 27 Dec 2016 04:22:03 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  Content-Encoding: gzip
+  Vary: Accept-Encoding
+  X-Varnish: '31253268'
+  grace: none
+  X-Varnish-Cache: MISS@default
+  Content-Length: '569'
+  Cache-Control: max-age=7200
+  Expires: Fri, 30 Dec 2016 20:20:10 GMT
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: "define('hfapp', [\r\n  'jquery',\r\n  'mustache',\r\n  'utils.minicart',\r\n
+  \ 'header.cart',\r\n  'header.logo',\r\n  'header.dropdownmodule',\r\n  'header.mainflyout',\r\n
+  \ 'header.simpleflyout',\r\n  'header.diyflyout',\r\n  'header.hsflyout',\r\n  'header.myaccount',\r\n
+  \ 'header.search',\r\n  'header.storefinder',\r\n  'header.shoppinglinks',\r\n  'header.tasklinks',\r\n
+  \ 'footer.email',\r\n  'footer.tagline',\r\n  'localizationPopup',\r\n  'triggerAutoLocalization',\r\n
+  \ 'global.modal',\r\n  'global.gestureHandler',\r\n  'global.dynamicRatings',\r\n
+  \ 'thd.moduleLoader'\r\n], function load(\r\n  $,\r\n  mustache,\r\n  miniCart,\r\n
+  \ headerCart,\r\n  headerLogo,\r\n  headerDropDowns,\r\n  headerMainFlyout,\r\n
+  \ headerSimpleFlyout,\r\n  headerDIYFlyout,\r\n  headerHsFlyout,\r\n  headerMyaccount,\r\n
+  \ headerSearch,\r\n  headerStoreFinder,\r\n  headerShoppingLinks,\r\n  headerTaskLinks,\r\n
+  \ footerEmail,\r\n  footerTagline,\r\n  localizationPopup,\r\n  triggerAutoLocalization,\r\n
+  \ globalModal,\r\n  gestureHandler,\r\n  dynamicRatings,\r\n  moduleLoader\r\n  )
+  {\r\n  return {\r\n    init: function init() {\r\n      return {\r\n        headerCart:
+  headerCart.init(),\r\n        mainFlyout: headerMainFlyout.init(),\r\n        simpleFlyout:
+  headerSimpleFlyout.init(),\r\n        diyFlyout: headerDIYFlyout.init(),\r\n        hsFlyout:
+  headerHsFlyout.init(),\r\n        headerDropDowns: headerDropDowns.init(),\r\n        headerLogo:
+  headerLogo.init(),\r\n        headerMyaccount: headerMyaccount.init(),\r\n        headerSearch:
+  headerSearch.init(),\r\n        headerStoreFinder: headerStoreFinder.init(),\r\n
+  \       headerShoppingLinks: headerShoppingLinks.init(),\r\n        headerTaskLinks:
+  headerTaskLinks.init(),\r\n        footerEmail: footerEmail.init(),\r\n        footerTagline:
+  footerTagline.init(),\r\n        localizationPopup: localizationPopup.init(),\r\n
+  \       triggerAutoLocalization: triggerAutoLocalization.init(),\r\n        globalModal:
+  globalModal.init(),\r\n        gestureHandler: gestureHandler.init(),\r\n        dynamicRatings:
+  dynamicRatings.init(),\r\n        moduleLoader: moduleLoader.init()\r\n      };\r\n
+  \   }\r\n  };\r\n});\r\n"

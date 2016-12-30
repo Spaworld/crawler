@@ -1,0 +1,19 @@
+---
+:scope: 
+:url: http://api.jetlore.com/track.png?access_token=a45e82250e9f0d4ba3faa4537d66b11682ded0fd751edc883f50919460229505&action=click&id=not_available&pid=100675927
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 22:12:02 GMT
+  Content-Type: image/png
+  Content-Length: '68'
+  Connection: close
+  Set-Cookie:
+  - AWSALB=Q4Z9hpGqrjwQ2k0C0MxoibS79546zHEcCHa9LZDQJlcLlU2M8aS/3a6hAseVpoiiYoxpcUkBS3z+/TJR5raIUFqi4LDAtz9RW5bpb7v9YtKuKt8HhVadPowoMjUS;
+    Expires=Fri, 06 Jan 2017 22:12:02 GMT; Path=/
+  - 556cc9b8e4b0859b0de44a92.homedepot_master.jlusrid=jluuid_6b9de960-fa6a-4758-9734-576b0797fd66;
+    Max-Age=31536000; Expires=Sat, 30 Dec 2017 22:12:02 GMT; Path=/; Domain=.jetlore.com
+:content: !binary |-
+  iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6
+  zwAAAgcBApocMXEAAAAASUVORK5CYII=

@@ -1,0 +1,19 @@
+---
+:scope: 
+:url: http://gum.criteo.com/sync?c=8&r=1&a=1&u=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D28645%26dpuuid%3D%40USERID%40
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Cache-Control: private
+  Content-Type: text/html; charset=utf-8
+  Location: http://dpm.demdex.net/ibs:dpid=28645&dpuuid=
+  Server: Microsoft-IIS/8.5
+  Set-Cookie: uid=fc2ee850-529c-4d1a-aa84-0fcbd02245db; domain=.criteo.com; expires=Sat,
+    30-Dec-2017 18:20:10 GMT; path=/
+  X-Powered-By: ASP.NET
+  Date: Fri, 30 Dec 2016 18:20:09 GMT
+  Content-Length: '165'
+  Connection: close
+:content: "<html><head><title>Object moved</title></head><body>\r\n<h2>Object moved
+  to <a href=\"http://dpm.demdex.net/ibs:dpid=28645&amp;dpuuid=\">here</a>.</h2>\r\n</body></html>\r\n"

@@ -1,0 +1,28 @@
+---
+:scope: 
+:url: http://va.v.liveperson.net/api/js/31564604?&cb=lpCb14762x7422&t=sp&ts=1483126096612&pid=4712234591&tid=2519005246&rvt=1483122113289&pt=The%20Home%20Depot&u=http%3A%2F%2Fwww.homedepot.com%2F&sec=%5B%22l1%3Ahomepage%22%2C%22url%3Ahttp%3A%2F%2Fwww.homedepot.com%2F%22%2C%22pageType%3Ahomepage%22%5D&df=0&os=0
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 19:28:16 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: close
+  Set-Cookie:
+  - LPVisitorID=RkZGQ1ODQ1NjY2Y2U3NGM5; Expires=Sat, 30-Dec-2017 19:28:16 GMT; Path=/;
+    HttpOnly
+  - LPSessionID=BSg72h43R9-DWkb1awwwOQ.4011e9a6e6e1c39a4bdb8224a52676808eb43946; Path=/api/js/31564604;
+    HttpOnly
+  Server: ws
+  Content-Encoding: gzip
+:content: lpCb14762x7422({"sdkConf":{"lpVisitorId":"RkZGQ1ODQ1NjY2Y2U3NGM5","lpSessionId":"BSg72h43R9-DWkb1awwwOQ.4011e9a6e6e1c39a4bdb8224a52676808eb43946","lpLastVisit":"1483126096710","protocolVersion":"8.1.0.1","domain":"homedepot.com"},"messagesToVisitor":[]});
+:request_headers:
+  Accept: "*/*"
+  Referer: http://www.homedepot.com/
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: va.v.liveperson.net

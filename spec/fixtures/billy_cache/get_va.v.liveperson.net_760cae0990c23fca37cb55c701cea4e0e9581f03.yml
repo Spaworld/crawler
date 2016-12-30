@@ -1,0 +1,25 @@
+---
+:scope: 
+:url: http://va.v.liveperson.net/api/js/31564604?sid=dUHr3eTbRNGkq_XZxzRHNw.e31bf13221d40966b9aa52f38b576652334a21cd&cb=lpCb69207x21662&t=uc&ts=1483128251664&pid=6682505376&tid=6876239054&sdes=%5B%7B%22type%22%3A%22pagediv%22%2C%22divId%22%3A%22lpbuttondiv-global%22%7D%2C%7B%22type%22%3A%22pagediv%22%2C%22divId%22%3A%22lebuttondiv-global%22%7D%5D&vid=cwMDllYzAzNDk4YjhlNTZj
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 20:04:11 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: close
+  Server: ws
+  Content-Encoding: gzip
+:content: lpCb69207x21662({"messagesToVisitor":[]});
+:request_headers:
+  Accept: "*/*"
+  Referer: http://www.homedepot.com/
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Cookie: LPSessionID=dUHr3eTbRNGkq_XZxzRHNw.e31bf13221d40966b9aa52f38b576652334a21cd;
+    LPVisitorID=cwMDllYzAzNDk4YjhlNTZj
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: va.v.liveperson.net

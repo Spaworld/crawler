@@ -1,0 +1,19 @@
+---
+:scope: 
+:url: https://www.facebook.com/tr/?id=325302054302543&ev=ViewCategory&dl=http%3A%2F%2Fwww.homedepot.com%2F&rl=&if=false&ts=1483122010312&cd[content_name]=homepage&cd[content_category]=homepage&v=2.5.1
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Content-Type: image/gif
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Expires: Fri, 30 Dec 2016 18:20:10 GMT
+  Last-Modified: Fri, 21 Dec 2012 00:00:01 GMT
+  Cache-Control: no-cache, must-revalidate, max-age=0
+  Set-Cookie: fr=0fGft2tqgb97nqlgG..BYZqVa...1.0.BYZqVa.; expires=Thursday, 30-Mar-2017
+    18:20:10 GMT; path=/; domain=.facebook.com
+  Server: proxygen
+  Connection: close
+  Content-Length: '44'
+:content: !binary |-
+  R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOwo=

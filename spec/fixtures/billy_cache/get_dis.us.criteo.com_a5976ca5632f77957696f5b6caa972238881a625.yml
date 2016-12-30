@@ -1,0 +1,30 @@
+---
+:scope: 
+:url: http://dis.us.criteo.com/dis/dis.aspx?p=5932&cb=52993573108&ref=&sc_r=1024x768&sc_d=32
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: no-cache,no-cache
+  Pragma: no-cache,no-cache
+  Content-Type: text/html; charset=utf-8
+  Expires: Mon, 26 Jul 1997 05:00:00 GMT,Mon, 26 Jul 1997 05:00:00 GMT
+  Server: Microsoft-IIS/8.5
+  P3P:
+  - CP='CUR ADM OUR NOR STA NID'
+  - CP='CUR ADM OUR NOR STA NID'
+  X-Powered-By: ASP.NET
+  Date: Fri, 30 Dec 2016 20:02:45 GMT
+  Content-Length: '25'
+  Connection: close
+:content: "<!-- default response -->"
+:request_headers:
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  Referer: http://www.homedepot.com/
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Cookie: uid=0b8ac0e7-a1ca-4feb-95c6-1059d9aa57b8
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: dis.us.criteo.com

@@ -1,0 +1,36 @@
+---
+:scope: 
+:url: https://www.google.com/textinputassistant/tia.png
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Content-Type: image/png
+  Date: Tue, 27 Dec 2016 23:55:36 GMT
+  Expires: Wed, 27 Dec 2017 23:55:36 GMT
+  Last-Modified: Thu, 08 Dec 2016 15:30:00 GMT
+  X-Content-Type-Options: nosniff
+  Server: sffe
+  Content-Length: '258'
+  X-XSS-Protection: 1; mode=block
+  Cache-Control: public, max-age=31536000
+  Age: '245184'
+  Alt-Svc: quic=":443"; ma=2592000; v="35,34"
+  Connection: close
+:content: !binary |-
+  iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAIAAAB1dKN5AAAAyUlEQVR4AWP4
+  ////buoBoGkMQOon9QDQNNqYOGrixdvPSiZtjG1aA0fxLevwI3wmrj94pXDi
+  lsKJmzC15fZtQeZGNayGIyAXp4lLdp4vm7r9Pxg0zduLjwEDQBOTWlajm/gO
+  Bsgz0ad4PtwELCYmt60DaiAeEWUi2G7CzsTnxscwQLaJcBPQTSTD1wRMbJ61
+  BWgiwhUYAFOKgIkXr9/rW3GUmiY+fvoC6MbK6TuB6khAjWuwmogwdOfhc0Bz
+  STIOw0SKwaiJ1K8LAfTB91A7nXAtAAAAAElFTkSuQmCC
+:request_headers:
+  Referer: https://www.google.com/?gws_rd=ssl
+  Accept: "*/*"
+  DNT: '1'
+  User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+  Cookie: NID=93=rZ4KFhVzXCPZRCezH_KhjVg4igtEK8zktfrDgIAtiIKF-L6nM6D9npNiBt-ZTUWHqBC3Uw1NL3cu3BoZs6XZ1xo9P1mJcag6ij1N2CWGZ8WAQfx9U0bhZGltZfTuKkXsDr-u8BSjhrip3ak
+  Connection: Keep-Alive
+  Accept-Encoding: gzip, deflate
+  Accept-Language: en-US,*
+  Host: www.google.com

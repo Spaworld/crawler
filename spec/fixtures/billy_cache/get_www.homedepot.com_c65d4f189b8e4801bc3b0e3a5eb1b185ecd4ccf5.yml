@@ -1,0 +1,34 @@
+---
+:scope: 
+:url: http://www.homedepot.com/content/js-build/desktop/source/secondary-data.js?v=e77fc1f
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  Last-Modified: Tue, 27 Dec 2016 04:22:03 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  Content-Encoding: gzip
+  Vary: Accept-Encoding
+  X-Varnish: '35467322'
+  grace: none
+  X-Varnish-Cache: MISS@default
+  Content-Length: '997'
+  Cache-Control: max-age=7200
+  Expires: Fri, 30 Dec 2016 20:20:10 GMT
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: 'define("secondary-data",["jquery","global.namespace","global.utility","thd.certona","thd.common.dataCollector","utils.userInfo","digitalData"],function(e,t,a,o,r,n,i){var
+  d,c={},s=i.get();return c.getCertonaResxUrlIfDefined=function(){"undefined"!=typeof
+  certonaResx&&certonaResx.getURL()},c.pushToSchemaArr=function(e,t){var a,o=e;for(a=0;a<t.length;a++)o.push(t[a].getAttribute("id"));return
+  o},c.setCertonaValues=function(e,t){window.resx=e,e.certonaSchema=t},c.initCertona=function(){var
+  e=document.getElementsByClassName("certona-content"),t=[],a={};c.pushToSchemaArr(t,e),t.length>0&&(a=THD_GLOBAL.resx,c.setCertonaValues(a,t),c.getCertonaResxUrlIfDefined(),o.refresh(a))},c.initializeCertonaIfAvailable=function(){window.certonaAvailable&&require(["resxclsx"],function(){c.initCertona()})},c.initializeLivePerson=function(){require(["live-person-legacy"],function(e){e.init(THD_GLOBAL.isHomePage,THD_GLOBAL.lp)})},c.checkIfLpEnabledAndInitializeLp=function(){THD_GLOBAL.lpEnabled&&(c.initializeLivePerson(),require(["leMTagConfig"]))},c.setViewportMetaAttr=function(e,t){t&&e.attr("content","width=1024")},c.loopThroughAndLoadDPDItems=function(e){var
+  a,o;for(a=0;a<e.length;a++)o=e[a],""===o.storeId&&(o.storeId=n.getLocalStore()||""),t.PLP.DPD.load(o)},c.loadSecondaryData=function(){var
+  a,o;t.secondaryLoaded||(t.secondaryLoaded=!0,c.initializeCertonaIfAvailable(),c.checkIfLpEnabledAndInitializeLp(),r.setStaticCommonDC(),THD_GLOBAL.DPDList&&require(["PLPDPD"],function(){c.loopThroughAndLoadDPDItems(THD_GLOBAL.DPDList)}),a=window.innerWidth<=568,o=e(''meta[name="viewport"]''),c.setViewportMetaAttr(o,a))},c.handleTablet=function(){d=THD_GLOBAL.isTablet?{page:{pageInfo:{pageName:"",pageType:"errorPage",abTest:"",pageLoadEvent:""},category:{primaryCategory:"Error
+  404",subCategory1:"",subCategory2:""}}}:{page:{pageInfo:{pageName:"Error 404: "+document.referrer,pageType:"Error",abTest:"",pageLoadEvent:""},category:{primaryCategory:"Error
+  404",subCategory1:"Error 404",subCategory2:"Error 404"}}}},c.init=function(){t.secondaryLoaded=!1,THD_GLOBAL.isErrorPage?(r.setStaticCommonDC(),c.handleTablet(),e.extend(s,d)):THD_GLOBAL.isHomePage?c.loadSecondaryData():e(document).one("touchstart
+  keyup mousemove","body",e.proxy(c.loadSecondaryData,this))},c});'

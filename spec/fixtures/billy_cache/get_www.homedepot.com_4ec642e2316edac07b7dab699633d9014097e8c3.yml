@@ -1,0 +1,24 @@
+---
+:scope: 
+:url: http://www.homedepot.com/content/js-build/desktop/source/main.content.js?v=e77fc1f
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  Last-Modified: Tue, 27 Dec 2016 04:22:03 GMT
+  Accept-Ranges: bytes
+  X-Varnish: '35991449'
+  grace: none
+  X-Varnish-Cache: MISS@default
+  Content-Encoding: gzip
+  Content-Length: '210'
+  Vary: Accept-Encoding
+  Cache-Control: max-age=7200
+  Expires: Fri, 30 Dec 2016 20:20:10 GMT
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: define(["jquery","global.namespace","credit-center"],function(e,n,i){return{init:function(){i.init(),e("#ManagePrivacy").length&&require(["thd-privacy-settings"],function(e){e.init()}),"undefined"!=typeof
+  DIGITAL_EMITTER&&DIGITAL_EMITTER.trigger("jquery-ready")}}});

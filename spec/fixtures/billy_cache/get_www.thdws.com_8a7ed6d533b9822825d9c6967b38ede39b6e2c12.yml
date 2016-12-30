@@ -1,0 +1,20 @@
+---
+:scope: 
+:url: http://www.thdws.com/TA2/search?term=3051.110.&e=21&callback=termCallback
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  X-Application-Context: application
+  Content-Encoding: gzip
+  Content-Length: '289'
+  Vary: Accept-Encoding
+  Cache-Control: max-age=10800
+  Date: Fri, 30 Dec 2016 22:17:13 GMT
+  Connection: close
+:content: /**/termCallback({"st":"3051.110.","r":[{"t":"3051.110.crw","k":"/s/3051.110.crw?NCNI-5","du":"/TA2/products?termId=30514611046crw&term=3051.110.crw&originalTerm=3051.110.&callback=detailCallback","v":[{"t":"Whirlpool
+  Tubs","k":"/b/Search/N-5yc1vZbzaz/Ntk-Extended/Ntt-3051.110.crw?Ntx=mode+matchpartialmax&NCNI-5","du":"/TA2/products?termId=30514611046crw&term=3051.110.crw&originalTerm=3051.110.&callback=detailCallback","in":1,"ot":"3051.110."},{"t":"Walk-in
+  Tubs","k":"/b/Search/N-5yc1vZc8ka/Ntk-Extended/Ntt-3051.110.crw?Ntx=mode+matchpartialmax&NCNI-5","du":"/TA2/products?termId=30514611046crw&term=3051.110.crw&originalTerm=3051.110.&callback=detailCallback","in":2,"ot":"3051.110."},{"t":"Walk-in
+  Bathtubs","k":"/b/Search/N-5yc1vZbz9m/Ntk-Extended/Ntt-3051.110.crw?Ntx=mode+matchpartialmax&NCNI-5","du":"/TA2/products?termId=30514611046crw&term=3051.110.crw&originalTerm=3051.110.&callback=detailCallback","in":3,"ot":"3051.110."}],"in":1,"ot":"3051.110."}]});

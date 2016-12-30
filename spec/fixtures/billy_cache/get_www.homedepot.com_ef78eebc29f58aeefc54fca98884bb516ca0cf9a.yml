@@ -1,0 +1,30 @@
+---
+:scope: 
+:url: http://www.homedepot.com/content/js-build/desktop/source/credit-center.js?v=e77fc1f
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: application/javascript;charset=UTF-8
+  Last-Modified: Tue, 27 Dec 2016 04:22:03 GMT
+  Accept-Ranges: bytes
+  X-Varnish: '29979980'
+  grace: none
+  X-Varnish-Cache: MISS@default
+  Content-Encoding: gzip
+  Content-Length: '605'
+  Vary: Accept-Encoding
+  Cache-Control: max-age=7200
+  Expires: Fri, 30 Dec 2016 20:20:10 GMT
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: define(["jquery","global.namespace","utils.minicart","utils.url"],function(t,e,r,n){function
+  i(){"undefined"!=typeof thdTablet&&(thdTablet.content=!0,thdTablet.pn="Credit_Center")}function
+  a(){var t=r.getTHDTotalCartAmount().substr(1);return""===t&&(t="0.00"),t.split(",").join("")}function
+  c(t){for(var e=!1,r=s.length;!e&&r--;)e=t.indexOf(s[r])>-1;return e}function o(t){return
+  t.indexOf("sc=30005")>-1}function u(e){var r=t(e.target),n=r.attr("href");c(n)&&r.attr("href",l.processUrl(n))}var
+  l=e.Utility.Namespace.createNamespace("THD.Content.CreditCard"),s=["www.citicards.com/cards/acq/Apply.do","www.accountonline.com/ACQ/RPL/Web/Apply"],d={};return
+  i(),d.setTabletElements=i,d.getCartValue=a,d.isCitiCardUrl=c,d.requiresSalesAmount=o,d.checkForCitiCardLink=u,l.privateMethods=d,l.processUrl=function(t){var
+  e=t;return c(t)&&o(t)&&(e=n.set({url:t,setParms:{SALE_AMT:a()}})),e},l.init=function(){THD_GLOBAL.creditCenter&&t(document).on("click","a",u)},l});

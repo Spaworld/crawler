@@ -1,0 +1,179 @@
+---
+:scope: 
+:url: http://gateway.answerscloud.com/homedepot/production/foresee/foresee_surveydef.js?v=R036FE204E2
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: Apache
+  Last-Modified: Tue, 11 Oct 2016 15:08:47 GMT
+  ETag: '"100000013e919-30ae-53e9840d3eb16"'
+  Content-Encoding: gzip
+  P3P: CP="ALL"
+  Cache-Control: max-age=31104000
+  Expires: Sun, 31 Dec 2023 00:00:00 GMT
+  Content-Type: application/x-javascript
+  Content-Length: '4313'
+  Accept-Ranges: bytes
+  Date: Fri, 30 Dec 2016 18:21:12 GMT
+  Via: 1.1 varnish
+  Age: '6239831'
+  Connection: close
+  X-Served-By: cache-jfk8132-JFK
+  X-Cache: HIT
+  X-Cache-Hits: '56830'
+  X-Timer: S1483122072.390352,VS0,VE0
+  Vary: Accept-Encoding
+  Access-Control-Allow-Origin: "*"
+:content: "var $$FSR = {\r\n  'enabled': true,\r\n  'frames': false,\r\n  'sessionreplay':
+  true,\r\n  'auto': true,\r\n  'encode': true,\r\n  'version': '18.4.12',\r\n  'files':
+  '/foresee/',\r\n  // The 'swf_files' attribute needs to be set when foresee_transport.swf
+  is not located at 'files'\r\n  //'swf_files': '/some/other/location/'\r\n  'id':
+  'ERcYlgQhMZgswME8lFVQJA==',\r\n  'definition': 'foresee_surveydef.js',\r\n  'swf':
+  {\r\n    'fileName': 'foresee_transport.swf',\r\n    'scriptAccess': 'always'\r\n
+  \ },\r\n  'worker': 'foresee_worker.js',\r\n  'embedded': false,\r\n  'replay_id':
+  'homedepot.com',\r\n  'site_id': 'homedepot.com',\r\n  'attach': false,\r\n  'renderer':
+  'W3C',\r\n  // or \"ASRECORDED\"\r\n  'layout': 'CENTERFIXED',\r\n  // or \"LEFTFIXED\"
+  or \"LEFTSTRETCH\" or \"CENTERSTRETCH\"\r\n  'triggerDelay': 0,\r\n  'heartbeat':
+  true,\r\n  'enableAMD': false,\r\n  'pools': [{\r\n    'path': '.',\r\n    'sp':
+  20 // CHANGE ONLY WHEN INCLUDING SESSION REPLAY\r\n  }],\r\n  'repools': [{\r\n
+  \   path: '.',\r\n    sp: 100\r\n  }],\r\n  'sites': [{\r\n    'path': /\\w+-?\\w+\\.(com|org|edu|gov|net|co\\.uk)/\r\n
+  \ },\r\n  {\r\n    'path': '.',\r\n    'domain': 'default'\r\n  }],\r\n  'storageOption':
+  'cookie',\r\n  'nameBackup': window.name,\r\n  'iframeHrefs': [\"frameWorker.html\"],\r\n
+  \ 'acceptableorigins': []\r\n};\r\n\r\n$$FSR.FSRCONFIG = {};\r\n\r\n(function (config)
+  {\r\n\r\n  var FSR, supports_amd = !! config.enableAMD && typeof(_4c.global[\"define\"])
+  === 'function' && !! _4c.global[\"define\"][\"amd\"];\r\n\r\n  if (!supports_amd)
+  FSR = window.FSR;\r\n  else FSR = {};\r\n/*\r\n * ForeSee Survey Def(s)\r\n */\r\n
+  \ FSR.surveydefs = [{\r\n    name: 'tablet',\r\n    invite: {\r\n      when: 'onentry',\r\n
+  \     dialogs: [\r\n        [{\r\n          reverseButtons: false,\r\n          headline:
+  \"We would like your feedback.\",\r\n          blurb: \"Can we email or text you
+  a brief customer satisfaction survey so we can improve your experience?\",\r\n          attribution:
+  \"Conducted by ForeSee.\",\r\n          declineButton: \"No, thanks\",\r\n          acceptButton:
+  \"Yes, I'll help\",\r\n          locale: \"en\"\r\n        }],\r\n        [{\r\n
+  \         reverseButtons: false,\r\n          headline: \"Thank you for helping!\",\r\n
+  \         blurb: \"Please provide your email address or mobile phone number. After
+  your visit we'll send you a link to the survey. Standard Message and Data Rates
+  Apply.<br /><br />ForeSee's <a href='//www.foresee.com/privacy-policy.shtml' target='_blank'>Privacy
+  Policy</a><br /><br />\",\r\n          attribution: \"Conducted by ForeSee.\",\r\n
+  \         declineButton: \"Cancel\",\r\n          acceptButton: \"email/text me\",\r\n
+  \         locale: \"en\",\r\n          mobileExitDialog: {\r\n            support:
+  \"b\",\r\n            //e for email only, s for sms only, b for both\r\n            inputMessage:
+  \"email or Phone Number\",\r\n            emailMeButtonText: \"email me\",\r\n            textMeButtonText:
+  \"text me\",\r\n            fieldRequiredErrorText: \"Enter a phone number or email
+  address\",\r\n            invalidFormatErrorText: \"Format should be: name@domain.com
+  or 123-456-7890\"\r\n          }\r\n        }]\r\n      ]\r\n    },\r\n    platform:
+  'mobile',\r\n    pop: {\r\n      when: 'later'\r\n    },\r\n    criteria: {\r\n
+  \     sp: [40, 40],\r\n      lf: 3\r\n    },\r\n    include: {\r\n      urls: ['.']\r\n
+  \   }\r\n  },\r\n  {\r\n    name: 'blinds',\r\n    pin: 1,\r\n    invite: {\r\n
+  \     when: 'onentry'\r\n    },\r\n    platform: 'desktop',\r\n    pop: {\r\n      when:
+  'later'\r\n    },\r\n    criteria: {\r\n      sp: [50, 0],\r\n      lf: 2\r\n    },\r\n
+  \   include: {\r\n      urls: ['/SV_HS_Bathroom_Remodeling', '/IS_Shower_Door_Installation',
+  '/SV_HS_Toilet_Installation', '/IS_Tub_Shower_Liner_Installation', '/IS_Walk_In_Tub_Installation',
+  '/SV_HS_Water_Softeners_Filters', '/IS_Blinds_Shades_Installation', '/SV_HS_Interior_Shutters',
+  '/SV_HS_Custom_Home_Organization', '/SV_HS_Door_Installation', '/SV_HS_Windows_Installation',
+  '/SV_HS_Fencing_Installation', '/SV_HS_Garage_Doors_Openers_Installation', '/SV_HS_Garage_Doors_Openers_Installation',
+  '/SV_HS_Garage_Doors_Openers_Installation', '/SV_HS_Custom_Home_Organization', '/SV_HS_Gutters_Leaf_Protection',
+  '/SV_HS_Home_Insulation', '/SV_HS_Roofing', '/SV_HS_Sheds_Storage_Buildings_Installation',
+  '/SV_HS_Siding', '/SV_HS_Solar_Power_Systems', '/SV_HS_Sunrooms_Screenrooms_Shade_Covers',
+  '/SV_HS_Carpet_Installation', '/SV_HS_Wood_Flooring', '/IS_NHance_Wood_Renewal',
+  '/SV_HS_Laminate_Flooring', '/c/SV_HS_Tile_Flooring', '/SV_HS_Vinyl_Flooring', '/IS_Express_Installation',
+  '/SV_HS_HVAC_Replacement', '/SV_HS_HVAC_Maintenance', '/SV_HS_HVAC_Repair', '/SV_HS_Electrical_Services',
+  '/SV_HS_Generator_Installation', '/SV_HS_Water_Heaters', '/IS_Water_Heater_Repair',
+  '/SV_HS_Tankless_Water_Heaters', '/SV_HS_Kitchen_Cabinet_Installation', '/IS_Cabinet_Refacing',
+  '/IS_NHance_Wood_Renewal', '/SV_HS_Countertop_Installation', '/SV_HS_Toilet_Installation',
+  '/SV_HS_Water_Softeners_Filters']\r\n    }\r\n  },\r\n  {\r\n    name: 'browse',\r\n
+  \   lock: 1,\r\n    invite: {\r\n      when: 'onentry'\r\n    },\r\n    pop: {\r\n
+  \     when: 'later'\r\n    },\r\n    platform: 'desktop',\r\n    criteria: {\r\n
+  \     sp: [0, 50],\r\n      lf: 3\r\n    },\r\n    include: {\r\n      urls: ['.']\r\n
+  \   },\r\n    links: {\r\n      pause: [{\r\n        tag: 'button',\r\n        attribute:
+  'id',\r\n        patterns: ['submitId1top']\r\n      }],\r\n      cancel: [{\r\n
+  \       tag: 'input',\r\n        attribute: 'value',\r\n        patterns: ['ppContainer']\r\n
+  \     }]\r\n    }\r\n  }];\r\n\r\n/*\r\n * ForeSee Properties\r\n */\r\n  FSR.properties
+  = {\r\n    repeatdays: [90, 30],\r\n\r\n    repeatoverride: false,\r\n\r\n    altcookie:
+  {\r\n      name: 'foresee_survey',\r\n      value: '1'\r\n    },\r\n\r\n    language:
+  {\r\n      locale: 'en'\r\n    },\r\n\r\n    exclude: {\r\n      userAgents: [\"Rigor\"],\r\n
+  \     cookies: [{\r\n        name: \"fsr.disable\",\r\n        value: \".\"\r\n
+  \     },\r\n      {\r\n        name: \"THD_INSTORE\",\r\n        value: \".\"\r\n
+  \     }]\r\n    },\r\n\r\n    ignoreWindowTopCheck: false,\r\n\r\n    ipexclude:
+  'fsr$ip',\r\n\r\n    mobileHeartbeat: {\r\n      delay: 60,\r\n      /*mobile on
+  exit heartbeat delay seconds*/\r\n      max: 3600 /*mobile on exit heartbeat max
+  run time seconds*/\r\n    },\r\n\r\n    invite: {\r\n\r\n      // For no site logo,
+  comment this line:\r\n      siteLogo: \"sitelogo.gif\",\r\n\r\n      //alt text
+  fore site logo img\r\n      siteLogoAlt: \"\",\r\n\r\n      /* Desktop */\r\n      dialogs:
+  [{\r\n        reverseButtons: false,\r\n        headline: \"We'd welcome your feedback!\",\r\n
+  \       blurb: \"Thank you for visiting our website. You have been selected to participate
+  in a brief customer satisfaction survey to let us know how we can improve your experience.\",\r\n
+  \       noticeAboutSurvey: \"The survey is designed to measure your entire experience,
+  please look for it at the <u>conclusion</u> of your visit.\",\r\n        attribution:
+  \"This survey is conducted by an independent company ForeSee, on behalf of the site
+  you are visiting.\",\r\n        closeInviteButtonText: \"Click to close.\",\r\n
+  \       declineButton: \"No, thanks\",\r\n        acceptButton: \"Yes, I'll give
+  feedback\",\r\n        error: \"Error\",\r\n        warnLaunch: \"this will launch
+  a new window\"\r\n      }],\r\n\r\n      exclude: {\r\n        urls: ['/OrderItemDisplayViewShiptoAssoc',
+  '/CheckoutSignIn', '/ShippingInfo', '/ShippingMethod', '/PaymentMethod', '/OrderDisplay',
+  '/THDMobileBopisOverLay', '/THDMobileBossOverlay', '/THDMobileBossOverlay', '/LogonForm',
+  '/OrderItemDisplayViewShiptoAssoc', '/FasterCheckoutSignIn', '/THDShippingInfo',
+  '/ShippingMethod', '/PickUpPersonUpdate', '/DeliveryCalendar', '/THDPaymentMethod',
+  '/AOLPartsServicesView', '/Bopis2OverLay', '/THDPlsLocalize', '/PickUpOptions',
+  '/OrderItemUpdate', '/MobileOrderItemDisplayViewShiptoAssoc', '/MobileCheckoutSignIn',
+  '/RememberMeCheckoutSignIn', '/THDMobileShippingInfo', '/MobileShippingMethod',
+  '/THDMobilePickUpPersonUpdate', '/MobileDeliveryCalendar', '/MobileAOLPartsServicesView',
+  '/THDMobileBopis2OverLay', '/OrderProcess', '/OrderPrepare', '/OrderCalculate',
+  '/UserRegistrationForm', '/UserRegistrationAdd', '/ResetPasswordForm', '/DeliveryDetails',
+  '/DeliveryDetailsAjaxView', '/DeliveryDetailsCmd', '/FetchCityStatesByZipCode',
+  '/THDShippingDetailsCmd', '/ShippingDetailsAjaxView', '/THDPreCheckoutCmd', '/PayPalExpress',
+  '/PayPalReturn', '/PayPalOrderReview', '/PayPalOrderProcess', '/EReceiptSummaryJSONView',
+  '/OrderDetailsView', '/MyAcctWriteReview', 'MobileOrderItemDisplayViewShiptoAssoc',
+  'MobileCheckoutSignIn', 'MobileShippingMethod', 'MobilePickUpOptionsView', 'THDMobileOrderDisplay',
+  'MobileDeliveryCalendar', 'cart', 'checkout', '/Ordering/Cart', '/Ordering/OrderConfirmation/Express',
+  'THDChangePassword', 'ResetPswdAccView', 'ScheduleDeliveryDisplayView', '/Auth/Logon',
+  '/User/Register', '/Auth/ForgotPassword', '/Auth/ResetPassword', '/MyList/CreateList',
+  '/Cart/ViewCart.do', '/Cart/UpdateCart.do', '/Cart/cartOp.do', '/Checkout.do', 'MCCCheckout',
+  '/Checkout/Paypal/Express.do'],\r\n        referrers: [],\r\n        userAgents:
+  [],\r\n        browsers: [],\r\n        cookies: [{\r\n          name: 'fsr.disable',\r\n
+  \         value: '.'\r\n        }],\r\n        variables: []\r\n      },\r\n      include:
+  {\r\n        local: ['.']\r\n      },\r\n\r\n      delay: 0,\r\n      timeout: 0,\r\n\r\n
+  \     hideOnClick: false,\r\n\r\n      hideCloseButton: false,\r\n\r\n      css:
+  'foresee_dhtml.css',\r\n\r\n      hide: [],\r\n\r\n      hideFlash: false,\r\n\r\n
+  \     type: 'dhtml',\r\n      /* desktop */\r\n      // url: 'invite.html'\r\n      /*
+  mobile */\r\n      url: 'invite-mobile.html',\r\n      back: 'url'\r\n\r\n      //SurveyMutex:
+  'SurveyMutex'\r\n    },\r\n\r\n    tracker: {\r\n      width: '690',\r\n      height:
+  '415',\r\n\r\n      // Timeout is the normal between-page timeout\r\n      timeout:
+  10,\r\n\r\n      // Fast timeout is when we think there's a good chance we've closed
+  the browser\r\n      fasttimeout: 7,\r\n\r\n      adjust: true,\r\n      alert:
+  {\r\n        enabled: false,\r\n        message: 'The survey is now available.'\r\n
+  \     },\r\n      url: 'tracker.html'\r\n    },\r\n\r\n    survey: {\r\n      width:
+  690,\r\n      height: 600\r\n    },\r\n\r\n    qualifier: {\r\n      footer: '<div
+  id=\\\"fsrcontainer\\\"><div style=\\\"float:left;width:80%;font-size:8pt;text-align:left;line-height:12px;\\\">This
+  survey is conducted by an independent company ForeSee,<br>on behalf of the site
+  you are visiting.</div><div style=\\\"float:right;font-size:8pt;\\\"><a target=\"_blank\"
+  title=\"Validate TRUSTe privacy certification\" href=\"//privacy-policy.truste.com/click-with-confidence/ctv/en/www.foreseeresults.com/seal_m\"><img
+  border=\\\"0\\\" src=\\\"{%baseHref%}truste.png\\\" alt=\\\"Validate TRUSTe Privacy
+  Certification\\\"></a></div></div>',\r\n      width: '690',\r\n      height: '500',\r\n
+  \     bgcolor: '#333',\r\n      opacity: 0.7,\r\n      x: 'center',\r\n      y:
+  'center',\r\n      delay: 0,\r\n      buttons: {\r\n        accept: 'Continue'\r\n
+  \     },\r\n      hideOnClick: false,\r\n      css: 'foresee_dhtml.css',\r\n      url:
+  'qualifying.html'\r\n    },\r\n\r\n    cancel: {\r\n      url: 'cancel.html',\r\n
+  \     width: '690',\r\n      height: '400'\r\n    },\r\n\r\n    pop: {\r\n      what:
+  'survey',\r\n      after: 'leaving-site',\r\n      pu: false,\r\n      tracker:
+  true\r\n    },\r\n\r\n    meta: {\r\n      referrer: true,\r\n      terms: true,\r\n
+  \     ref_url: false,\r\n      url: true,\r\n      url_params: false,\r\n      user_agent:
+  false,\r\n      entry: false,\r\n      entry_params: false\r\n    },\r\n\r\n    events:
+  {\r\n      enabled: true,\r\n      id: true,\r\n      codes: {\r\n        purchase:
+  800,\r\n        items: 801,\r\n        dollars: 802,\r\n        followup: 803,\r\n
+  \       information: 804,\r\n        content: 805\r\n      },\r\n      pd: 7,\r\n
+  \     custom: {}\r\n    },\r\n\r\n    previous: false,\r\n\r\n    analytics: {\r\n
+  \     google_local: false,\r\n      google_remote: false\r\n    },\r\n\r\n    cpps:
+  {\r\n      fulfillStoreID: {\r\n        source: 'variable',\r\n        name: '_hddata.fulfillStoreID1'\r\n
+  \     },\r\n      purchase: {\r\n        source: 'url',\r\n        init: 'N',\r\n
+  \       patterns: [{\r\n          regex: '/OrderOKView',\r\n          value: 'Y'\r\n
+  \       },\r\n        {\r\n          regex: '/Confirmation.do',\r\n          value:
+  'Y'\r\n        }]\r\n      },\r\n      beta: {\r\n        init: 'null',\r\n        source:
+  'cookie',\r\n        name: 'HD_DC'\r\n      },\r\n      ClickTaleUID: {\r\n        source:
+  'function',\r\n        value: function () {\r\n          try {\r\n            if
+  (ClickTaleGetUID && ClickTaleGetUID instanceof Function) {\r\n              var
+  ClickTaleUID = ClickTaleGetUID();\r\n              return ClickTaleUID;\r\n            }\r\n
+  \         }\r\n          catch (e) {\r\n            return null;\r\n          }\r\n
+  \       }\r\n      }\r\n    },\r\n\r\n    mode: 'first-party'\r\n  };\r\n  FSR.CPPS.set('cxreplayaws',
+  'true');\r\n\r\n  if (supports_amd) {\r\n    define(function () {\r\n      return
+  FSR\r\n    });\r\n  }\r\n\r\n})($$FSR);"

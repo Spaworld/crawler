@@ -1,0 +1,15 @@
+---
+:scope: 
+:url: http://homedepot.tt.omtrdc.net/m2/homedepot/mbox/standard?mboxHost=www.homedepot.com&mboxSession=1483122071570-460618&mboxPage=1483122071570-460618&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-300&colorDepth=32&HD_DC=origin&mboxCount=5&mboxMCSDID=7459FA87AB4E2747-70D081E576F5AFF6&mbox=homepage_top2&mboxId=0&mboxTime=1483104071575&mboxURL=http%3A%2F%2Fwww.homedepot.com%2F&mboxReferrer=&mboxVersion=53
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: Test & Target
+  Content-Type: text/javascript;charset=UTF-8
+  Date: Fri, 30 Dec 2016 18:21:10 GMT
+  Pragma: no-cache
+  Connection: close
+  Content-Length: '127'
+:content: " /* no display - blocked mbox */ mboxFactories.get('default').get('homepage_top2',0).setOffer(new
+  mboxOfferDefault()).loaded();"

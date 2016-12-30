@@ -1,0 +1,19 @@
+---
+:scope: 
+:url: http://va.v.liveperson.net/api/js/31564604?&cb=lpCb77576x90921&t=sp&ts=1483136148093&pid=6011845823&tid=5582516030&rvt=1483136085167&pt=The%20Home%20Depot&u=http%3A%2F%2Fwww.homedepot.com%2F&sec=%5B%22l1%3Ahomepage%22%2C%22url%3Ahttp%3A%2F%2Fwww.homedepot.com%2F%22%2C%22pageType%3Ahomepage%22%5D&df=0&os=0
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 22:15:48 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: close
+  Set-Cookie:
+  - LPVisitorID=AyMzAwZWQxYzdmMWY5ODRi; Expires=Sat, 30-Dec-2017 22:15:48 GMT; Path=/;
+    HttpOnly
+  - LPSessionID=H4KcFCgAT1mkulryv7CjoA.a5b3c923ba99d176e4041e66a0929aab779fbbba; Path=/api/js/31564604;
+    HttpOnly
+  Server: ws
+  Content-Encoding: gzip
+:content: lpCb77576x90921({"sdkConf":{"lpVisitorId":"AyMzAwZWQxYzdmMWY5ODRi","lpSessionId":"H4KcFCgAT1mkulryv7CjoA.a5b3c923ba99d176e4041e66a0929aab779fbbba","lpLastVisit":"1483136148220","protocolVersion":"8.1.0.1","domain":"homedepot.com"},"messagesToVisitor":[]});

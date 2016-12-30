@@ -1,0 +1,30 @@
+---
+:scope: 
+:url: http://widget.criteo.com/event?a=5932&v=4.0.0&p0=e%3Dexd%26site_type%3Dd&p1=e%3Dvp%26p%3D100675927&p2=e%3Ddis&adce=1
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: no-cache
+  Pragma: no-cache
+  Content-Type: application/x-javascript; charset=utf-8
+  Expires: "-1"
+  Server: Microsoft-IIS/8.5
+  P3P: NON DSP COR CURa PSA PSD OUR BUS NAV STA
+  Set-Cookie:
+  - uic=*1GrnqBNrNXVMdVvosxPPN1DwUQ9%2bcRvd1a6yBoSKgr7XdBowLC8XUnp9PJZAKtdqh; domain=.criteo.com;
+    expires=Wed, 30-Dec-2015 22:12:02 GMT; path=/
+  - evt=*18aIqqEuSJwYuXO%2bQ1aB%2bwJBwjyer3My%2fXqOp22ZLW%2f0%3d; domain=.criteo.com;
+    expires=Wed, 30-Dec-2015 22:12:02 GMT; path=/
+  - acdc=*1wwmT0PcPUPZdd0H0N%2fCs7Q%3d%3d; domain=.criteo.com; expires=Wed, 30-Dec-2015
+    22:12:02 GMT; path=/
+  - uei=*1FtfTNy3pxEcS6g06QvOoSQ%3d%3d; domain=.criteo.com; expires=Wed, 30-Dec-2015
+    22:12:02 GMT; path=/
+  X-Powered-By: ASP.NET
+  Date: Fri, 30 Dec 2016 22:12:02 GMT
+  Content-Length: '894'
+  Connection: close
+:content: "/*<!--*/(function() {var qss=\"&cb=\"+Math.floor(99999999999*Math.random());try{qss+=\"&ref=\"+encodeURIComponent(document.referrer)}catch(e$$12){}try{qss+=\"&sc_r=\"+encodeURIComponent(screen.width+\"x\"+screen.height)}catch(e$$13){}try{qss+=\"&sc_d=\"+encodeURIComponent(screen.colorDepth)}catch(e$$14){}\nvar
+  callDis=function(c,d){var a=function(){callDisInternal(c,d)};\"complete\"===document.readyState?setTimeout(a):window.addEventListener?window.addEventListener(\"load\",a,!1):window.attachEvent(\"onload\",a)},disCalled=!1,callDisInternal=function(c,d){if(!disCalled){disCalled=!0;var
+  a=\"//\"+d+\"/dis/dis.aspx\",b=document.createElement(\"iframe\");b.width=b.height=\"0\";b.style.display=\"none\";b.src=(a+\"?p=\"+c+qss).substring(0,2E3);(a=document.getElementById(\"criteoTagsContainer\"))?a.appendChild(b):criteo_q.push({event:\"appendTag\",\nelement:b})}};\n\r\ncallDis(5932,
+  'dis.us.criteo.com');\r\n})();\r\n\r\n\r\n/*-->*/"

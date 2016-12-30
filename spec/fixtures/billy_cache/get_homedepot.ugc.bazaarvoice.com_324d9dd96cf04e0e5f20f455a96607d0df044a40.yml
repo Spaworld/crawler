@@ -1,0 +1,35 @@
+---
+:scope: 
+:url: http://homedepot.ugc.bazaarvoice.com/static/1999aa/filteringBusy.gif
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: max-age=3600
+  Content-Type: image/gif
+  ETag: '"LJnjVZRlqlhKQaqjZzuXrwVkex4"'
+  Expires: Fri, 30 Dec 2016 05:15:44 GMT
+  Last-Modified: Thu, 29 Dec 2016 12:24:49 GMT
+  P3P: CP="Bazaarvoice does not have a P3P policy."
+  Server: nginx
+  Content-Length: '723'
+  Date: Fri, 30 Dec 2016 22:12:02 GMT
+  Connection: close
+:content: !binary |-
+  R0lGODlhEAALAPQAAP///8zMzPb29vT09Pr6+s3NzczMzNXV1eXl5d7e3vDw
+  8NLS0tra2ufn59/f3/Hx8dPT08zMzNvb2/n5+fb29vz8/NfX1/f39/v7++/v
+  7+vr6/Pz8/r6+gAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVh
+  dGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAg
+  jmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh
+  +QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tY
+  LyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxj
+  pGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJ
+  CwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacD
+  yIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUy
+  ICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55K
+  qdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGX
+  aOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAA
+  LAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSa
+  cYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGT
+  qLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAA
+  AAAA

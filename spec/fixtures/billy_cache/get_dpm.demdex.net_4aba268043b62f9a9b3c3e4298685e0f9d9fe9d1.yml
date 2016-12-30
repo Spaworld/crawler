@@ -1,0 +1,19 @@
+---
+:scope: 
+:url: http://dpm.demdex.net/id?d_visid_ver=1.5.4&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=F6421253512D2C100A490D45%40AdobeOrg&d_nsid=0&d_cb=s_c_il%5B0%5D._setMarketingCloudFields
+:body: ''
+:status: 302
+:method: get
+:headers:
+  Cache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+  Date: Fri, 30 Dec 2016 18:20:09 GMT
+  Expires: Thu, 01 Jan 2009 00:00:00 GMT
+  Location: http://dpm.demdex.net/id/rd?d_visid_ver=1.5.4&d_rtbd=json&d_ver=2&d_verify=1&d_orgid=F6421253512D2C100A490D45%40AdobeOrg&d_nsid=0&d_cb=s_c_il%5B0%5D._setMarketingCloudFields
+  P3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS
+    PUR COM NAV INT"
+  Pragma: no-cache
+  Set-Cookie: demdex=50981432369812804992378120583744643884;Path=/;Domain=.demdex.net;Expires=Wed,
+    28-Jun-2017 18:20:09 GMT
+  Content-Length: '0'
+  Connection: close
+:content: ''

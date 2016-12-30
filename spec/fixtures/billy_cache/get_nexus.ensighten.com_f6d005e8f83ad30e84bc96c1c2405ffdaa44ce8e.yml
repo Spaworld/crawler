@@ -1,0 +1,15 @@
+---
+:scope: 
+:url: http://nexus.ensighten.com/homedepot/prod/perf.rnc?cid=20&ns=1483136431706&ce=0&cs=0&dc=0&dclee=0&dcles=212&di=212&dl=4&dle=0&dls=0&fs=0&lee=0&les=0&rede=0&reds=0&reqs=0&resps=0&respe=6&scs=0&ues=0&uee=0
+:body: ''
+:status: 204
+:method: get
+:headers:
+  Cache-Control:
+  - no-cache
+  - no-store
+  Date: Fri, 30 Dec 2016 22:20:31 GMT
+  Expires: Fri, 30 Dec 2016 22:20:30 GMT
+  Server: nginx
+  Connection: close
+:content: ''

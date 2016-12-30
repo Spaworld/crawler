@@ -1,0 +1,23 @@
+---
+:scope: 
+:url: http://fls.doubleclick.net/activityj;src=3518820;type=thd;cat=thd001;u16=50911463810022688062407056325945544025;u5=;u1=The%20Home%20Depot?
+:body: ''
+:status: 200
+:method: get
+:headers:
+  P3P: policyref="http://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa
+    ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+  Timing-Allow-Origin: "*"
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Expires: Fri, 30 Dec 2016 18:20:10 GMT
+  Cache-Control: private, max-age=0
+  Content-Type: text/javascript; charset=UTF-8
+  X-Content-Type-Options: nosniff
+  Content-Disposition: attachment; filename="f.txt"
+  Server: cafe
+  Content-Length: '0'
+  X-XSS-Protection: 1; mode=block
+  Set-Cookie: test_cookie=CheckForPermission; expires=Fri, 30-Dec-2016 18:35:10 GMT;
+    path=/; domain=.doubleclick.net
+  Connection: close
+:content: ''

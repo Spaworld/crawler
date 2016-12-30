@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: http://www.google-analytics.com/collect?v=1&_v=j47&a=723484189&t=pageview&_s=1&dl=http%3A%2F%2Fwww.homedepot.com%2F&ul=en-us&de=UTF-8&dt=The%20Home%20Depot&sd=32-bit&sr=1024x768&vp=1024x768&je=0&_u=SGCAgEYI~&jid=1511253512&cid=1909532789.1483130068&tid=UA-32593878-1&z=347502720
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Access-Control-Allow-Origin: "*"
+  Date: Wed, 28 Dec 2016 00:31:58 GMT
+  Pragma: no-cache
+  Expires: Mon, 01 Jan 1990 00:00:00 GMT
+  Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+  X-Content-Type-Options: nosniff
+  Content-Type: image/gif
+  Server: Golfe2
+  Content-Length: '35'
+  Cache-Control: no-cache, no-store, must-revalidate
+  Age: '244950'
+  Connection: close
+:content: !binary |-
+  R0lGODlhAQABAID/AP///wAAACwAAAAAAQABAAACAkQBADs=

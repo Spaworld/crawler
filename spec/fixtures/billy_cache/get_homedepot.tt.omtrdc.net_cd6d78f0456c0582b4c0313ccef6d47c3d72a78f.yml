@@ -1,0 +1,14 @@
+---
+:scope: 
+:url: http://homedepot.tt.omtrdc.net/m2/homedepot/mbox/standard?mboxHost=www.homedepot.com&mboxSession=1483136248451-509385&mboxPC=1483136248451-509385.17_82&mboxPage=1483136249297-605694&screenHeight=768&screenWidth=1024&browserWidth=1024&browserHeight=768&browserTimeOffset=-300&colorDepth=32&HD_DC=origin&mboxCount=7&template=templateId%3AGlobalShell&env=www.homedepot.com&mboxMCGVID=50911463810022688062407056325945544025&mboxMCGLH=7&mboxAAMB=NRX38WO0n5BH8Th-nqAG_A&mboxMCSDID=3A56E80311B3A53A-3B4DA4C9185D3398&mbox=PIP_top&mboxId=0&mboxTime=1483118249427&mboxURL=http%3A%2F%2Fwww.homedepot.com%2Fp%2FAmerican-Standard-Acrylic-Standard-Series-51-in-x-30-in-Walk-In-Whirlpool-Tub-in-White-3051-110-WLW%2F100675927%3Fkeyword%3D3051.110.WLW&mboxReferrer=http%3A%2F%2Fwww.homedepot.com%2F&mboxVersion=53
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: Test & Target
+  Content-Type: text/javascript;charset=UTF-8
+  Date: Fri, 30 Dec 2016 22:17:28 GMT
+  Pragma: no-cache
+  Connection: close
+  Content-Length: '88'
+:content: mboxFactories.get('default').get('PIP_top',0).setOffer(new mboxOfferDefault()).loaded();

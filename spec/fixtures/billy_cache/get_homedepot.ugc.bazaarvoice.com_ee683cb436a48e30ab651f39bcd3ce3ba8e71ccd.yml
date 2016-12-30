@@ -1,0 +1,40 @@
+---
+:scope: 
+:url: http://homedepot.ugc.bazaarvoice.com/1999aa/crossdomain.htm?format=embedded
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: max-age=3600
+  Content-Language: en-US
+  Content-Type: text/html;charset=UTF-8
+  Expires: Fri, 30 Dec 2016 22:47:19 GMT
+  P3P: CP="Bazaarvoice does not have a P3P policy."
+  Server: nginx
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Content-Length: '644'
+  Connection: close
+:content: |-
+  <!DOCTYPE html> <html xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"
+  > <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="en-US" />
+  <meta name="viewport" content="width=device-width" />
+  <title></title>
+  <script src="http://homedepot.ugc.bazaarvoice.com/static/1999aa/bvapi.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+  $BV.Internal.configureAppLoader("rr",false,{"cmn/1999/lightbox":"lightbox","cmn/1999m/analyticsInternalHooks":"analyticsHooks","cmn/1999redes/analyticsInternalHooks":"analyticsHooks"});
+  $BV.analytics = $BV.analytics || {};
+  $BV.analytics.piiRegion = 'US';
+  $BV.Internal.require(['crossDomain'],function(c){c.initialize(
+  "(^|\\.)(bazaarvoice\\.com|homedepot\\.com)(:\\d+)?$",
+  "http://homedepot.ugc.bazaarvoice.com/1999aa/managecookie.htm?format=embedded",
+  "^((p|r|q|a|s|c)(fv|hf|if|rf)|abaf)_|(rm)|^(r|s)-commented-|^(goto|scroll-to-story-id|bvReturnPosition)$|^(PRR|QA)-split-|^fbs_|^fbsr_|^hint$" )});
+  </script>
+  <div id="BVpageRenderSuccess" style="display:none"></div>
+  </body>
+  </html>

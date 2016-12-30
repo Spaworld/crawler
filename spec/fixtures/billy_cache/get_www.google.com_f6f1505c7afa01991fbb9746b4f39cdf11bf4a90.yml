@@ -1,0 +1,20 @@
+---
+:scope: 
+:url: https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-32593878-1&cid=329087709.1483122072&jid=9214711&_v=j47&z=1446805796
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Content-Type: image/gif
+  Date: Fri, 30 Dec 2016 18:21:12 GMT
+  Pragma: no-cache
+  Expires: Fri, 01 Jan 1990 00:00:00 GMT
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+  Server: adclick_server
+  Content-Length: '42'
+  X-XSS-Protection: 1; mode=block
+  Alt-Svc: quic=":443"; ma=2592000; v="35,34"
+  Connection: close
+:content: !binary |-
+  R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7

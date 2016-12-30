@@ -21,3 +21,6 @@
 
 # SimpleCov
 coverage
+
+# PuffingBilly cache
+/spec/fixtures/billy_cache

@@ -3,7 +3,6 @@ SimpleCov.start
 
 require 'factory_girl_rails'
 require 'support/database_cleaner'
-require 'support/puffing_billy_driver.rb'
 
 require 'fantaskspec'
 
@@ -23,3 +22,5 @@ RSpec.configure do |config|
   config.infer_rake_task_specs_from_file_location!
 
 end
+
+FIXTURES_ROOT="#{Rails.root}/spec/fixtures"

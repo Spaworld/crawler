@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: https://network.bazaarvoice.com/sid.gif?_=72y522
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: no-cache, no-transform, must-revalidate, max-age=0
+  Content-Type: image/gif
+  Date: Fri, 30 Dec 2016 22:18:16 GMT
+  Expires: "-1"
+  P3P: policyref="/w3c/p3p.xml", CP="ADMa OUR IND DSP NON COR"
+  Set-Cookie:
+  - BVID=81d28b6c-d380-4b91-ab97-bb2d21face6f;Version=1;Domain=.network.bazaarvoice.com;Max-Age=31536000;Expires=Sat,
+    30 Dec 2017 22:18:16 GMT
+  - BVSID=062c12b3-7a68-4672-8089-63c9cad1382f;Version=1;Domain=.network.bazaarvoice.com;Max-Age=1800;Expires=Fri,
+    30 Dec 2016 22:48:16 GMT
+  Content-Length: '43'
+  Connection: close
+:content: !binary |-
+  R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==

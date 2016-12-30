@@ -1,0 +1,17 @@
+---
+:scope: 
+:url: http://6gpwkrxh.micpn.com/p/js/1.js
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: no-cache max-age=0
+  Expires: Thu, 01 Dec 1994 16:00:00 GMT
+  Pragma: no-cache
+  Content-Type: text/javascript
+  P3P: policyref="https://movableink.com/w3c/p3p.xml", CP="DEVa PSAa PSDa IVAa IVDa
+    OUR IND DSP NON COR NAV UNI"
+  Date: Fri, 30 Dec 2016 18:20:10 GMT
+  Connection: close
+  Transfer-Encoding: chunked
+:content: "// No _mibhv cookie detected"

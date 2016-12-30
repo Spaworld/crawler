@@ -63,6 +63,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-webkit (1.1.0)
+      capybara (~> 2.0, >= 2.0.2)
+      json
     cliver (0.3.2)
     codeclimate-engine-rb (0.4.0)
       virtus (~> 1.0)
@@ -328,6 +331,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
+  capybara-webkit
   database_cleaner
   dotenv-rails
   factory_girl_rails

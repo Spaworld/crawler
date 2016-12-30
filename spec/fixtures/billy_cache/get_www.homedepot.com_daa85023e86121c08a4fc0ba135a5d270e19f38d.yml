@@ -1,0 +1,71 @@
+---
+:scope: 
+:url: http://www.homedepot.com/p/static/node_modules/global-css/src/images/stars-orange.svg
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: image/svg+xml
+  X-VARNISH-ESI: 'true'
+  Last-Modified: Fri, 30 Sep 2016 13:47:04 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  X-Varnish: '10027542'
+  X-Varnish-Cache: MISS@core_p_grid
+  Vary: Accept-Encoding
+  Content-Encoding: gzip
+  Cache-Control: max-age=7200
+  Expires: Sat, 31 Dec 2016 00:18:17 GMT
+  Date: Fri, 30 Dec 2016 22:18:17 GMT
+  Content-Length: '594'
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+  access-control-max-age: '86400'
+  access-control-allow-credentials: 'false'
+  access-control-allow-headers: "*"
+  access-control-allow-methods: GET,POST
+  access-control-allow-origin: "*"
+:content: !binary |-
+  PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxv
+  bmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjcwcHgiIGhlaWdodD0iMTNweCIgdmll
+  d0JveD0iMCAwIDcwIDEzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8v
+  d3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cu
+  dzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPlN0YXJzLU9yYW5nZTwv
+  dGl0bGU+CiAgICA8ZyBpZD0iQnJvd3NlIiBzdHJva2U9Im5vbmUiIHN0cm9r
+  ZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4K
+  ICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQtOCIgZmlsbD0iI0Y5NjMwMiI+CiAg
+  ICAgICAgICAgIDxnIGlkPSJHcm91cCI+CiAgICAgICAgICAgICAgICA8cG9s
+  eWdvbiBpZD0i4piF4piF4piF4piF4piFIiBwb2ludHM9IjE0LjY3MDczNDIg
+  NS43NzA2NjEzOCAxMC4yODU2OTE3IDguOTEzNzg2MjUgMTEuNzg4MjU4NyAx
+  My44NTA3OTIxIDcuNjk0NTMwMiAxMC44NDU2NTgxIDMuNDE2ODEzOTEgMTMu
+  OTEyMTIxNCA0Ljk5NjA0MjUxIDguODk4NDUzOTQgMC42MTEgNS43NzA2NjEz
+  OCA1Ljg4NTMxNjg2IDUuNzcwNjYxMzggNy41NTY1MzkzNSAwLjY2NSA5LjI4
+  OTA5MTExIDUuNzcwNjYxMzgiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAg
+  IDxwb2x5Z29uIGlkPSLimIXimIXimIXimIXimIUtY29weSIgcG9pbnRzPSIy
+  OC42NzA3MzQyIDUuNzcwNjYxMzggMjQuMjg1NjkxNyA4LjkxMzc4NjI1IDI1
+  Ljc4ODI1ODcgMTMuODUwNzkyMSAyMS42OTQ1MzAyIDEwLjg0NTY1ODEgMTcu
+  NDE2ODEzOSAxMy45MTIxMjE0IDE4Ljk5NjA0MjUgOC44OTg0NTM5NCAxNC42
+  MTEgNS43NzA2NjEzOCAxOS44ODUzMTY5IDUuNzcwNjYxMzggMjEuNTU2NTM5
+  NCAwLjY2NSAyMy4yODkwOTExIDUuNzcwNjYxMzgiPjwvcG9seWdvbj4KICAg
+  ICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSLimIXimIXimIXimIXimIUtY29w
+  eS0yIiBwb2ludHM9IjQyLjY3MDczNDIgNS43NzA2NjEzOCAzOC4yODU2OTE3
+  IDguOTEzNzg2MjUgMzkuNzg4MjU4NyAxMy44NTA3OTIxIDM1LjY5NDUzMDIg
+  MTAuODQ1NjU4MSAzMS40MTY4MTM5IDEzLjkxMjEyMTQgMzIuOTk2MDQyNSA4
+  Ljg5ODQ1Mzk0IDI4LjYxMSA1Ljc3MDY2MTM4IDMzLjg4NTMxNjkgNS43NzA2
+  NjEzOCAzNS41NTY1Mzk0IDAuNjY1IDM3LjI4OTA5MTEgNS43NzA2NjEzOCI+
+  PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IuKYheKY
+  heKYheKYheKYhS1jb3B5LTMiIHBvaW50cz0iNTYuNjcwNzM0MiA1Ljc3MDY2
+  MTM4IDUyLjI4NTY5MTcgOC45MTM3ODYyNSA1My43ODgyNTg3IDEzLjg1MDc5
+  MjEgNDkuNjk0NTMwMiAxMC44NDU2NTgxIDQ1LjQxNjgxMzkgMTMuOTEyMTIx
+  NCA0Ni45OTYwNDI1IDguODk4NDUzOTQgNDIuNjExIDUuNzcwNjYxMzggNDcu
+  ODg1MzE2OSA1Ljc3MDY2MTM4IDQ5LjU1NjUzOTQgMC42NjUgNTEuMjg5MDkx
+  MSA1Ljc3MDY2MTM4Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9s
+  eWdvbiBpZD0i4piF4piF4piF4piF4piFLWNvcHktNCIgcG9pbnRzPSI3MC42
+  NzA3MzQyIDUuNzcwNjYxMzggNjYuMjg1NjkxNyA4LjkxMzc4NjI1IDY3Ljc4
+  ODI1ODcgMTMuODUwNzkyMSA2My42OTQ1MzAyIDEwLjg0NTY1ODEgNTkuNDE2
+  ODEzOSAxMy45MTIxMjE0IDYwLjk5NjA0MjUgOC44OTg0NTM5NCA1Ni42MTEg
+  NS43NzA2NjEzOCA2MS44ODUzMTY5IDUuNzcwNjYxMzggNjMuNTU2NTM5NCAw
+  LjY2NSA2NS4yODkwOTExIDUuNzcwNjYxMzgiPjwvcG9seWdvbj4KICAgICAg
+  ICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+

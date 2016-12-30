@@ -1,0 +1,14 @@
+---
+:scope: 
+:url: http://va.v.liveperson.net/api/js/31564604?sid=NC9ZFBUHTnaoe_IMSefApA.d2e8289f53d5b5d76fa1fb8f055ffa82fd61d99d&cb=lpCb79301x16032&t=ip&ts=1483135969854&pid=3671300464&tid=6647479161&vid=c1MzM5ZmI2OGNhYjdmMDFl
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Date: Fri, 30 Dec 2016 22:12:49 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: close
+  Server: ws
+  Content-Encoding: gzip
+:content: lpCb79301x16032({"smtConf":{"keepAliveFreq":10},"messagesToVisitor":[]});

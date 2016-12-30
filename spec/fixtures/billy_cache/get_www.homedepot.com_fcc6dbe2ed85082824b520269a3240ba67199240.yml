@@ -1,0 +1,27 @@
+---
+:scope: 
+:url: http://www.homedepot.com/p/static/node_modules/olt-global-styles/images//btns/arrow.png
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Server: nginx
+  Content-Type: image/png
+  Content-Length: '177'
+  X-VARNISH-ESI: 'true'
+  Last-Modified: Thu, 15 Sep 2016 18:49:00 GMT
+  Accept-Ranges:
+  - bytes
+  - bytes
+  X-Varnish: '9143121'
+  X-Varnish-Cache: MISS@core_p_grid
+  Cache-Control: max-age=7200
+  Expires: Sat, 31 Dec 2016 00:12:01 GMT
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+  Set-Cookie: MCC_THROTTLE=true; path=/; domain=.homedepot.com
+:content: !binary |-
+  iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0
+  d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFNJREFUeNpiZACC////M7yo
+  Nv7PgAUwMRAAjDATYADdJLAJjIyMMMn3WK2AugEkKQDEHyRazzLCFWCRFERx
+  w/MqIxRJkHXIbgJzQIpQBJEAQIABADphLht+UAtdAAAAAElFTkSuQmCC

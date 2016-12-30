@@ -1,0 +1,21 @@
+---
+:scope: 
+:url: http://homedepot.ugc.bazaarvoice.com/answers/1999/static/moreQuestionsAndAnswers.gif
+:body: ''
+:status: 200
+:method: get
+:headers:
+  Cache-Control: max-age=3600
+  Content-Type: image/gif
+  ETag: '"GH-8ozxpwXe_8SvZjs33ugXgebo"'
+  Expires: Fri, 30 Dec 2016 10:41:30 GMT
+  Last-Modified: Thu, 29 Dec 2016 11:35:52 GMT
+  P3P: CP="Bazaarvoice does not have a P3P policy."
+  Server: nginx
+  Content-Length: '131'
+  Date: Fri, 30 Dec 2016 22:12:01 GMT
+  Connection: close
+:content: !binary |-
+  R0lGODlhCgALAPMAAJCnyd7a39PU1dDg8L3J1fDw8MDI0P/4/5Cw4N7e35GT
+  lTI7RfP4zwAAAAAAAAAAACH5BAEAAAwALAAAAAAKAAsAAAQwUEnFqlWnDGoZ
+  1oZ0HUi5ENw3GGfokSaALInKEmy97LtMJ0BFQICjXXi7hAXIBEYAADs=

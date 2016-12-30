@@ -26,7 +26,10 @@ RSpec.describe PoltergeistCrawler do
 
   it 'should append hd url to lisitng' do
     expect(Listing).to receive(:append_hd_url)
-      .with('foo', 'bar')
+      .with('foo',
+            'bar',
+            { channel: 'hd',
+              force_update: false} )
     crawler.append_url_to_listing('foo','bar')
   end
 

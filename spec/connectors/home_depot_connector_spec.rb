@@ -44,9 +44,9 @@ RSpec.describe HomeDepotConnector do
 
     before do
       @listing = create(:listing)
-      sample_page = File.read("#{Rails.root}/spec/fixtures/standard_page.html")
+      product_page = File.read("#{Rails.root}/spec/fixtures/pages/home_depot/product_page.html")
       proxy.stub("http://www.homedepot.com/s/#{@listing.sku}")
-        .and_return(text: sample_page)
+        .and_return(text: product_page)
     end
 
     describe 'visting listing pages' do
@@ -55,6 +55,12 @@ RSpec.describe HomeDepotConnector do
         connector.get_listing_page_url(@listing.sku)
         expect(connector.driver.page)
           .to have_content('Home Depot')
+      end
+
+      it 'should find the search field' do
+        connector.get_listing_page_url(@listing.sku)
+        expect(connector.driver.page.body)
+          .to include('#headerSearch')
       end
 
       it 'should handle wrong / empty sku injection' do
