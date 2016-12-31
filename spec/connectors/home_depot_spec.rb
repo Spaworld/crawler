@@ -86,9 +86,12 @@ RSpec.describe HomeDepot do
       end
 
       context 'when listing does not exist' do
+
         it 'should check if page exists' do
-          expect { connector.get_listing_page('foobarinnio') }.to change { @driver.current_url }
+          expect { connector.get_listing_page('123') }
+            .to change { @driver.current_url }
         end
+
       end
 
     end
