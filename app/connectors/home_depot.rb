@@ -9,6 +9,7 @@ class HomeDepot < BaseConnector
     skus.each do |sku|
       puts "--- starting sku: #{sku}"
       get_listing_page(sku)
+      skus.delete(sku)
     end
   end
 
@@ -17,9 +18,10 @@ class HomeDepot < BaseConnector
   end
 
   def get_listing_page(sku)
+    return if Listing.record_exists?(sku)
     driver.fill_in('headerSearch', with: sku)
     driver.find_field('headerSearch').native.send_keys(:return)
-    puts ">>> listing page found? #{listing_page_found?(sku)}"
+    puts ">>> listing page found? #{listing_page_found?(sku)}, | SKU: #{sku}"
     listing_page_found?(sku) ? parse_page(sku) : return
   end
 

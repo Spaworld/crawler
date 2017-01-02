@@ -15,6 +15,8 @@ gem 'puma'
 gem 'capybara'
 gem 'poltergeist', '~> 1.11'
 gem 'capybara-webkit'
+gem 'sidekiq'
+gem 'foreman'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'

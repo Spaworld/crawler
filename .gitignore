@@ -24,3 +24,9 @@ coverage
 
 # PuffingBilly cache
 /spec/fixtures/billy_cache
+
+# OpenOffice
+lib/.~*
+
+# Redis
+*.rdb
