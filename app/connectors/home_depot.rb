@@ -2,7 +2,15 @@
 # navigating Home Depot
 class HomeDepot < BaseConnector
 
-  HOME_URL = 'http://www.homedepot.com'
+  HOME_URL = 'http://www.homedepot.com/'
+
+  def process_listings(skus)
+    set_home_page
+    skus.each do |sku|
+      puts "--- starting sku: #{sku}"
+      get_listing_page(sku)
+    end
+  end
 
   def set_home_page
     driver.visit(HOME_URL)
@@ -10,27 +18,24 @@ class HomeDepot < BaseConnector
 
   def get_listing_page(sku)
     driver.fill_in('headerSearch', with: sku)
-    # driver.click_button('Submit Search')
     driver.find_field('headerSearch').native.send_keys(:return)
-    parse_page(sku)
+    puts ">>> listing page found? #{listing_page_found?(sku)}"
+    listing_page_found?(sku) ? parse_page(sku) : return
   end
 
   def parse_page(sku)
-    if listing_found?(sku)
     append_url_to_listing(sku,
                           driver.current_url,
                           abbrev: 'hd')
-    else
-      return
-    end
   end
 
   private
 
-  def listing_found?(sku)
-    driver.current_url != HOME_URL &&
-      !driver.doc.find('An internal homedepot.com error occurred.') &&
-      driver.doc.find("Model # #{sku}")
+  def listing_page_found?(sku)
+    # sleeping here to avoid stupid race conditions
+    # caused by outgoing tracking pixel GETs
+    sleep(0.5)
+    driver.doc.at('.modelNo').present?
   end
 
 end

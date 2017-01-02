@@ -17,19 +17,31 @@ class Listing < ActiveRecord::Base
   CHANNELS.each do |channel_name|
     define_singleton_method("append_#{channel_name}_url") do |sku, url, force_update|
       listing = find_by(sku: sku)
-      if force_update?
-        if listing.present?
-          listing.update_attributes("#{channel_name}_url": url)
-        else
-          create!(sku: sku, "#{channel_name}_url":url)
-        end
+      # puts 'im in Listing'
+      puts "=== SKU #{sku}"
+      puts "--- url #{url}"
+      puts "--- force_update  #{force_update}"
+      if force_update
+        listing.update_attributes!("#{channel_name}_url": url)
+      elsif listing
+        puts '--- listing already exists'
+        return
       else
-        if listing.exists?
-          return
-        else
-          create!(sku: sku, "#{channel_name}_url":url)
-        end
+        puts '--- updating listing'
+        create!(sku: sku, "#{channel_name}_url":url)
       end
+      # if force_update
+      #   if listing.present?
+      #     listing.update_attributes("#{channel_name}_url": url)
+      #   else
+      #     create!(sku: sku, "#{channel_name}_url":url)
+      #   end
+      # else
+      #   if listing
+      #     return
+      # else
+      #   create!(sku: sku, "#{channel_name}_url":url)
+      # end
     end
   end
 

@@ -13,7 +13,8 @@ class BillyDriver
       options = {
         phantomjs_options: [
           '--ignore-ssl-errors=yes',
-          "--proxy=#{Billy.proxy.host}:#{Billy.proxy.port}"
+          "--proxy=#{Billy.proxy.host}:#{Billy.proxy.port}",
+          '--load-images=no'
         ],
         js_errors: false
       }
