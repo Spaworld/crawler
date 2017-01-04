@@ -18,6 +18,7 @@ class PoltergeistCrawler
         phantomjs_logger: open('/dev/null')
       })
     end
+
     Capybara.run_server = false
     Capybara.default_driver = :poltergeist_crawler
     page.driver.headers = {
@@ -36,27 +37,8 @@ class PoltergeistCrawler
     Listing.send("append_#{channel}_url", sku, url, force_update: false)
   end
 
-  private
-
-  def translate_channel(abbrev)
-    case abbrev
-    when hd
-      'hd'
-    when wayfair
-      'wayfair'
-    when menards
-      'menards'
-    when overstock
-      'overstock'
-    when lowes
-      'lowes'
-    when build
-      'build'
-    when hmb
-      'hmb'
-    when houzz
-      'houzz'
-    end
+  def screenshot(name="public_screenshot_")
+    page.driver.render("public/#{name}.jpg", full: true)
   end
 
 end

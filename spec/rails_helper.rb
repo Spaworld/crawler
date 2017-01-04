@@ -12,8 +12,9 @@ require 'capybara/poltergeist'
 require 'billy/capybara/rspec'
 require 'support/puffing_billy_config'
 require 'support/billy_driver'
+require 'support/billy_selenium_driver'
 
-Capybara.javascript_driver = :webkit_billy
+Capybara.javascript_driver = :selenium_billy
 
 Rails.application.load_tasks
 

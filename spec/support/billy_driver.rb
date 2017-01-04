@@ -16,6 +16,7 @@ class BillyDriver
           "--proxy=#{Billy.proxy.host}:#{Billy.proxy.port}",
           '--load-images=no'
         ],
+        phantomjs_logger: File.open("#{Rails.root}/spec/fixtures/logs/js_log.txt", 'w'),
         js_errors: false
       }
       Capybara::Poltergeist::Driver.new(app, options)
@@ -36,6 +37,10 @@ class BillyDriver
   def append_url_to_listing(sku, url)
     return unless @listing_url
     Listing.append_hd_url(sku, url)
+  end
+
+  def screenshot(name="screenshot_")
+    page.driver.render("public/#{name}.jpg", full: true)
   end
 
 end

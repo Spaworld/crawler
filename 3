@@ -1,0 +1,222 @@
+require 'rails_helper'
+require 'shared_examples/a_driver'
+
+RSpec.describe Menards do
+
+  let(:subject) { Menards.new(BillyDriver.new) }
+
+  it_behaves_like('a driver')
+
+  describe 'crawling' do
+
+    before do
+      product_page = File.open("#{page_fixtures}/menards/product.html")
+      proxy.stub('http://www.menards.com/main/p-1482823193202.html')
+        .and_return(body: product_page)
+    end
+
+    let(:connector) { subject }
+    let(:driver)    { subject.driver }
+
+    describe 'visiting product pages' do
+
+      # TODO move to shared_context
+      it 'should have a BASE URL' do
+        expect(Menards::BASE_URL)
+          .to_not be_nil
+      end
+
+      it 'should visit the product url' do
+        connector.visit_product_page('1482823193202')
+        expect(driver.current_url)
+          .to eq('http://www.menards.com/main/p-1482823193202.html')
+      end
+
+      context 'when menards product id is nil' do
+
+        it 'should not visit the product page' do
+          expect { connector.visit_product_page(nil) }
+            .to_not change{ driver.current_url }
+        end
+
+      end
+
+    end # visting product pages
+
+    describe 'fetching product attributes' do
+
+      before do
+        connector.visit_product_page('1482823193202')
+      end
+
+      it 'should be able to fetch url' do
+        expect { connector.fetch_product_attributes('1482823193202') }
+          .to change { connector.listing_attrs[:url] }
+          .from(nil)
+          .to('http://www.menards.com/main/p-1482823193202.html')
+      end
+
+      context 'when menards id is nil' do
+
+        it 'should not parse product attrs' do
+        end
+
+      end # when id is nil
+
+    end # fetching product attributes
+
+  end # crawling
+
+end
+
+# RSpec.describe Menards do
+
+#   context 'init' do
+
+#     let(:subject) { Menards.new(BillyDriver.new) }
+
+#     context 'with valid driver injection' do
+
+#       it { is_expected.to respond_to(:driver) }
+
+#     end
+
+#     context 'with invalid driver injection' do
+
+#       it 'should raise ArgumentError exception' do
+#         expect { Menards.new(nil) }
+#           .to raise_error(ArgumentError)
+#       end
+
+#     end
+
+#   end
+
+#   context 'sitemap navigation' do
+#     let(:subject) { Menards.new(BillyDriver.new) }
+#     it 'should visit the sitemap URL' do
+#       subject.fetch_sitemaps
+#       subject.combine_sitemaps
+#     end
+#   end
+
+#   context 'naviating' do
+
+#     let(:connector) { Menards.new(BillyDriver.new) }
+#     let(:driver)    { connector.driver }
+
+#     describe 'setting home page' do
+
+#       before do
+#         home_page = File.read("#{Rails.root}/spec/fixtures/pages/menards/index.html")
+#         Billy.proxy.stub(Menards::HOME_URL)
+#           .and_return(body: home_page)
+#       end
+
+#       it 'should navigates to home page' do
+#         connector.set_home_page
+#         expect(driver.page)
+#           .to have_content('Menards')
+#       end
+
+#       it 'should set current url to Menards home page' do
+#         expect { connector.set_home_page }
+#           .to change{ driver.current_url }
+#       end
+
+#       it 'should see the search bar' do
+#         connector.set_home_page
+#         search_field = driver.page.find('#input')
+#         expect(search_field)
+#           .to_not be_nil
+#       end
+
+#     end
+
+#     describe 'accessing the home page' do
+
+#       before do
+#         home_page = File.read("#{Rails.root}/spec/fixtures/pages/menards/index.html")
+#         Billy.proxy.stub(Menards::HOME_URL)
+#           .and_return(body: home_page)
+#         successful_search_results = File.read("#{Rails.root}/spec/fixtures/pages/menards/index.html")
+#         Billy
+#           .proxy
+#           .stub('http://www.menards.com/main/search.html?search=22LSAZ087-096-22')
+#           .and_return(body: successful_search_results)
+#         Billy
+#           .proxy
+#           .stub('http://www.menards.com/main/search.html?search=%22LSAZ087-096%22')
+#           .and_return(body: successful_search_results)
+#         connector.set_home_page
+#         connector.get_listing_page('LSAZ087-096')
+#       end
+
+#       it 'should see the search results page' do
+#         expect(driver.page)
+#           .to have_content('ANZZI')
+#       end
+
+#     end
+
+#   end
+
+# end
+
+
+#   # RSpec.describe Menards do
+
+#   #   let(:subject) { Menards.new(WebKitBilly.new) }
+
+#   #   #TODO add shared context with Driver
+#   #   # to test < (inheritance)
+#   #   context 'init' do
+
+#   #     context 'with valid driver injection' do
+
+#   #       it { is_expected.to respond_to(:driver) }
+
+#   #     end
+
+#   #     context 'with invalid driver injection' do
+
+#   #       it 'should raise ArgumentError exception' do
+#   #         expect { Menards.new(nil) }
+#   #           .to raise_error(ArgumentError)
+#   #       end
+
+#   #     end
+
+#   #   end
+
+#   #   describe 'navigation' do
+
+#   #     let(:connector) { subject }
+
+#   #     describe 'setting home page' do
+
+#   #       it 'should navigate to home page' do
+#   #         expect(connector.driver)
+#   #           .to receive(:visit)
+#   #           .with(Menards::HOME_URL)
+#   #         connector.set_home_page
+#   #       end
+
+#   #       it 'should see the home page' do
+#   #         connector.set_home_page
+#   #         expect(connector.driver.page.body)
+#   #           .to have_contnet('Menards')
+#   #       end
+
+#   #     end
+
+
+#   #     it 'should enter product sku with quotes' do
+#   #       connector.set_home_page
+#   #       expect{ connector.input_product_sku('123') }
+#   #         .to change(driver.current_url)
+#   #     end
+
+#   #   end
+
+#   # end

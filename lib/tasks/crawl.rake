@@ -6,4 +6,10 @@ namespace :crawl do
     HDCrawler.new.perform(skus_array)
   end
 
+  desc 'crawls menards listings'
+  task :menards, [:skus] => [:environment] do |task, args|
+    skus_array = args[:skus].split(' ').flatten
+    MenardsCrawler.new.perform(skus_array)
+  end
+
 end

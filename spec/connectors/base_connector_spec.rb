@@ -1,60 +1,15 @@
 require 'rails_helper'
+require 'shared_examples/a_driver'
 
 RSpec.describe BaseConnector do
 
-  context 'initialization' do
+  let(:subject) { BaseConnector.new(BillyDriver.new) }
 
-    describe 'driver' do
+  it_behaves_like('a driver')
 
-      let(:subject) { BaseConnector.new(BillyWebkitDriver.new) }
+  describe 'data manipulation' do
 
-      it { is_expected.to respond_to(:driver) }
-
-      it 'should have a valid driver' do
-        connector = BaseConnector.new(
-          PuffingBillyCrawler.new)
-        expect(connector.driver.class)
-          .to eq(PuffingBillyCrawler)
-      end
-
-      it 'should not railse Argument Error when /
-      valid driver is injected' do
-        valid_driver = PuffingBillyCrawler.new
-        expect { BaseConnector.new(valid_driver) }
-          .to_not raise_error
-      end
-
-      it 'should raise Invalid driver when nil /
-      driver is injected' do
-        expect { BaseConnector.new(nil) }
-          .to raise_error(ArgumentError, 'Invalid driver')
-      end
-
-      it 'should raise Invalid driver when falsey /
-      driver is injected' do
-        expect { BaseConnector.new(Class.new) }
-          .to raise_error(ArgumentError, 'Invalid driver')
-      end
-
-    end
-
-  end
-
-  context 'crawling' do
-
-    let(:subject) { BaseConnector.new(PuffingBillyCrawler.new) }
-
-    it 'is able to navigate to pages' do
-      subject.driver.visit(HomeDepot::HOME_URL)
-      expect(subject.driver.page)
-        .to have_content('Home Depot')
-    end
-
-  end
-
-  context 'data manipulation' do
-
-    let(:connector) { BaseConnector.new(PuffingBillyCrawler.new) }
+    let(:connector) { subject }
 
     describe 'appending a url to listing' do
 
