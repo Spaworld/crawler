@@ -9,7 +9,6 @@ RSpec.describe Listing, type: :model do
       .to_not be_nil
   end
 
-
   describe 'appending vendor attributes' do
 
     before do
@@ -27,9 +26,31 @@ RSpec.describe Listing, type: :model do
 
       it 'should update listing vendor attrs' do
         Listing.append_vendor_attrs(@listing.sku, @attr_hash)
-        expect(Listing.first[:vendors][:hd]).to_not be_empty
+        expect(Listing.last[:vendors][:hd]).to_not be_empty
         expect(Listing.find_by(sku: @listing.sku).vendors[:hd])
           .to_not be_nil
+      end
+
+      it 'should update listings\'s vendor attrs' do
+        expect {
+          Listing.append_vendor_attrs(@listing.sku, @attr_hash)
+        }.to change {
+          @listing.reload.vendors }
+      end
+
+      it 'should update vendor_id attr' do
+        listing = create(:listing, :with_menards_url)
+        expect {
+          Listing.append_hd_url(listing.sku, @attr_hash[:vendor_url])
+        }.to change {
+          listing.reload.hd_url }
+      end
+
+      it 'should not overwite previous vendor_id entries' do
+        listing = create(:listing, :with_menards_url)
+        Listing.append_hd_url(listing.sku, 'hd')
+        expect(listing.reload.hd_url).to_not be_nil
+        expect(listing.menards_url).to_not be_nil
       end
 
     end

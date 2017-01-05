@@ -15,7 +15,10 @@ class PoltergeistCrawler
         :js_errors => false,
         :inspector => false,
         :timeout   => 123,
-        phantomjs_logger: open('/dev/null')
+        phantomjs_logger: open('/dev/null'),
+        phantomjs_options: [
+        '--load-images=no'
+        ]
       })
     end
 

@@ -1,129 +1,138 @@
 require 'rails_helper'
+require 'shared_examples/a_driver'
 
 RSpec.describe HomeDepot do
 
-  let(:subject) { HomeDepot.new(BillyDriver.new) }
+  let(:subject)   { HomeDepot.new(BillyDriver.new) }
+  let(:connector) { subject }
+  let(:driver)    { subject.driver }
 
-  #TODO add shared context with Driver
-  # to test < (inheritance)
-  context 'init' do
+  it_behaves_like('a driver')
 
-    context 'with valid driver injection' do
+  describe 'crawling' do
 
-      it { is_expected.to respond_to(:driver) }
-
+    before do
+      product_page = File.read("#{page_fixtures}/home_depot/product.html")
+      proxy.stub("#{HomeDepot::BASE_URL}204766736")
+        .and_return(body: product_page)
     end
 
-    context 'with invalid driver injection' do
+    describe 'visiting product pages' do
 
-      it 'should raise ArgumentError exception' do
-        expect { HomeDepot.new(nil) }
-          .to raise_error(ArgumentError)
-      end
-
-    end
-
-  end
-
-  describe 'navigation' do
-
-    let(:connector) { subject }
-
-    describe 'setting home page' do
-
-      it 'should navigate to home page' do
-        expect(connector.driver)
-          .to receive(:visit)
-          .with(HomeDepot::HOME_URL)
-        connector.set_home_page
-      end
-
-      it 'should set driver#page to homepage' do
-        connector.set_home_page
-        expect(connector.driver.page.body)
-          .to include('Home Depot')
-      end
-
-    end
-
-    describe 'getting listing page' do
-
-      before do
-        @driver = connector.driver
-        connector.set_home_page
-        file_path = 'lib/skus.csv'
-        @sku = CSVFeedParser.fetch_skus(file_path).first
-      end
-
-      it 'should have cached home page' do
-        expect(@driver.page)
+      it 'should have a BASE URL' do
+        expect(HomeDepot::BASE_URL)
           .to_not be_nil
       end
 
-      it 'should fill in search bar with SKU' do
-        allow(@driver)
-          .to receive(:click_button)
-        expect(@driver)
-          .to receive(:fill_in)
-          .with('headerSearch', { with: @sku })
-        connector.get_listing_page(@sku)
+      it 'should visit the product url' do
+        connector.visit_product_page('204766736')
+        expect(driver.current_url)
+          .to eq('http://www.homedepot.com/p/204766736')
       end
 
-      it 'should check if listing page exists' do
-        expect(connector)
-          .to receive(:listing_page_found?)
-        connector.get_listing_page(@sku)
-      end
+      context 'when menards product id is nil' do
 
-      it 'should handle nil arg passed to #listing_page_found' do
-        expect{ connector.send(:listing_page_found?, nil) }
-          .to_not raise_error
-
-      end
-
-      it 'should handle invalid arg passed to #listing_page_found' do
-        expect{ connector.send(:listing_page_found?, self) }
-          .to_not raise_error
-      end
-
-      context 'when listing exists' do
-
-        it 'should navigate to listing page' do
-          expect { connector.get_listing_page(@sku) }
-            .to change { @driver.current_url }
-            .from (HomeDepot::HOME_URL)
+        it 'should not visit the product page' do
+          expect { connector.visit_product_page(nil) }
+            .to_not change{ driver.current_url }
         end
 
-        it 'should create new Listing' do
-          expect { connector.get_listing_page(@sku) }
-            .to change { Listing.count(1) }
+        it 'should not parse product attrs' do
+          expect(driver).to_not receive(:visit)
+          connector.visit_product_page(nil)
         end
 
-        it 'should update new Listing url' do
-          connector.get_listing_page(@sku)
-          expect(Listing.first.hd_url).to_not be_nil
-          expect(Listing.first.hd_url).to_not eq(HomeDepot::HOME_URL)
-        end
+      end # when product_id.nil?
 
+    end # visting product pages
+
+    describe 'fetching product attributes' do
+
+      before do
+        connector.visit_product_page('204766736')
       end
 
-      context 'when listing does not exist' do
-
-        it 'should know that a listing page does not exist' do
-          expect(connector.send(:listing_page_found?, 'huita'))
-            .to be_falsey
-        end
-
-        it 'should not update an existing listing' do
-          expect_any_instance_of(Listing)
-            .to_not receive(:update)
-          connector.get_listing_page('huita')
-        end
-
+      it 'should be able to product attributes' do
+        expect {
+          connector.fetch_product_attributes('204766736')
+        }.to change {
+          connector.listing_attrs
+        } .from(nil)
+          .to(a_kind_of(Hash))
       end
 
+      context 'specific attributes' do
+
+        it 'should store product vendor' do
+          connector.fetch_product_attributes('1482823193202')
+          expect(connector.listing_attrs[:vendor])
+            .to eq('hd')
+        end
+
+        it 'should store product page url' do
+          connector.fetch_product_attributes('204766736')
+          expect(connector.listing_attrs[:vendor_url])
+            .to eq('http://www.homedepot.com/p/204766736')
+        end
+
+        it 'should store product\'s vendor id' do
+          connector.fetch_product_attributes('204766736')
+          expect(connector.listing_attrs[:vendor_id])
+            .to eq('204766736')
+        end
+
+        it 'should store product\'s vendor sku' do
+          connector.fetch_product_attributes('204766736')
+          expect(connector.listing_attrs[:vendor_sku])
+            .to eq('HD4872CS')
+        end
+
+        it 'should store product\'s vendor title' do
+          connector.fetch_product_attributes('204766736')
+          expect(connector.listing_attrs[:vendor_title])
+            .to eq('Peridot 6 ft. Acrylic Reversible Drain Rectangular Bathtub in White')
+        end
+
+        it 'should store product\'s vendor price' do
+          connector.fetch_product_attributes('204766736')
+          expect(connector.listing_attrs[:vendor_price])
+            .to eq('$739.46')
+        end
+
+      end # specific attributes
+
+    end # fetching product attributes
+
+    context 'when listing page is not found' do
+
+      before do
+        not_found_page = File.read("#{page_fixtures}/home_depot/404.html")
+        proxy.stub('http://www.homedepot.com/p/kozladoy')
+          .and_return(body: not_found_page)
+      end
+
+      it 'should see a not found message' do
+        connector.visit_product_page('kozladoy')
+        expect(connector.send(:page_not_found?))
+          .to be_truthy
+      end
+
+    end # not-found message
+
+  end # crawling
+
+  context 'storing product attributes' do
+
+    it 'should store product attributes' do
+      expect_any_instance_of(BaseConnector)
+        .to receive(:store_attrs)
+        .with('123', a_kind_of(Hash))
+      connector.store_attrs('123', {})
     end
 
-  end
+    it 'should append product attrs to listing vendor' do
+      Listing.append_menards_url( '123', 'foo.com' )
+    end
 
+  end # storing attributes
 end

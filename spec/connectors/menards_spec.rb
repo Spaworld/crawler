@@ -109,11 +109,6 @@ RSpec.describe Menards do
           .and_return(body: not_found_page)
       end
 
-      it 'should see a not-found message' do
-        expect { connector.visit_product_page('kozladoy')}
-          .to raise_error(PageNotFoundError)
-      end
-
     end # not-found message
 
   end # crawling

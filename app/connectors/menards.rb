@@ -8,8 +8,11 @@ class Menards < BaseConnector
     nodes.each_with_index do |node, index|
       id = node[0]
       sku = node[1]
-      next if Listing.record_exists?(sku)
-      puts "=== starting id: #{id} | iteration: #{index}"
+      binding.pry
+      next if Listing.data_present?(sku, 'menards')
+      puts "=== starting id: #{id} \
+      | sku: #{sku} \
+      | iteration: #{index}"
       visit_product_page(id)
       next if page_not_found?
       fetch_product_attributes(id)

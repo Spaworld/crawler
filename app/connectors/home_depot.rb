@@ -1,44 +1,54 @@
 # Encapsulates instructions for
 # navigating Home Depot
 class HomeDepot < BaseConnector
+  attr_reader :listing_attrs
 
-  HOME_URL = 'http://www.homedepot.com/'
+  BASE_URL = 'http://www.homedepot.com/p/'
 
-  def process_listings(skus)
-    set_home_page
-    skus.each do |sku|
-      puts "--- starting sku: #{sku}"
-      get_listing_page(sku)
-      skus.delete(sku)
+  def process_listings(nodes)
+    nodes.each_with_index do |node, index|
+      id = node[0]
+      sku = node[1]
+      # next if Listing.record_exists?(sku)
+      next if Listing.data_present?(sku, 'hd')
+      puts '>>> listing exists' if Listing.data_present?(sku, 'hd')
+      puts "=== starting id: #{id} \
+      | sku: #{sku} \
+      | iteration: #{index}"
+      visit_product_page(id)
+      next if page_not_found?
+      fetch_product_attributes(id)
+      vendor_sku = @listing_attrs[:vendor_sku]
+      vendor_url = @listing_attrs[:vendor_url]
+      Listing.append_hd_url(
+        vendor_sku,
+        vendor_url)
+      Listing.append_vendor_attrs(
+        vendor_sku,
+        @listing_attrs)
     end
   end
 
-  def set_home_page
-    driver.visit(HOME_URL)
+  def visit_product_page(hd_id)
+    driver.visit("#{BASE_URL}#{hd_id}") unless hd_id.nil?
   end
 
-  def get_listing_page(sku)
-    return if Listing.record_exists?(sku)
-    driver.fill_in('headerSearch', with: sku)
-    driver.find_field('headerSearch').native.send_keys(:return)
-    puts ">>> listing page found? #{listing_page_found?(sku)}, | SKU: #{sku}"
-    listing_page_found?(sku) ? parse_page(sku) : return
-  end
-
-  def parse_page(sku)
-    append_url_to_listing(sku,
-                          driver.current_url,
-                          abbrev: 'hd')
+  def fetch_product_attributes(hd_id)
+    @listing_attrs =
+      { vendor:       'hd',
+        vendor_url:   driver.current_url,
+        vendor_id:    driver.doc.at('#product_internet_number').text,
+        vendor_sku:   driver.doc.at('.modelNo').text.split(' ').last,
+        vendor_title: driver.doc.at('h1.product-title__title').text,
+        vendor_price: driver.doc.at('#ajaxPrice').text.strip }
   end
 
   private
 
-  def listing_page_found?(sku)
-    # sleeping here to avoid stupid race conditions
-    # caused by outgoing tracking pixel GETs
-    sleep(0.5)
-    driver.doc.at('.modelNo').present?
+  def page_not_found?
+    driver.current_url == BASE_URL ||
+      driver.doc.at('.no-results').present? ||
+      driver.doc.at('.content_margin_404page').present?
   end
 
 end
-
