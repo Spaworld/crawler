@@ -3,6 +3,8 @@ rake = Rake.application
 rake.init
 rake.load_rakefile
 
-file_path = 'lib/anzzi_skus.csv'
-skus = CSVFeedParser.fetch_skus(file_path)
-rake['crawl:menards'].invoke(skus)
+file_path = 'lib/menards_skus.csv'
+nodes = CSVFeedParser.fetch_menards_skus(file_path)
+# rake['crawl:menards'].invoke(ids)
+connector = Menards.new(PoltergeistCrawler.new)
+connector.process_listings(nodes)

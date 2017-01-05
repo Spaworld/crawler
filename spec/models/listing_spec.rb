@@ -2,97 +2,57 @@ require 'rails_helper'
 
 RSpec.describe Listing, type: :model do
 
-  it { should validate_presence_of(:sku) }
+  it { should validate_presense_of(:sku) }
 
-  it 'should validate channel url format' do
-    expect{
-      create(:listing, hd_url: 'foo')
-    }.to raise_error(
-      ActiveRecord::RecordInvalid)
+  it 'should have vendors' do
+    expect(Listing::VENDORS)
+      .to_not be_nil
   end
 
-  describe 'CHANNELS' do
 
-    let (:subject) { Listing }
-
-    it { is_expected.to be_const_defined(:CHANNELS) }
-
-    it 'should include home depot' do
-      expect(Listing::CHANNELS).to include('hd')
+  describe 'appending vendor attributes' do
+    pending
+    before do
+      @attr_hash = {
+        vendor:       'hd',
+        vendor_id:    '12312312',
+        vendor_sku:   '123',
+        vendor_url:   Faker::Internet.url,
+        vendor_title: Faker::Commerce.product_name,
+        vendor_price: Faker::Commerce.price }
+      @listing = create(:listing, sku: '123')
     end
 
-    it 'should include menards' do
-      expect(Listing::CHANNELS).to include('menards')
-    end
+    context 'when listing exists' do
 
-    it 'should include overstock' do
-      expect(Listing::CHANNELS).to include('overstock')
-    end
+      it 'should update listing vendor attrs' do
 
-    it 'should include lowes' do
-      expect(Listing::CHANNELS).to include('lowes')
-    end
+          Listing.append_vendor_attrs(@listing.sku, @attr_hash)
+          expect(Listing.first[:vendors][:hd]).to_not be_empty
+      end
 
-    it 'should include build' do
-      expect(Listing::CHANNELS).to include('build')
-    end
-
-    it 'should include hmb' do
-      expect(Listing::CHANNELS).to include('hmb')
-    end
-
-    it 'should include wayfair' do
-      expect(Listing::CHANNELS).to include('wayfair')
-    end
-
-    it 'should include wayfair' do
-      expect(Listing::CHANNELS).to include('houzz')
     end
 
   end
 
-  describe 'dynamic channel url appending' do
+  describe 'appending listing urls' do
 
-    let (:subject) { Listing }
+    subject { Listing }
 
     it { is_expected.to respond_to(:append_hd_url) }
-    it { is_expected.to respond_to(:append_menards_url) }
+    it { is_expected.to respond_to(:append_wayfair_url) }
     it { is_expected.to respond_to(:append_overstock_url) }
-    it { is_expected.to respond_to(:append_lowes_url) }
     it { is_expected.to respond_to(:append_build_url) }
     it { is_expected.to respond_to(:append_hmb_url) }
-    it { is_expected.to respond_to(:append_wayfair_url) }
     it { is_expected.to respond_to(:append_houzz_url) }
+    it { is_expected.to respond_to(:append_menards_url) }
+    it { is_expected.to respond_to(:append_lowes_url) }
 
-  end
-
-  context 'when listing exists' do
-
-    it 'should update correspodning channel url' do
-      listing = create(:listing)
-      Listing.append_hd_url('http://abc.com', listing.sku)
-      listing.reload
-      expect(listing.hd_url).to eq('http://abc.com')
+    it 'should append vendor url' do
+      Listing.append_hd_url('123', 'googogle.com')
+      expect(Listing.first.hd_url).to eq('googogle.com')
     end
 
-  end
-
-  context 'when listing does not exist' do
-
-    it 'should create new listing with corresponding sku and url' do
-      expect(Listing.count).to eq(0)
-      Listing.append_hd_url('http://www.abc.com', 'foo')
-      expect(Listing.count).to eq(1)
-      expect(Listing.first.sku).to eq('foo')
-      expect(Listing.first.hd_url).to eq('http://www.abc.com')
-    end
-
-  end
-
-  it 'should return available channel urls' do
-    listing = build(:listing, hd_url: 'http://foo.com')
-    expect(listing.available_channel_urls)
-      .to include('http://foo.com')
   end
 
 end

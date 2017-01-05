@@ -3,7 +3,9 @@ require 'shared_examples/a_driver'
 
 RSpec.describe Menards do
 
-  let(:subject) { Menards.new(BillyDriver.new) }
+  let(:subject)   { Menards.new(BillyDriver.new) }
+  let(:connector) { subject }
+  let(:driver)    { subject.driver }
 
   it_behaves_like('a driver')
 
@@ -14,9 +16,6 @@ RSpec.describe Menards do
       proxy.stub('http://www.menards.com/main/p-1482823193202.html')
         .and_return(body: product_page)
     end
-
-    let(:connector) { subject }
-    let(:driver)    { subject.driver }
 
     describe 'visiting product pages' do
 
@@ -62,35 +61,76 @@ RSpec.describe Menards do
 
       context 'specific attributes' do
 
+        it 'should store product vendor' do
+          connector.fetch_product_attributes('1482823193202')
+          expect(connector.listing_attrs[:vendor])
+            .to eq('menards')
+        end
+
         it 'should store product page url' do
           connector.fetch_product_attributes('1482823193202')
-          expect(connector.listing_attrs[:url]).to_not be_nil
+          expect(connector.listing_attrs[:vendor_url])
+            .to eq('http://www.menards.com/main/p-1482823193202.html')
         end
 
         it 'should store product\'s vendor id' do
           connector.fetch_product_attributes('1482823193202')
-          expect(connector.listing_attrs[:vendor_id]).to_not be_nil
+          expect(connector.listing_attrs[:vendor_id])
+            .to eq('1482823193202')
         end
 
         it 'should store product\'s vendor sku' do
           connector.fetch_product_attributes('1482823193202')
-          expect(connector.listing_attrs[:vendor_sku]).to_not be_nil
+          expect(connector.listing_attrs[:vendor_sku])
+            .to eq('FT521BL-0025')
         end
 
         it 'should store product\'s vendor title' do
           connector.fetch_product_attributes('1482823193202')
-          expect(connector.listing_attrs[:title]).to_not be_nil
+          expect(connector.listing_attrs[:vendor_title])
+            .to eq('ANZZI Ember 5.4 ft. Man-Made Stone Slipper Flatbottom Non-Whirlpool Bathtub in Regal Blue and Kros Faucet in Chrome')
         end
 
         it 'should store product\'s vendor price' do
           connector.fetch_product_attributes('1482823193202')
-          expect(connector.listing_attrs[:price]).to_not be_nil
+          expect(connector.listing_attrs[:vendor_price])
+            .to eq('$6,499.00')
         end
 
       end # specific attributes
 
     end # fetching product attributes
 
+    context 'when listing page is not found' do
+
+      before do
+        not_found_page = File.read("#{page_fixtures}/menards/404.html")
+        proxy.stub('http://www.menards.com/main/p-kozladoy.html')
+          .and_return(body: not_found_page)
+      end
+
+      it 'should see a not-found message' do
+        expect { connector.visit_product_page('kozladoy')}
+          .to raise_error(PageNotFoundError)
+      end
+
+    end # not-found message
+
   end # crawling
 
-end
+  context 'storing product attributes' do
+
+    it 'should store product attributes' do
+      expect_any_instance_of(BaseConnector)
+        .to receive(:store_attrs)
+        .with('123', a_kind_of(Hash))
+      connector.store_attrs('123', {})
+    end
+
+    it 'should append product attrs to listing vendor' do
+      Listing.append_menards_url( '123', 'foo.com' )
+    end
+
+  end # storing attributes
+
+end # class

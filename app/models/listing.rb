@@ -2,46 +2,36 @@
 # pertaining to a retailing channel
 class Listing < ActiveRecord::Base
 
+  VENDORS = %W( hd menards houzz overstock lowes build hmb wayfair )
+
   validates_presence_of :sku
-  validate :channel_urls_format
+  serialize :vendors, HashSerializer
+  store_accessor :vendors, :hd, :wayfair, :lowes, :menards, :hmb, :houzz, :overstock, :build
 
-  CHANNELS = %w( hd menards overstock lowes build hmb wayfair houzz )
-
-  def available_channel_urls
-    channel_names = CHANNELS.map { |channel| "#{channel}_url" }
-    channel_names.map do |name|
-      attributes.fetch_values(name)
-    end.flatten.compact
-  end
-
-  CHANNELS.each do |channel_name|
-    define_singleton_method("append_#{channel_name}_url") do |sku, url, force_update|
-      listing = find_by(sku: sku)
-      puts "=== SKU #{sku}"
-      puts "--- url #{url}"
-      puts "--- force_update  #{force_update}"
-      if force_update
-        listing.update_attributes!("#{channel_name}_url": url)
-      elsif listing
-        puts '--- listing already exists'
-        return
-      else
-        puts '--- updating listing'
-        create!(sku: sku, "#{channel_name}_url":url)
-      end
-    end
+  def self.append_vendor_attrs(sku, attrs)
+    listing = find_by(sku: sku) || new(sku: sku)
+    listing.fetch_vendor_data(attrs)
+    listing.save!
   end
 
   def self.record_exists?(sku)
     find_by(sku: sku).present?
   end
 
+  def fetch_vendor_data(attrs)
+    vendors[attrs[:vendor]].merge!({
+      id:    attrs[:vendor_id],
+      sku:   attrs[:vendor_sku],
+      url:   attrs[:vendor_url],
+      title: attrs[:vendor_title],
+      price: attrs[:vendor_price] }).to_json
+  end
 
-  private
-
-  def channel_urls_format
-    if available_channel_urls.any? { |url| url.scan(URI.regexp).empty? }
-      errors.add(:base, message: 'malformed url')
+  VENDORS.each do |vendor|
+    define_singleton_method("append_#{vendor}_url") do |sku, url|
+      listing = find_by(sku: sku) || new(sku: sku)
+      listing["#{vendor}_url"] = url
+      listing.save!
     end
   end
 

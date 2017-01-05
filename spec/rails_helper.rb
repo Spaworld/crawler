@@ -4,15 +4,12 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 require 'support/shoulda_matchers'
-
 require 'capybara/rspec'
 require 'capybara/rails'
-
 require 'capybara/poltergeist'
 require 'billy/capybara/rspec'
-require 'support/puffing_billy_config'
+require 'support/billy_config'
 require 'support/billy_driver'
-require 'support/billy_selenium_driver'
 
 Capybara.javascript_driver = :selenium_billy
 

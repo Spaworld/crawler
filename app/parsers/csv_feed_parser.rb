@@ -17,4 +17,12 @@ class CSVFeedParser
     skus.join(' ')
   end
 
+  def self.fetch_menards_skus(file_path)
+    nodes = {}
+    CSV.foreach(file_path) do |row|
+      nodes[row[0]] = row[1]
+    end
+    nodes
+  end
+
 end

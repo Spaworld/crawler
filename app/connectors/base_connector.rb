@@ -8,9 +8,8 @@ class BaseConnector
     @driver = driver
   end
 
-  def append_url_to_listing(sku, url, abbrev: '', force_update: false)
-    return unless valid_options?(abbrev, force_update)
-    Listing.send("append_#{abbrev}_url", sku, url, force_update)
+  def store_attrs(sku, attrs)
+    Listing.append_vendor_attrs(sku, attrs)
   end
 
   private
@@ -23,13 +22,6 @@ class BaseConnector
     unless valid_driver?(driver)
       raise ArgumentError.new('Invalid driver')
     end
-  end
-
-  # Validates options keyword args
-  def valid_options?(abbrev, force_update)
-    abbrev.present? &&
-      Listing::CHANNELS.include?(abbrev) &&
-      [true, false].include?(force_update)
   end
 
 end
