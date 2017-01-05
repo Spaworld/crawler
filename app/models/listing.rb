@@ -10,6 +10,7 @@ class Listing < ActiveRecord::Base
 
   def self.append_vendor_attrs(sku, attrs)
     listing = find_by(sku: sku) || new(sku: sku)
+    listing.vendors_will_change!
     listing.fetch_vendor_data(attrs)
     listing.save!
   end
@@ -19,12 +20,12 @@ class Listing < ActiveRecord::Base
   end
 
   def fetch_vendor_data(attrs)
-    vendors[attrs[:vendor]].merge!({
+    vendors[attrs[:vendor]] = ({
       id:    attrs[:vendor_id],
       sku:   attrs[:vendor_sku],
       url:   attrs[:vendor_url],
       title: attrs[:vendor_title],
-      price: attrs[:vendor_price] }).to_json
+      price: attrs[:vendor_price] })
   end
 
   VENDORS.each do |vendor|

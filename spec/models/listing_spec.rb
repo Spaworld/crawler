@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Listing, type: :model do
 
-  it { should validate_presense_of(:sku) }
+  it { should validate_presence_of(:sku) }
 
   it 'should have vendors' do
     expect(Listing::VENDORS)
@@ -11,8 +11,9 @@ RSpec.describe Listing, type: :model do
 
 
   describe 'appending vendor attributes' do
-    pending
+
     before do
+      @listing = create(:listing, sku: '123')
       @attr_hash = {
         vendor:       'hd',
         vendor_id:    '12312312',
@@ -20,22 +21,22 @@ RSpec.describe Listing, type: :model do
         vendor_url:   Faker::Internet.url,
         vendor_title: Faker::Commerce.product_name,
         vendor_price: Faker::Commerce.price }
-      @listing = create(:listing, sku: '123')
     end
 
     context 'when listing exists' do
 
       it 'should update listing vendor attrs' do
-
-          Listing.append_vendor_attrs(@listing.sku, @attr_hash)
-          expect(Listing.first[:vendors][:hd]).to_not be_empty
+        Listing.append_vendor_attrs(@listing.sku, @attr_hash)
+        expect(Listing.first[:vendors][:hd]).to_not be_empty
+        expect(Listing.find_by(sku: @listing.sku).vendors[:hd])
+          .to_not be_nil
       end
 
     end
 
   end
 
-  describe 'appending listing urls' do
+  describe 'appending listing urls directly' do
 
     subject { Listing }
 
