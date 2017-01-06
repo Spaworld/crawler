@@ -23,7 +23,8 @@ class Listing < ActiveRecord::Base
   def self.data_present?(sku, vendor)
     listing = find_by(sku: sku.strip)
     listing.present? &&
-      listing.vendors["#{vendor}"].present?
+      listing.vendors["#{vendor}"].present? &&
+      listing.send("#{vendor}_url").present?
   end
 
   def fetch_vendor_data(attrs)

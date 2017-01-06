@@ -8,7 +8,6 @@ class Menards < BaseConnector
     nodes.each_with_index do |node, index|
       id = node[0]
       sku = node[1]
-      binding.pry
       next if Listing.data_present?(sku, 'menards')
       puts "=== starting id: #{id} \
       | sku: #{sku} \
