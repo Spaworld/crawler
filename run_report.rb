@@ -18,7 +18,6 @@ puts "HD > Houzz overlaps: #{ Listing.all.select { |l| l.vendors[:hd].present? &
 puts "Menards > Houzz overlaps: #{ Listing.all.select { |l| l.vendors[:houzz].present? && l.vendors[:menards].present? }.count}"
 
 puts '-=--=-=-'
-binding.pry
 puts "total Menards with url only: #{Listing.all.select { |l| l.vendors[:menards].nil? && l.menards_url.present? }.count }"
 
 

@@ -18,6 +18,13 @@ class Listing < ActiveRecord::Base
 
   def self.record_exists?(sku)
     find_by(sku: sku).present?
+
+  end
+
+  def self.get_price(sku)
+    listing = find_by(sku: sku)
+    return if listing.nil?
+    listing.vendors[:hd][:price]
   end
 
   def self.data_present?(sku, vendor)

@@ -1,0 +1,5 @@
+connector = Wayfair.new
+connector.fetch_page_nodes
+connector.fetch_listing_nodes
+connector.compile_listings
+connector.process_listing_nodes(connector.listings)

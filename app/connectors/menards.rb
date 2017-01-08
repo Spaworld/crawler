@@ -26,7 +26,6 @@ class Menards < BaseConnector
     end
   end
 
-
   def visit_product_page(menards_id)
     driver.visit("#{BASE_URL}p-#{menards_id}.html") unless menards_id.nil?
   end
