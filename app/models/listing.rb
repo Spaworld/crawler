@@ -55,5 +55,22 @@ class Listing < ActiveRecord::Base
     find_by(sku: sku) || new(sku: sku)
   end
 
+  def self.append_not_found(vendor,sku, id)
+    listing = find_by(sku: sku) || return
+    listing.vendors[vendor][:found?] = false
+  end
+
+  def self.page_not_found?(vendor, sku)
+    listing = find_by(sku: sku)
+    listing.vendors[vendor][:found?].nil?
+  end
+
+  VENDORS.each do |vendor|
+    define_singleton_method("append_#{vendor}_url") do |sku, url|
+      listing = find_by(sku: sku) || new(sku: sku)
+      listing.send("#{vendor}_url=", url)
+      listing.save!
+    end
+  end
 
 end
