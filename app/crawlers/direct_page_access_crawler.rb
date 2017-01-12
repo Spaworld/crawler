@@ -17,6 +17,18 @@ class DirectPageAccessCrawler
     @nodes = CSVFeedParser.fetch_nodes(file_path)
   end
 
+  # Creates listings from
+  # fetched @nodes
+  def process_listings(nodes)
+    @nodes.each_with_index do |node, index|
+      next if data_exists?(node)
+      next if nil_id?(node)
+      output_process_info(node, index)
+      validate_listing(id, sku, index)
+      index % 20 == 0 ? connector.restart : connector.process_listing(node, index)
+    end
+  end
+
   private
 
   # Validates connector to be an instance
@@ -27,6 +39,30 @@ class DirectPageAccessCrawler
     else
       raise InvalidConnectorError
     end
+  end
+
+  # returns 'true' if listing's vendor
+  # data is present
+  def data_exists?(node)
+    if Listing.data_present?(node[1],
+        connector.abbrev)
+      Notifier.raise_data_exists
+      return true
+    end
+  end
+
+  # returns 'true' if node's
+  # 'id' or 'sku' are missing
+  def invalid_node?(node)
+    if node[0].nil? || node[1].nil?
+      Notifier.raise_invalid_node
+      return true
+    end
+  end
+
+  # Outputs process info to STDOUT
+  def output_process_info(node, index)
+    Notifier.output_process_info(id, sku, index)
   end
 
 end

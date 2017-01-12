@@ -3,6 +3,19 @@ class Menards < BaseConnector
   attr_accessor :listing_attrs
 
   BASE_URL = 'http://www.menards.com/main/'
+  ABBREV = 'menards'
+
+  def process_listing(node)
+    id  = node[0]
+    # sku = node[1]
+    visit_product_page(id)
+    fetch_product_attributes(id)
+    store_product_attributes(@listing_attrs)
+  end
+
+  def abbrev
+    ABBREV
+  end
 
   def process_listings(nodes)
     nodes.each_with_index do |node, index|

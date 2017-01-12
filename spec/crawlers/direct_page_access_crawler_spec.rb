@@ -50,4 +50,16 @@ RSpec.describe DirectPageAccessCrawler do
 
   end
 
+  describe 'processing' do
+
+    it 'should iterate through listing nodes' do
+      listings = create_list(:listing, 3)
+      expect(connector)
+        .to receive(:process_listing)
+        .with(nodes.first, 0)
+      subject.process_listings(nodes)
+    end
+
+  end
+
 end
