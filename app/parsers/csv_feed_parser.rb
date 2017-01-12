@@ -40,7 +40,7 @@ class CSVFeedParser
                'wayfair url', 'wayfair price',
                'menards url', 'menard price',
                'overstock url', 'overstock price',
-               'houzz url', 'houzz price']
+               'houzz url', 'houzz price' ]
       Listing.all.map do |listing|
         csv << [ listing.sku,
                  listing.vendors[:hd][:url],
