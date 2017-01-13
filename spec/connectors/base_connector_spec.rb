@@ -60,4 +60,8 @@ RSpec.describe BaseConnector do
 
   end
 
+  it 'should restart browser' do
+    pending
+  end
+
 end

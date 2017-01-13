@@ -12,6 +12,9 @@ class BaseConnector
     Listing.append_vendor_attrs(sku, attrs)
   end
 
+  def restart
+  end
+
   private
 
   def valid_driver?(driver)

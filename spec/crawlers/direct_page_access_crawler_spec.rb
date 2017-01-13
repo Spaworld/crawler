@@ -58,7 +58,7 @@ RSpec.describe DirectPageAccessCrawler do
       allow(connector).to receive(:visit_product_page)
     end
 
-    it 'should iterate through stored nodes' do
+    it 'should iterate through parsed nodes' do
       csv = "#{Rails.root}/spec/fixtures/CSVs/sample_nodes.csv"
       crawler.fetch_product_nodes(csv)
       expect{ crawler.process_listings }
@@ -83,6 +83,55 @@ RSpec.describe DirectPageAccessCrawler do
       crawler.process_listings(nodes)
     end
 
+    it 'should call #output_process_info on Notifier' do
+      node = OpenStruct.new(id: '1', sku: '2')
+      nodes = [node]
+      expect(Notifier).to receive(:output_process_info)
+        .with(node, 0)
+      crawler.process_listings(nodes)
+    end
+
+    describe 'dispatching action' do
+
+      context 'when the bulk of 20 nodes is complete' do
+
+        it 'should restart the driver' do
+          expect(connector)
+            .to receive(:restart)
+          node = OpenStruct.new(id: '1', sku: '2')
+          crawler.send(:dispatch_action, node, 20)
+        end
+
+        it 'should process listing' do
+          expect(connector)
+            .to receive(:process_listing)
+          node = OpenStruct.new(id: '1', sku: '2')
+          crawler.send(:dispatch_action, node, 20)
+        end
+
+      end # when bulk of 20 is complete
+
+      context 'when index arg is 0' do
+
+        it 'should not restart the driver' do
+          expect(connector)
+            .to_not receive(:restart)
+          node = OpenStruct.new(id: '1', sku: '2')
+          crawler.send(:dispatch_action, node, 0)
+        end
+
+      end # when index arg is 0
+
+      it 'should process listing' do
+        node = OpenStruct.new(id: '1', sku: '2')
+        expect(connector)
+          .to receive(:process_listing)
+          .with(node)
+        crawler.send(:dispatch_action, node, rand(0..21))
+      end
+
+    end # dispatching action
+
     describe 'node validation' do
 
       it 'should check if node has "sku" and "id" values' do
@@ -99,10 +148,18 @@ RSpec.describe DirectPageAccessCrawler do
 
       context 'when node is invalid' do
 
-        describe 'beacuse of an empty id' do
+        let(:nil_id_node) { OpenStruct.new(id: '',    sku: '123') }
+        let(:valid_node)  { OpenStruct.new(id: '123', sku: '123') }
+        let(:invalid_id_node) { OpenStruct.new(id: '#N/A',    sku: '123') }
 
-          let(:nil_id_node) { OpenStruct.new(id: '',    sku: '123') }
-          let(:valid_node)  { OpenStruct.new(id: '123', sku: '123') }
+        it '#invalid_node? should return true' do
+          expect(crawler.send(:invalid_node?, nil_id_node))
+            .to eq(true)
+          expect(crawler.send(:invalid_node?, invalid_id_node))
+            .to eq(true)
+        end
+
+        describe 'beacuse of an empty id' do
 
           it 'should identify the invalid node' do
             expect(crawler.send(:invalid_node?, nil_id_node))
@@ -136,7 +193,6 @@ RSpec.describe DirectPageAccessCrawler do
 
         describe 'because of an invalid id' do
 
-          let(:invalid_id_node) { OpenStruct.new(id: '#N/A',    sku: '123') }
 
           it 'should identify the invalid node' do
             expect(crawler.send(:invalid_node?,
@@ -193,26 +249,47 @@ RSpec.describe DirectPageAccessCrawler do
 
       it 'should check if listing vendor data already exists' do
         listings = create_list(:listing, 1, :with_menards_attrs)
-        node = listings.first.to_node('menards')
+        nodes = [listings.first.to_node('menards')]
         expect(crawler)
           .to receive(:data_exists?)
-          .with(node)
+          .with(nodes.first)
           .once
-        crawler.process_listings([node])
+        crawler.process_listings(nodes)
       end
 
       context 'when listing vendor data already exists' do
 
-        let(:listing) { create(:listing,
-                               :with_menards_attrs,
-                               :with_menards_url) }
+        describe '#data_exists? analyzer' do
 
-        it 'should notify about existing data' do
-          nodes = [listing.to_node('menards')]
-          expect(Notifier)
-            .to receive(:raise_data_exists)
-          crawler.process_listings(nodes)
-        end
+          let(:listing) { create(:listing,
+                                 :with_menards_attrs,
+                                 :with_menards_url) }
+          let(:node)    { listing.to_node('menards') }
+
+          it 'should return true' do
+            expect(crawler.send(:data_exists?, node))
+              .to eq(true)
+          end
+
+          it 'should query Listings for existing vendor data' do
+            expect(Listing).to receive(:data_present?)
+              .with(node.sku, 'menards')
+            crawler.send(:data_exists?, node)
+          end
+
+          it 'should notify about existing data' do
+            nodes = [node]
+            expect(Notifier)
+              .to receive(:raise_data_exists)
+            crawler.process_listings(nodes)
+          end
+
+          it 'should identify existing vendor data' do
+            expect(crawler.send(:data_exists?, node))
+              .to be_truthy
+          end
+
+        end # #data_exists?
 
       end # when listing.vendors data exists
 

@@ -1,0 +1,734 @@
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+write CoreM_State: 81~-1~-1~-1~-1~3~3~5~3~3~7~7~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~|
+
+initial CoreM_State: 81~-1~-1~-1~-1~3~3~5~3~3~7~7~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~|
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=6, pr=undefined, cg=, at=undefined, pi=
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (32 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (7 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (9 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (7 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (9 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (7 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (7 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
+Processing tag: tid=5, pr=, cg=, at=undefined, pi=Product:  ()
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Product from product view not added to cookie.  Product is blank.
+
+Processing tag: tid=1, pr=undefined, cg=, at=undefined, pi=
+
+initial CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+initial CoreM_State_Content: 6~|~~|~
+
+Page ID not added to cookie.  Page ID is blank.
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473816
+
+successful retrieval of config file (9 ms)
+
+[object Object]
+write CoreM_State: 81~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011205
+
