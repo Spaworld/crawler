@@ -43,7 +43,7 @@ class DirectPageAccessCrawler
   # returns 'true' if listing's vendor
   # data is present
   def data_exists?(node)
-    if Listing.data_present?(node.values.first, connector.abbrev)
+    if Listing.data_present?(node[1], connector.abbrev)
       Notifier.raise_data_exists
       return true
     end
@@ -53,11 +53,10 @@ class DirectPageAccessCrawler
   # 'id' or 'sku' are missing
   # or if 'id' is '#N/A'
   def invalid_node?(node)
-    if node.keys.first.nil? ||
-        node.keys.first.empty? ||
-        node.values.first.nil? ||
-        node.values.first.empty? ||
-        node.keys.first.to_s == '#N/A'
+    if node.any? { |member|
+      member.nil? ||
+        member.empty? ||
+        member == '#N/A' }
       Notifier.raise_invalid_node
       return true
     end

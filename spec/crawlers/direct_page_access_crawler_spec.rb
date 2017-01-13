@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe DirectPageAccessCrawler do
 
-  let(:subject) { DirectPageAccessCrawler.new(connector) }
+  let(:subject)   { DirectPageAccessCrawler.new(connector) }
   let(:connector) { Menards.new(BillyDriver.new) }
   let(:crawler)   { subject }
 
@@ -53,15 +53,16 @@ RSpec.describe DirectPageAccessCrawler do
   describe 'processing' do
 
     before do
-
-        allow(connector).to receive(:fetch_product_attributes)
-        allow(connector).to receive(:store_product_attributes)
+      allow(connector).to receive(:fetch_product_attributes)
+      allow(connector).to receive(:store_product_attributes)
+      allow(connector).to receive(:visit_product_page)
     end
 
     it 'should iterate through stored nodes' do
       csv = "#{Rails.root}/spec/fixtures/CSVs/sample_nodes.csv"
       crawler.fetch_product_nodes(csv)
-      expect(crawler.process_listings).to be_valid
+      expect{ crawler.process_listings }
+        .to_not raise_error
     end
 
     it 'should iterate through listing nodes' do
