@@ -101,15 +101,16 @@ RSpec.describe DirectPageAccessCrawler do
 
         describe 'beacuse of an empty id' do
 
-          let(:node) { {'': '234' } }
+          let(:nil_id_node) { OpenStruct.new(id: '',    sku: '123') }
+          let(:valid_node)  { OpenStruct.new(id: '123', sku: '123') }
 
           it 'should identify the invalid node' do
-            expect(crawler.send(:invalid_node?, node))
+            expect(crawler.send(:invalid_node?, nil_id_node))
               .to be_truthy
           end
 
           it 'should skip invalid node' do
-            nodes = { 'a': 1, '': 2 }
+            nodes = [nil_id_node, valid_node]
             expect(crawler)
               .to receive(:output_process_info)
               .once
@@ -118,62 +119,68 @@ RSpec.describe DirectPageAccessCrawler do
           end
 
           it 'should not process invalid node' do
+            nodes = [nil_id_node]
             expect(connector)
               .to_not receive(:process_listing)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
 
           it 'should notify of invalid node' do
+            nodes = [nil_id_node]
             expect(Notifier)
               .to receive(:raise_invalid_node)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
-
 
         end
 
         describe 'because of an invalid id' do
 
-          let(:node) { { '#N/A': '123' } }
+          let(:invalid_id_node) { OpenStruct.new(id: '#N/A',    sku: '123') }
 
           it 'should identify the invalid node' do
-            expect(crawler.send(:invalid_node?, node))
+            expect(crawler.send(:invalid_node?,
+                                invalid_id_node))
               .to be_truthy
           end
 
           it 'should skip listing processing for that node' do
+            nodes = [invalid_id_node]
             expect(connector)
               .to_not receive(:process_listing)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
 
           it 'should notify of invalid node' do
+            nodes = [invalid_id_node]
             expect(Notifier)
               .to receive(:raise_invalid_node)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
 
         end
 
         describe 'beacuse of an empty sku' do
 
-          let(:node) { {'123': '' } }
+          let(:empty_sku_node) { OpenStruct.new(id: '#N/A', sku: '') }
 
           it 'should identify the invalid node' do
-            expect(crawler.send(:invalid_node?, node))
+            expect(crawler.send(:invalid_node?, empty_sku_node))
               .to be_truthy
           end
 
           it 'should skip listing processing for that node' do
+            nodes = [empty_sku_node]
             expect(connector)
               .to_not receive(:process_listing)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
 
           it 'should notify of invalid node' do
+            nodes = [empty_sku_node]
             expect(Notifier)
               .to receive(:raise_invalid_node)
-            crawler.process_listings([node])
+            crawler.process_listings(nodes)
           end
 
         end # empty sku

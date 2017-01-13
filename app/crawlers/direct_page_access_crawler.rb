@@ -43,20 +43,23 @@ class DirectPageAccessCrawler
   # returns 'true' if listing's vendor
   # data is present
   def data_exists?(node)
-    if Listing.data_present?(node[1], connector.abbrev)
+    if Listing.data_present?(node.sku, connector.abbrev)
       Notifier.raise_data_exists
       return true
     end
   end
 
   # returns 'true' if node's
-  # 'id' or 'sku' are missing
-  # or if 'id' is '#N/A'
+  # 'id' or 'sku' values are
+  # - nil
+  # - empty
+  # - eql?('#N/A')
   def invalid_node?(node)
-    if node.any? { |member|
-      member.nil? ||
-        member.empty? ||
-        member == '#N/A' }
+    node_hash  = node.to_h
+    if node_hash.values.any? { |value|
+      value.nil? ||
+        value.empty? ||
+        value == '#N/A' }
       Notifier.raise_invalid_node
       return true
     end
@@ -71,8 +74,7 @@ class DirectPageAccessCrawler
   # - when reaches % 20 restarts driver
   # - else proceeds with data storing
   def dispatch_action(node, index)
-    case
-    when index > 0 && index % 20 == 0
+    if index > 0 && index % 20 == 0
       connector.restart
     else
       connector.process_listing(node)

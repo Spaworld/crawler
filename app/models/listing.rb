@@ -20,11 +20,12 @@ class Listing < ActiveRecord::Base
     find_by(sku: sku).present?
   end
 
-  # Constructs hash of
-  # '{ vendor_id: sku }'
-  # based on vendor injected
+  # Constructs an ostruct
+  # '{ id: vendor_id, sku: sku }'
+  # based on vendor name injected
   def to_node(vendor)
-    Hash[vendors["#{vendor}"][:vendor_id], sku]
+    OpenStruct.new(id: vendors["#{vendor}"][:vendor_id],
+                   sku: sku)
   end
 
   def self.get_price(sku)

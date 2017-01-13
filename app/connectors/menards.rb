@@ -6,7 +6,7 @@ class Menards < BaseConnector
   ABBREV = 'menards'
 
   def process_listing(node)
-    id  = node[0]
+    id  = node.id
     visit_product_page(id)
     fetch_product_attributes(id)
     store_product_attributes(@listing_attrs)

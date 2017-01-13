@@ -25,10 +25,14 @@ class CSVFeedParser
     nodes
   end
 
+  # Parses the file at `file_path`
+  # and returns an array of ostruct
+  # nodes with keys 'sku' and 'id'
   def self.fetch_nodes(file_path)
-    nodes = {}
+    nodes = []
     CSV.foreach(file_path) do |row|
-      nodes[row[0]] = row[1]
+      nodes << OpenStruct.new(id:  row[0],
+                              sku: row[1])
     end
     nodes
   end
