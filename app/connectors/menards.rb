@@ -7,7 +7,6 @@ class Menards < BaseConnector
 
   def process_listing(node)
     id  = node[0]
-    # sku = node[1]
     visit_product_page(id)
     fetch_product_attributes(id)
     store_product_attributes(@listing_attrs)
@@ -51,6 +50,9 @@ class Menards < BaseConnector
         vendor_sku:   driver.doc.at('p.itemModelSku').children.last.text.strip,
         vendor_title: driver.doc.at('.itemCenterContent span h2').text,
         vendor_price: driver.doc.at('#totalItemPrice').children.first.text.strip }
+  end
+
+  def store_product_attributes(listing_attrs)
   end
 
   private

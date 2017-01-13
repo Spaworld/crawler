@@ -18,14 +18,16 @@ class DirectPageAccessCrawler
   end
 
   # Creates listings from
-  # fetched @nodes
-  def process_listings(nodes)
-    @nodes.each_with_index do |node, index|
+  # injected nodes (default: @nodes)
+  def process_listings(nodes = @nodes)
+    nodes.each_with_index do |node, index|
+      binding.pry
+      next if invalid_node?(node)
       next if data_exists?(node)
-      next if nil_id?(node)
       output_process_info(node, index)
-      validate_listing(id, sku, index)
-      index % 20 == 0 ? connector.restart : connector.process_listing(node, index)
+      # validate_listing(id, sku, index)
+      dispatch_action(node, index)
+      # (index != 0 && index % 20 == 0) ? connector.restart : connector.process_listing(node)
     end
   end
 
@@ -44,8 +46,7 @@ class DirectPageAccessCrawler
   # returns 'true' if listing's vendor
   # data is present
   def data_exists?(node)
-    if Listing.data_present?(node[1],
-        connector.abbrev)
+    if Listing.data_present?(node.values.first, connector.abbrev)
       Notifier.raise_data_exists
       return true
     end
@@ -53,8 +54,13 @@ class DirectPageAccessCrawler
 
   # returns 'true' if node's
   # 'id' or 'sku' are missing
+  # or if 'id' is '#N/A'
   def invalid_node?(node)
-    if node[0].nil? || node[1].nil?
+    if node.keys.first.nil? ||
+        node.keys.first.empty? ||
+        node.values.first.nil? ||
+        node.values.first.empty? ||
+        node.keys.first.to_s == '#N/A'
       Notifier.raise_invalid_node
       return true
     end
@@ -62,7 +68,19 @@ class DirectPageAccessCrawler
 
   # Outputs process info to STDOUT
   def output_process_info(node, index)
-    Notifier.output_process_info(id, sku, index)
+    Notifier.output_process_info(node, index)
+  end
+
+  # Dispatches action based on current index param
+  # - when reaches % 20 restarts driver
+  # - else proceeds with data storing
+  def dispatch_action(node, index)
+    case
+    when index > 0 && index % 20 == 0
+      connector.restart
+    else
+      connector.process_listing(node)
+    end
   end
 
 end

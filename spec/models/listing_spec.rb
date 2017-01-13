@@ -77,4 +77,15 @@ RSpec.describe Listing, type: :model do
 
   end
 
+  describe 'helper methods' do
+
+    it 'should construct a node hash' do
+      listing = create(:listing, :with_menards_attrs)
+      expect(listing.to_node('menards')).to eq(
+        Hash[listing.sku, listing.vendors[:menards][:vendor_id]]
+      )
+    end
+
+  end
+
 end

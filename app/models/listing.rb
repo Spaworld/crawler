@@ -18,7 +18,13 @@ class Listing < ActiveRecord::Base
 
   def self.record_exists?(sku)
     find_by(sku: sku).present?
+  end
 
+  # Constructs hash of
+  # '{ vendor_id: sku }'
+  # based on vendor injected
+  def to_node(vendor)
+    Hash[vendors["#{vendor}"][:vendor_id], sku]
   end
 
   def self.get_price(sku)

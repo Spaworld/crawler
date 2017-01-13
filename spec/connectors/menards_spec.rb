@@ -115,6 +115,10 @@ RSpec.describe Menards do
 
   context 'storing product attributes' do
 
+    it 'should stor product attributes' do
+      pending
+  end
+
     it 'should store product attributes' do
       expect_any_instance_of(BaseConnector)
         .to receive(:store_attrs)

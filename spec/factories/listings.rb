@@ -6,15 +6,18 @@ FactoryGirl.define do
         menards: {
           vendor_url:   Faker::Internet.url,
           vendor_id:    Faker::Number.number(10),
-          vendor_sku:   Faker::Code.isbn,
+          vendor_sku:   sku,
           vendor_title: Faker::Commerce.product_name,
           vendor_price: Faker::Commerce.price
         },
         hd: {}
       } }
     end
+
     trait :with_menards_url do
       menards_url Faker::Internet.url
     end
+
   end
+
 end
