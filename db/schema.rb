@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20170105055350) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "sku"
-    t.datetime "created_at",                                                                                                                                  null: false
-    t.datetime "updated_at",                                                                                                                                  null: false
-    t.jsonb    "vendors",       default: {"hd"=>nil, "hmb"=>nil, "build"=>nil, "houzz"=>nil, "lowes"=>nil, "menards"=>nil, "wayfair"=>nil, "overstock"=>nil}
+    t.datetime "created_at",                                                                                                                          null: false
+    t.datetime "updated_at",                                                                                                                          null: false
+    t.jsonb    "vendors",       default: {"hd"=>{}, "hmb"=>{}, "build"=>{}, "houzz"=>{}, "lowes"=>{}, "menards"=>{}, "wayfair"=>{}, "overstock"=>{}}
     t.string   "hd_url"
     t.string   "overstock_url"
     t.string   "menards_url"
