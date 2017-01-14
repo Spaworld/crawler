@@ -3,45 +3,25 @@ class Menards < BaseConnector
   attr_accessor :listing_attrs
 
   BASE_URL = 'http://www.menards.com/main/'
-  ABBREV = 'menards'
+  ABBREV   = 'menards'
+
+  def abbrev; ABBREV end
 
   def process_listing(node)
     id  = node.id
     visit_product_page(id)
+
+    return if page_not_found?
     fetch_product_attributes(id)
     store_product_attributes(@listing_attrs)
-  end
-
-  def abbrev
-    ABBREV
-  end
-
-  def process_listings(nodes)
-    nodes.each_with_index do |node, index|
-      id = node[0]
-      sku = node[1]
-      next if Listing.data_present?(sku, 'menards')
-      puts "=== starting id: #{id} \
-      | sku: #{sku} \
-      | iteration: #{index}"
-      visit_product_page(id)
-      next if page_not_found?
-      fetch_product_attributes(id)
-      vendor_sku = @listing_attrs[:vendor_sku]
-      vendor_url = @listing_attrs[:vendor_url]
-      Listing.append_menards_url(
-        vendor_sku,
-        vendor_url)
-      Listing.append_vendor_attrs(
-        vendor_sku,
-        @listing_attrs)
-    end
   end
 
   def visit_product_page(menards_id)
     driver.visit("#{BASE_URL}p-#{menards_id}.html") unless menards_id.nil?
   end
 
+  # compiles a hash of fetched
+  # product listing attributes
   def fetch_product_attributes(menards_id)
     @listing_attrs =
       { vendor:      'menards',
@@ -52,16 +32,24 @@ class Menards < BaseConnector
         vendor_price: driver.doc.at('#totalItemPrice').children.first.text.strip }
   end
 
+  # stores listing.vendors[:vendor] data
+  # and listing.vendor_url
   def store_product_attributes(listing_attrs)
+    sku = listing_attrs[:vendor_sku]
+    url = listing_attrs[:vendor_url]
+      Listing.append_menards_url(sku, url)
+      Listing.append_vendor_attrs(sku, listing_attrs)
   end
 
   private
 
+  # identifies a 404 if
+  # elems are found on page
   def page_not_found?
     driver.current_url == BASE_URL ||
       driver.doc.at('h5.error').present? ||
-      driver.doc.at('h3.resettitle').present? &&
-      driver.doc.at('h3.resettitle').text.include?('404 error')
+      (driver.doc.at('h3.resettitle').present? &&
+      driver.doc.at('h3.resettitle').text.include?('404 error'))
   end
 
 end

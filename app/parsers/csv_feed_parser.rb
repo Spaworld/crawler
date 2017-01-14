@@ -41,10 +41,10 @@ class CSVFeedParser
     path = "#{Rails.root}/lib/export/vendor_data.csv"
     CSV.open(path, 'wb') do |csv|
       csv << [ 'sku', 'hd_url', 'hd_price',
-               'wayfair url', 'wayfair price',
-               'menards url', 'menard price',
+               'wayfair url',   'wayfair price',
+               'menards url',   'menard price',
                'overstock url', 'overstock price',
-               'houzz url', 'houzz price' ]
+               'houzz url',     'houzz price' ]
       Listing.all.map do |listing|
         csv << [ listing.sku,
                  listing.vendors[:hd][:url],

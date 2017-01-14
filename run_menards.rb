@@ -1,10 +1,16 @@
-require 'rake'
-rake = Rake.application
-rake.init
-rake.load_rakefile
+# require 'rake'
+# rake = Rake.application
+# rake.init
+# rake.load_rakefile
 
-file_path = 'lib/menards_skus.csv'
-nodes = CSVFeedParser.fetch_menards_skus(file_path)
+csv = 'lib/menards_skus.csv'
+# nodes = CSVFeedParser.fetch_menards_skus(file_path)
+# connector = Menards.new(PoltergeistCrawler.new)
+# connector.process_listings(nodes)
+#
 connector = Menards.new(PoltergeistCrawler.new)
-connector.process_listings(nodes)
+crawler = DirectPageAccessCrawler.new(connector)
+csv = 'lib/menards_skus.csv'
+crawler.fetch_product_nodes(csv)
+crawler.process_listings
 

@@ -43,4 +43,10 @@ class BillyDriver
     page.driver.render("public/#{name}.jpg", full: true)
   end
 
+  # restarts browser to avoid
+  # PhantomJS memory leak debuckle
+  def restart
+    page.driver.browser.restart
+  end
+
 end

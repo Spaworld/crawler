@@ -115,9 +115,16 @@ RSpec.describe Menards do
 
   context 'storing product attributes' do
 
-    it 'should stor product attributes' do
-      pending
-  end
+    let(:listing_attrs) { { vendor:     'menards',
+                            vendor_sku: '123',
+                            vendor_url: 'foo.com' } }
+
+    it 'should store listing ul' do
+      expect(Listing)
+        .to receive(:append_menards_url)
+        .with('123', 'foo.com')
+      connector.store_product_attributes(listing_attrs)
+    end
 
     it 'should store product attributes' do
       expect_any_instance_of(BaseConnector)

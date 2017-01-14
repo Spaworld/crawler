@@ -8,12 +8,9 @@ class BaseConnector
     @driver = driver
   end
 
-  def store_attrs(sku, attrs)
-    Listing.append_vendor_attrs(sku, attrs)
-  end
-
-  def restart
-  end
+  # def store_attrs(sku, attrs)
+  #   Listing.append_vendor_attrs(sku, attrs)
+  # end
 
   private
 
