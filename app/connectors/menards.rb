@@ -37,8 +37,8 @@ class Menards < BaseConnector
   def store_product_attributes(listing_attrs)
     sku = listing_attrs[:vendor_sku]
     url = listing_attrs[:vendor_url]
-      Listing.append_menards_url(sku, url)
-      Listing.append_vendor_attrs(sku, listing_attrs)
+    Listing.append_menards_url(sku, url)
+    Listing.append_vendor_attrs(sku, listing_attrs)
   end
 
   private
@@ -46,10 +46,13 @@ class Menards < BaseConnector
   # identifies a 404 if
   # elems are found on page
   def page_not_found?
-    driver.current_url == BASE_URL ||
-      driver.doc.at('h5.error').present? ||
-      (driver.doc.at('h3.resettitle').present? &&
-      driver.doc.at('h3.resettitle').text.include?('404 error'))
+    if driver.current_url == BASE_URL ||
+        driver.doc.at('h5.error').present? ||
+        (driver.doc.at('h3.resettitle').present? &&
+         driver.doc.at('h3.resettitle').text.include?('404 error'))
+      Notifier.raise_page_not_found
+      return true
+    end
   end
 
 end

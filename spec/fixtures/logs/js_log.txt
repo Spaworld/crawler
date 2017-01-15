@@ -1,17 +1,457 @@
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
+!!! Trying to read cookie 'HD_DC', but cookieManager not initialized. Investigate this!
+JQMIGRATE: Logging is active
+JQMIGRATE: jQuery.browser is deprecated
+
 cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
-successful retrieval of config file (160 ms)
+successful retrieval of config file (58 ms)
 
 [object Object]
-write CoreM_State: 29~-1~-1~-1~-1~3~3~5~3~3~7~7~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~-1~-1~-1~-1~3~3~5~3~3~7~7~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~|
 
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -21,18 +461,18 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
 cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
-successful retrieval of config file (10 ms)
+successful retrieval of config file (7 ms)
 
 [object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -42,18 +482,18 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
 cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
-successful retrieval of config file (2 ms)
+successful retrieval of config file (4 ms)
 
 [object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -63,12 +503,54 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
+
+successful retrieval of config file (9 ms)
+
+[object Object]
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
+
+cmRecRequest: PDPZ1,1482823193143,,,
+
+display_recs
+
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
+
+successful retrieval of config file (8 ms)
+
+[object Object]
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+
+write CoreM_State_Content: 6~|~~|~
+
+stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
+
+ab test id: no ab test
+
+step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
+
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
 Processing tag: tid=5, pr=1482823193202, cg=13298, at=undefined, pi=Product: ANZZI EMBER 54 FT MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
  (1482823193202)
 
-initial CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
+initial CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~~|~~|~~|~||||||~|~~|~~|~~|~~|~~|~~|~~|~
 
 initial CoreM_State_Content: 6~|~~|~
 
@@ -76,7 +558,7 @@ Adding product from product view to cookie.  Product: 1482823193202
 
 encryption of 1482823193202: 46660137
 
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345031613~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442941796~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -86,12 +568,12 @@ cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
-successful retrieval of config file (8 ms)
+successful retrieval of config file (9 ms)
 
 [object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345031613~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442941796~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -101,18 +583,18 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
 cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
 successful retrieval of config file (8 ms)
 
 [object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345031613~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442941796~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
@@ -122,33 +604,12 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
-
-cmRecRequest: PDPZ1,1482823193143,,,
-
-display_recs
-
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
-
-successful retrieval of config file (7 ms)
-
-[object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345031613~|~~|~~|~~|~~|~~|~~|~
-
-write CoreM_State_Content: 6~|~~|~
-
-stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
-
-ab test id: no ab test
-
-step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
-
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
 Processing tag: tid=5, pr=1482823193202, cg=13298, at=undefined, pi=Product: ANZZI EMBER 54 FT MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
  (1482823193202)
 
-initial CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345031613~|~~|~~|~~|~~|~~|~~|~
+initial CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442941796~|~~|~~|~~|~~|~~|~~|~
 
 initial CoreM_State_Content: 6~|~~|~
 
@@ -156,13 +617,13 @@ Adding product from product view to cookie.  Product: 1482823193202
 
 encryption of 1482823193202: 46660137
 
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442942804~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~~|~
 
 Processing tag: tid=1, pr=undefined, cg=13298, at=undefined, pi=PRODUCT: ANZZI EMBER 5.4 FT. MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
 
-initial CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
+initial CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442942804~|~~|~~|~~|~~|~~|~~|~
 
 initial CoreM_State_Content: 6~|~~|~
 
@@ -170,7 +631,7 @@ Adding page ID from page view to cookie.  Page ID: PRODUCT: ANZZI EMBER 5.4 FT. 
 
 encryption of PRODUCT: ANZZI EMBER 5.4 FT. MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME: E236794B2FBCDF1B
 
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442942804~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
 
@@ -178,12 +639,12 @@ cmRecRequest: PDPZ1,1482823193143,,,
 
 display_recs
 
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
+Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2474071
 
 successful retrieval of config file (10 ms)
 
 [object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
+write CoreM_State: 44~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484442942804~|~~|~~|~~|~~|~~|~~|~
 
 write CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
 
@@ -193,55 +654,5 @@ ab test id: no ab test
 
 step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
 
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
-
-cmRecRequest: PDPZ1,1482823193143,,,
-
-display_recs
-
-Retrieving Config file io_config.js. url: http://iocdn.coremetrics.com/90401280/io_config.js?ts=2473908
-
-successful retrieval of config file (8 ms)
-
-[object Object]
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
-
-write CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
-
-stack_manager called - successful config download - parms: PDPZ1, false, 1482823193143, , , , 
-
-ab test id: no ab test
-
-step: 0 offer_id: 18 type: P target: _SP_ algo_id:  algo_value: 
-
-Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011305
-
-Processing tag: tid=5, pr=1482823193202, cg=13298, at=undefined, pi=Product: ANZZI EMBER 54 FT MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
- (1482823193202)
-
-initial CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345032901~|~~|~~|~~|~~|~~|~~|~
-
-initial CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
-
-Adding product from product view to cookie.  Product: 1482823193202
-
-encryption of 1482823193202: 46660137
-
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345033859~|~~|~~|~~|~~|~~|~~|~
-
-write CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
-
-Processing tag: tid=1, pr=undefined, cg=13298, at=undefined, pi=PRODUCT: ANZZI EMBER 5.4 FT. MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
-
-initial CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345033859~|~~|~~|~~|~~|~~|~~|~
-
-initial CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
-
-Adding page ID from page view to cookie.  Page ID: PRODUCT: ANZZI EMBER 5.4 FT. MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME
-
-encryption of PRODUCT: ANZZI EMBER 5.4 FT. MAN-MADE STONE SLIPPER FLATBOTTOM NON-WHIRLPOOL BATHTUB IN REGAL BLUE AND KROS FAUCET IN CHROME: E236794B2FBCDF1B
-
-write CoreM_State: 29~1~-1~-1~E~6~6~6~10~10~0~0~|~46660137~|~~|~~|~0||||||~|~1484345033859~|~~|~~|~~|~~|~~|~~|~
-
-write CoreM_State_Content: 6~|~E236794B2FBCDF1B~|~0
+Retrieving recommendations for target: 574B4AFC. url: http://iocdn.coremetrics.com/90401280/V4/P18/P57/574B4AFC.js?V=2017011405
 
