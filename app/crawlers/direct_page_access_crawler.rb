@@ -74,7 +74,7 @@ class DirectPageAccessCrawler
   # - when reaches % 20 restarts driver
   # - else proceeds with data storing
   def dispatch_action(node, index)
-    connector.restart if index > 0 && index % 20 == 0
+    connector.restart_driver if index > 0 && index % 20 == 0
     connector.process_listing(node)
   end
 

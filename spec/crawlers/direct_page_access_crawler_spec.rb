@@ -97,7 +97,7 @@ RSpec.describe DirectPageAccessCrawler do
 
         it 'should restart the driver' do
           expect(connector)
-            .to receive(:restart)
+            .to receive(:restart_driver)
           node = OpenStruct.new(id: '1', sku: '2')
           crawler.send(:dispatch_action, node, 20)
         end
@@ -115,7 +115,7 @@ RSpec.describe DirectPageAccessCrawler do
 
         it 'should not restart the driver' do
           expect(connector)
-            .to_not receive(:restart)
+            .to_not receive(:restart_driver)
           node = OpenStruct.new(id: '1', sku: '2')
           crawler.send(:dispatch_action, node, 0)
         end
