@@ -19,7 +19,7 @@ class DirectPageAccessCrawler
 
   # Creates listings from
   # injected nodes (default: @nodes)
-  def process_listings(nodes)
+  def process_listings(nodes = @nodes)
     nodes.each_with_index do |node, index|
       output_process_info(node, index)
       next if invalid_node?(node)
@@ -74,17 +74,8 @@ class DirectPageAccessCrawler
   # - when != 0 AND % 20, restart_driver
   # - else proceeds with data storing
   def dispatch_action(node, index)
-    check_if_restart_required(index)
+    connector.restart_driver if !index.equal?(0) && (index % 20).equal?(0)
     connector.process_listing(node)
-  end
-
-  private
-
-  # checks if the bulk of 20 pages is complete
-  # and restart the driver's browser
-  def check_if_restart_required(index)
-    return if index.eql?(0)
-    connector.restart_driver if index % 20 == 0
   end
 
 end

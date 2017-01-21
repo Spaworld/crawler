@@ -127,7 +127,15 @@ RSpec.describe DirectPageAccessCrawler do
 
         end # when index arg is 0
 
-        context 'when the index arg is > 1 and is NOT dividable by 20' do
+        context 'when the index arg is > 0 and is NOT dividable by 20' do
+
+          it 'should restart the driver' do
+            expect(connector)
+              .to_not receive(:restart_driver)
+            node = build(:node)
+            index = rand(1...19)
+            crawler.send(:dispatch_action, node, index)
+          end
 
           it 'should restart the driver' do
             expect(connector)
@@ -177,9 +185,9 @@ RSpec.describe DirectPageAccessCrawler do
 
       context 'when node is invalid' do
 
-        let(:nil_id_node)     { OpenStruct.new(id: '',     sku: '123') }
-        let(:valid_node)      { OpenStruct.new(id: '123',  sku: '123') }
-        let(:invalid_id_node) { OpenStruct.new(id: '#N/A', sku: '123') }
+        let(:nil_id_node)     { build(:node, id: '') }
+        let(:valid_node)      { build(:node) }
+        let(:invalid_id_node) { build(:node, id: '#N/A') }
 
         it '#invalid_node? should return true' do
           expect(crawler.send(:invalid_node?, nil_id_node))
