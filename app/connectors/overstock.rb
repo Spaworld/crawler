@@ -1,40 +1,42 @@
 class Overstock < BaseConnector
 
-  attr_reader :listing_attrs
-
   BASE_URL = 'https://www.overstock.com/'
   ABBREV   = 'overstock'
 
   def abbrev; ABBREV end
 
   def process_listing(node)
-    id = node.id
     visit_home_page
-    search_for_product(id)
-    fetch_product_attributes(id)
-    store_product_attributes(id)
+    search_for_product(node.id)
+    return if page_not_found?
+    fetch_product_attributes(node.id)
+    store_product_attributes(node.id)
   end
 
   # Visits the home page
-  # raises page_not_found if
-  # connection to host cannot
-  # be established
+  # return if driver is already on home page
   def visit_home_page
-    begin
-    return if driver.current_url == BASE_URL
+    return if already_on_site?#driver.current_url == BASE_URL
+    close_popups
     driver.visit(BASE_URL)
-    rescue PageNotFound
-      Notifier.raise_page_not_found
-      return
-    end
   end
 
+  # Identifies and closes popups
+  def close_popups
+    return if driver.doc.at('.cb_close').nil?
+    driver.first('.cb_close').click
+  end
+
+  # conducts search for product using
+  # passed-in product identifier
   def search_for_product(overstock_id)
     driver.fill_in('keywords', with: overstock_id)
     driver.first('.os-icon-magnify').click
   end
 
-  def fetch_product_attributes(overstock_id, sku)
+  # fetches product attributes from
+  # elements found on page
+  def fetch_product_attributes(overstock_id)
     @listing_attrs =
       { vendor:      'overstock',
         vendor_url:   driver.current_url,
@@ -61,6 +63,13 @@ class Overstock < BaseConnector
       Notifier.raise_page_not_found
       return true
     end
+  end
+
+  # checks if driver is already pointing
+  # to overstock.com/*
+  def already_on_site?
+    driver.current_url != 'about:blank' &&
+      driver.current_url.include?(BASE_URL)
   end
 
 end

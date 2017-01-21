@@ -7,6 +7,24 @@ RSpec.describe BaseConnector do
 
   it_behaves_like('a driver')
 
+  describe 'init' do
+
+    it 'should set empty listing attributes' do
+      expect(subject.listing_attrs)
+        .to be_a_kind_of(OpenStruct)
+    end
+
+    it 'should have empty listing attributes' do
+      expect(subject.listing_attrs.vendor).to be_nil
+      expect(subject.listing_attrs.vendor_url).to be_nil
+      expect(subject.listing_attrs.vendor_id).to be_nil
+      expect(subject.listing_attrs.vendor_price).to be_nil
+      expect(subject.listing_attrs.vendor_title).to be_nil
+      expect(subject.listing_attrs.vendor_sku).to be_nil
+    end
+
+  end
+
   describe 'data manipulation' do
 
     let(:connector) { subject }
@@ -58,10 +76,17 @@ RSpec.describe BaseConnector do
 
     end
 
-  end
+    describe 'crawling' do
 
-  it 'should restart browser' do
-    pending
-  end
+      it 'should restart browser' do
+        expect(connector.driver)
+          .to receive(:restart)
+        connector.restart_driver
+      end
+
+    end
+
+  end # crawling
+
 
 end

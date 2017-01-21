@@ -40,7 +40,7 @@ class BillyDriver
   end
 
   def screenshot(name="screenshot_")
-    page.driver.render("public/#{name}.jpg", full: true)
+    page.driver.render("public/#{name}test.jpg", full: true)
   end
 
   # restarts browser to avoid

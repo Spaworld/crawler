@@ -1,11 +1,12 @@
 # Provides data manipulation layer
 class BaseConnector
 
-  attr_reader :driver
+  attr_reader :driver, :listing_attrs
 
   def initialize(driver)
     validate_driver(driver)
     @driver = driver
+    set_listing_attrs
   end
 
   def restart_driver
@@ -29,6 +30,18 @@ class BaseConnector
     unless valid_driver?(driver)
       raise ArgumentError.new('Invalid driver')
     end
+  end
+
+  # sets an empty Ostuct inst
+  # for listing_attributes
+  def set_listing_attrs
+    @listing_attrs = OpenStruct.new(
+      vendor:       nil,
+      vendor_url:   nil,
+      vendor_id:    nil,
+      vendor_price: nil,
+      vendor_title: nil,
+      vendor_sku:   nil)
   end
 
 end
