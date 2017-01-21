@@ -21,6 +21,10 @@ RSpec.configure do |config|
 
   config.infer_rake_task_specs_from_file_location!
 
+  # silence STDOUT
+  config.before { allow($stdout).to receive(:puts) }
+
 end
 
 FIXTURES_ROOT="#{Rails.root}/spec/fixtures"
+

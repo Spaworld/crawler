@@ -58,13 +58,6 @@ RSpec.describe DirectPageAccessCrawler do
       allow(connector).to receive(:visit_product_page)
     end
 
-    it 'should iterate through parsed nodes' do
-      csv = "#{Rails.root}/spec/fixtures/CSVs/sample_nodes.csv"
-      crawler.fetch_product_nodes(csv)
-      expect{ crawler.process_listings }
-        .to_not raise_error
-    end
-
     it 'should iterate through listing nodes' do
       listings = create_list(:listing, 1, :with_menards_attrs)
       nodes = [listings.first.to_node('menards')]
@@ -96,31 +89,67 @@ RSpec.describe DirectPageAccessCrawler do
       context 'when the bulk of 20 nodes is complete' do
 
         it 'should restart the driver' do
+          index = rand(1..9) * 20
           expect(connector)
             .to receive(:restart_driver)
-          node = OpenStruct.new(id: '1', sku: '2')
-          crawler.send(:dispatch_action, node, 20)
+          node = build(:node)
+          crawler.send(:dispatch_action, node, index)
         end
 
         it 'should process listing' do
           expect(connector)
             .to receive(:process_listing)
-          node = OpenStruct.new(id: '1', sku: '2')
+          node = build(:node)
           crawler.send(:dispatch_action, node, 20)
         end
 
       end # when bulk of 20 is complete
 
-      context 'when index arg is 0' do
+      describe 'restarting the driver' do
 
-        it 'should not restart the driver' do
-          expect(connector)
-            .to_not receive(:restart_driver)
-          node = OpenStruct.new(id: '1', sku: '2')
-          crawler.send(:dispatch_action, node, 0)
-        end
+        context 'when index arg is 0' do
 
-      end # when index arg is 0
+          it 'should not restart the driver' do
+            expect(connector)
+              .to_not receive(:restart_driver)
+            node = build(:node)
+            crawler.send(:dispatch_action, node, 0)
+          end
+
+          it 'should still process listing' do
+            node = build(:node)
+            expect(connector)
+              .to receive(:process_listing)
+              .with(node)
+              .once
+            crawler.send(:dispatch_action, node, 0)
+          end
+
+        end # when index arg is 0
+
+        context 'when the index arg is > 1 and is NOT dividable by 20' do
+
+          it 'should restart the driver' do
+            expect(connector)
+              .to_not receive(:restart_driver)
+            node = build(:node)
+            index = rand(1...19)
+            crawler.send(:dispatch_action, node, index)
+          end
+
+          it 'should still process listing' do
+            node = build(:node)
+            index = rand(1...19)
+            expect(connector)
+              .to receive(:process_listing)
+              .with(node)
+              .once
+            crawler.send(:dispatch_action, node, index)
+          end
+
+        end # when index arg != 0
+
+      end # restarting driver
 
       it 'should process listing' do
         node = OpenStruct.new(id: '1', sku: '2')
@@ -148,9 +177,9 @@ RSpec.describe DirectPageAccessCrawler do
 
       context 'when node is invalid' do
 
-        let(:nil_id_node) { OpenStruct.new(id: '',    sku: '123') }
-        let(:valid_node)  { OpenStruct.new(id: '123', sku: '123') }
-        let(:invalid_id_node) { OpenStruct.new(id: '#N/A',    sku: '123') }
+        let(:nil_id_node)     { OpenStruct.new(id: '',     sku: '123') }
+        let(:valid_node)      { OpenStruct.new(id: '123',  sku: '123') }
+        let(:invalid_id_node) { OpenStruct.new(id: '#N/A', sku: '123') }
 
         it '#invalid_node? should return true' do
           expect(crawler.send(:invalid_node?, nil_id_node))
@@ -168,11 +197,11 @@ RSpec.describe DirectPageAccessCrawler do
 
           it 'should skip invalid node' do
             nodes = [nil_id_node, valid_node]
-            expect(crawler)
-              .to receive(:output_process_info)
+            expect(connector)
+              .to receive(:process_listing)
+              .with(valid_node)
               .once
             crawler.process_listings(nodes)
-
           end
 
           it 'should not process invalid node' do
@@ -189,10 +218,9 @@ RSpec.describe DirectPageAccessCrawler do
             crawler.process_listings(nodes)
           end
 
-        end
+        end # when node.id.nil?
 
         describe 'because of an invalid id' do
-
 
           it 'should identify the invalid node' do
             expect(crawler.send(:invalid_node?,
@@ -214,7 +242,7 @@ RSpec.describe DirectPageAccessCrawler do
             crawler.process_listings(nodes)
           end
 
-        end
+        end # when node.id is invalid
 
         describe 'beacuse of an empty sku' do
 

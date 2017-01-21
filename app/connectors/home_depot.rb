@@ -4,6 +4,22 @@ class HomeDepot < BaseConnector
   attr_reader :listing_attrs
 
   BASE_URL = 'http://www.homedepot.com/p/'
+  ABBREV   = 'hd'
+
+  def abbrev; ABBREV end
+
+  def process_listing(node)
+    id = node.id
+    visit_product_page(id)
+    return if page_not_found?
+    fetch_product_attributes(id)
+    store_product_attributes(@listing_attrs)
+  end
+
+  def visit_product_page(product_id)
+
+  end
+
 
   def process_listings(nodes)
     nodes.each_with_index do |node, index|

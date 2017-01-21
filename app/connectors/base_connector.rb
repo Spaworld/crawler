@@ -12,6 +12,13 @@ class BaseConnector
     driver.restart
   end
 
+  def store_product_attributes(listing_attrs)
+    sku = listing_attrs[:vendor_sku]
+    url = listing_attrs[:vendor_url]
+    Listing.append_menards_url(sku, url)
+    Listing.append_vendor_attrs(sku, listing_attrs)
+  end
+
   private
 
   def valid_driver?(driver)

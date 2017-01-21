@@ -19,11 +19,11 @@ class DirectPageAccessCrawler
 
   # Creates listings from
   # injected nodes (default: @nodes)
-  def process_listings(nodes = @nodes)
+  def process_listings(nodes)
     nodes.each_with_index do |node, index|
+      output_process_info(node, index)
       next if invalid_node?(node)
       next if data_exists?(node)
-      output_process_info(node, index)
       dispatch_action(node, index)
     end
   end
@@ -45,7 +45,7 @@ class DirectPageAccessCrawler
   def data_exists?(node)
     if Listing.data_present?(node.sku, connector.abbrev)
       Notifier.raise_data_exists
-      return true
+      true
     end
   end
 
@@ -61,7 +61,7 @@ class DirectPageAccessCrawler
         value.empty? ||
         value == '#N/A' }
       Notifier.raise_invalid_node
-      return true
+      true
     end
   end
 
@@ -71,11 +71,20 @@ class DirectPageAccessCrawler
   end
 
   # Dispatches action based on current index param
-  # - when reaches % 20 restarts driver
+  # - when != 0 AND % 20, restart_driver
   # - else proceeds with data storing
   def dispatch_action(node, index)
-    connector.restart_driver if index > 0 && index % 20 == 0
+    check_if_restart_required(index)
     connector.process_listing(node)
+  end
+
+  private
+
+  # checks if the bulk of 20 pages is complete
+  # and restart the driver's browser
+  def check_if_restart_required(index)
+    return if index.eql?(0)
+    connector.restart_driver if index % 20 == 0
   end
 
 end
