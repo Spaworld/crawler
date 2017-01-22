@@ -11,10 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105055350) do
+ActiveRecord::Schema.define(version: 20170122055415) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agents", force: :cascade do |t|
+    t.string   "business_name"
+    t.string   "dba"
+    t.string   "website"
+    t.string   "tax_id"
+    t.string   "office_address"
+    t.string   "office_city"
+    t.string   "office_state"
+    t.string   "office_zip"
+    t.string   "office_mailing_address"
+    t.string   "office_mailing_city"
+    t.string   "office_mailing_state"
+    t.string   "office_mailing_zip"
+    t.string   "login"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "license_number"
+    t.string   "license_state"
+    t.date     "expiration_date"
+    t.string   "eo_carrier_name"
+    t.string   "eo_policy_number"
+    t.string   "eo_expiration_date"
+    t.string   "header_from"
+    t.text     "comments"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "listings", force: :cascade do |t|
     t.string   "sku"
@@ -29,6 +60,22 @@ ActiveRecord::Schema.define(version: 20170105055350) do
     t.string   "houzz_url"
     t.string   "lowes_url"
     t.string   "wayfair_url"
+    t.string   "amazon_url"
+  end
+
+  create_table "quotes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "support_requests", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "subject"
+    t.string   "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
