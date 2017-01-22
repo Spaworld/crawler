@@ -52,13 +52,49 @@ RSpec.describe HomeDepot do
         connector.visit_product_page('204766736')
       end
 
-      it 'should be able to product attributes' do
+      it 'should be able to fetch vendor' do
         expect {
           connector.fetch_product_attributes('204766736')
         }.to change {
-          connector.listing_attrs
+          connector.listing_attrs[:vendor]
         } .from(nil)
-          .to(a_kind_of(Hash))
+          .to('hd')
+      end
+
+      it 'should be able to fetch vendor' do
+        expect {
+          connector.fetch_product_attributes('204766736')
+        }.to change {
+          connector.listing_attrs[:vendor_url]
+        } .from(nil)
+          .to('http://www.homedepot.com/p/204766736')
+      end
+
+      it 'should be able to fetch vendor' do
+        expect {
+          connector.fetch_product_attributes('204766736')
+        }.to change {
+          connector.listing_attrs[:vendor_id]
+        } .from(nil)
+          .to('204766736')
+      end
+
+      it 'should be able to fetch vendor' do
+        expect {
+          connector.fetch_product_attributes('204766736')
+        }.to change {
+          connector.listing_attrs[:vendor_sku]
+        } .from(nil)
+          .to('HD4872CS')
+      end
+
+      it 'should be able to fetch vendor' do
+        expect {
+          connector.fetch_product_attributes('204766736')
+        }.to change {
+          connector.listing_attrs[:vendor_title]
+        } .from(nil)
+          .to('Studio 5 ft. Reversible Drain Bathtub in Biscuit')
       end
 
       context 'specific attributes' do
@@ -90,7 +126,7 @@ RSpec.describe HomeDepot do
         it 'should store product\'s vendor title' do
           connector.fetch_product_attributes('204766736')
           expect(connector.listing_attrs[:vendor_title])
-            .to eq('Peridot 6 ft. Acrylic Reversible Drain Rectangular Bathtub in White')
+            .to eq('Studio 5 ft. Reversible Drain Bathtub in Biscuit')
         end
 
         it 'should store product\'s vendor price' do
@@ -121,18 +157,4 @@ RSpec.describe HomeDepot do
 
   end # crawling
 
-  context 'storing product attributes' do
-
-    it 'should store product attributes' do
-      expect_any_instance_of(BaseConnector)
-        .to receive(:store_attrs)
-        .with('123', a_kind_of(Hash))
-      connector.store_attrs('123', {})
-    end
-
-    it 'should append product attrs to listing vendor' do
-      Listing.append_menards_url( '123', 'foo.com' )
-    end
-
-  end # storing attributes
 end

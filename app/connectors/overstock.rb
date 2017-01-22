@@ -16,7 +16,7 @@ class Overstock < BaseConnector
   # Visits the home page
   # return if driver is already on home page
   def visit_home_page
-    return if already_on_site?#driver.current_url == BASE_URL
+    return if already_on_site?
     close_popups
     driver.visit(BASE_URL)
   end

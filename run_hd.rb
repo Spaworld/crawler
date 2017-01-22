@@ -1,9 +1,6 @@
-require 'rake'
-rake = Rake.application
-rake.init
-rake.load_rakefile
-
-file_path = 'lib/hd_skus.csv'
-nodes = CSVFeedParser.fetch_nodes(file_path)
+csv = 'lib/hd_skus.csv'
 connector = HomeDepot.new(PoltergeistCrawler.new)
-connector.process_listings(nodes)
+crawler = DirectPageAccessCrawler.new(connector)
+crawler.fetch_product_nodes(csv)
+crawler.process_listings
+
