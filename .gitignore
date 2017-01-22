@@ -30,3 +30,10 @@ lib/.~*
 
 # Redis
 *.rdb
+
+# CSVs
+lib/*.csv
+lib/export/*
+lib/wayfair_batch
+
+
